@@ -1,0 +1,152 @@
+@import './style.css';
+@import './variables';
+@import './mixins';
+@import url('https://fonts.googleapis.com/css?family=Amiri:700|Aref+Ruqaa|Reem+Kufi|Tajawal:500');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+// HEADER
+header{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+    .overlay{
+        background: linear-gradient(to right,     /* تدرج الخطي الى اليمين */
+            rgba(204, 171, 216, 0.89) 0%,   /* يبدأ باللون المحدد من اليسار اي يعني من الصفر بالمية */
+            rgba(132, 116, 161, 0.925) 100%  /* ينتهي بهذا اللون الى اليمين */
+        );
+        height: 100%;
+    }
+    
+    nav{
+        ul li{
+            margin-left: 30px;
+            a{
+                color: $color-white-dark;
+                font-size: 20px;
+                font-weight: lighter;
+                padding: 0px 5px;
+                &:hover{
+                    color: $color-white;
+                }
+            }
+            .cool-link::after{
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $color-white;
+                transition: width .3s;
+            }
+            .cool-link:hover::after{
+                width: 100%;
+                transition: width .3s;      
+            }
+        }
+
+        #brand{
+            img{
+                height: 125px;
+                width: 125px;
+            }
+            a:hover{
+                color: transparent;
+            }
+            h5{
+                color: black;
+                font-family: 'Reem Kufi', cursive;
+                display: inline-block;
+                margin: 0px;
+                position: relative;
+                top: 20px;
+                right: -5px
+            }
+        }
+    }
+    .about{
+        margin: 120px 35px;
+        h1{
+            span{
+                font-size: 60px;
+                font-weight: 600;
+                display: block;
+                margin-bottom: 8px;
+            }
+            font-size: 45px;
+            color: $color-white;
+            margin-top: 37px;
+        }
+        p{
+            font-size: 18px;
+            color: $color-white-dark;
+            margin-top: 20px;
+        }
+        .form-group{ //SEARCH FORM
+            margin-top: 65px;
+            ::-webkit-input-placeholder{
+                color: #000000;
+            }
+            input[type=search]{
+                width: 0;
+                position: relative;
+                right: 45%;
+                background-color: transparent;
+                background-image: url('../img/search.svg');
+                background-position: center; 
+                background-repeat: no-repeat;
+                cursor: pointer;
+                padding: 20px 45px;
+                border-color: transparent;
+                border-radius: 25px;
+                transition: all 0.4s ease;
+                &:focus {
+                    right: 0;
+                    width: 100%;
+                    background-position: 99%;
+                    color: #000000;
+                    border-color: transparent;
+                    box-shadow: 0 0 10px 0.1rem rgba(132, 116, 161, 0.925);
+                    
+                }
+            }
+            a{
+                font-size: 70px;
+                color: #d6e8ee;
+                position: relative;
+                top: 130px;
+                right: 4%;
+            }           
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
