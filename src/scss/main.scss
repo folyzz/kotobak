@@ -97,7 +97,7 @@ header{
                 border-color: transparent;
                 border-radius: 25px;
                 transition: all 0.4s ease;
-                &:focus {
+                &:focus,&:hover {
                     right: 0;
                     width: 100%;
                     background-position: 99%;
@@ -118,12 +118,39 @@ header{
                 position: relative;
                 top: 75px;
                 right: 45%;
+                &:hover{
+                    color: $color-brand;
+                }
             }           
         }
     }
 }
 
-
+#gallery{
+    background-color: $color-brand;
+    padding: 70px 0px;
+    h1{
+        color: $color-white;
+        font-weight: bold;
+        font-size: 55px;
+        margin-bottom: 70px;
+    }
+    .item{
+        height: 370px;
+        padding: 0 100px;
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 2%;
+            box-shadow: 0 0 35px -11px $color-black;
+            transition: all 0.5s ease;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0 0 45px -11px $color-black;
+            }
+        }
+    }
+}
 
 
 

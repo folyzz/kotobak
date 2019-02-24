@@ -71,7 +71,7 @@ header {
         border-color: transparent;
         border-radius: 25px;
         transition: all 0.4s ease; }
-        header .about .form-group input[type=search]:focus {
+        header .about .form-group input[type=search]:focus, header .about .form-group input[type=search]:hover {
           right: 0;
           width: 100%;
           background-position: 99%;
@@ -89,3 +89,26 @@ header {
         position: relative;
         top: 75px;
         right: 45%; }
+        header .about .form-group a:hover {
+          color: #594AA9; }
+
+#gallery {
+  background-color: #594AA9;
+  padding: 70px 0px; }
+  #gallery h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 55px;
+    margin-bottom: 70px; }
+  #gallery .item {
+    height: 370px;
+    padding: 0 100px; }
+    #gallery .item img {
+      height: 100%;
+      width: 100%;
+      border-radius: 2%;
+      box-shadow: 0 0 35px -11px #000000;
+      transition: all 0.5s ease; }
+      #gallery .item img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 45px -11px #000000; }
