@@ -1,86 +1,96 @@
 @import url(./style.css);
-@import url("https://fonts.googleapis.com/css?family=Amiri:700|Aref+Ruqaa|Reem+Kufi|Tajawal:500");
+@import url("https://fonts.googleapis.com/css?family=Amiri:700|Aref+Ruqaa|Reem+Kufi|Tajawal");
+@import url("https://fonts.googleapis.com/earlyaccess/droidarabickufi.css");
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Tajawal', sans-serif; }
+  font-family: 'Droid Arabic Kufi', sans-serif; }
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: #e6e6e6; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #3d3374; }
+
+nav.navbar.noTransparrent {
+  transition: all 0.5s ease; }
+  nav.navbar.noTransparrent #brand img {
+    height: 70px;
+    width: 70px; }
+  nav.navbar.noTransparrent #brand h5 {
+    font-size: 15px;
+    top: 9px; }
 
 header {
   background: linear-gradient(45deg, #FE7F77, #FFAA79);
   min-height: 100%; }
-  header nav ul li {
-    margin-left: 30px; }
-    header nav ul li a {
-      color: #f2f2f2;
-      font-size: 20px;
-      font-weight: lighter;
-      padding: 0px 5px; }
-      header nav ul li a:hover {
-        color: #ffffff; }
-    header nav ul li .cool-link::after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 2px;
-      background: #594AA9;
-      transition: width .3s; }
-    header nav ul li .cool-link:hover::after {
-      width: 100%;
-      transition: width .3s; }
-  header nav #brand img {
-    height: 125px;
-    width: 125px; }
-  header nav #brand a:hover {
-    color: transparent; }
-  header nav #brand h5 {
-    color: #ffffff;
-    font-family: 'Reem Kufi', cursive;
-    display: inline-block;
-    margin: 0px;
-    position: relative;
-    top: 20px;
-    right: -5px; }
+  header nav {
+    padding: 0px 10px !important; }
+    header nav ul li {
+      margin-left: 30px; }
+      header nav ul li:last-of-type {
+        margin: 8px 0px 0 20px; }
+      header nav ul li a {
+        color: #e6e6e6;
+        font-size: 20px;
+        font-weight: lighter;
+        padding: 0px 5px;
+        transition: all 0.3s ease; }
+        header nav ul li a:hover, header nav ul li a.active {
+          color: #ffffff;
+          text-shadow: 0 0 40px #ffffff; }
+    header nav #brand img {
+      height: 125px;
+      width: 125px;
+      transition: all 0.5s ease; }
+    header nav #brand a:hover {
+      color: transparent; }
+    header nav #brand h5 {
+      color: #ffffff;
+      font-family: 'Reem Kufi', cursive;
+      display: inline-block;
+      margin: 0px;
+      position: relative;
+      top: 15px;
+      right: -9px;
+      transition: all 0.5s ease; }
   header .about {
     padding: 140px 53px 125px; }
     header .about h1 {
-      font-size: 60px;
+      font-size: 70px;
       font-weight: bold;
       color: #594AA9; }
       header .about h1 span {
         font-size: 45px;
         font-weight: 400;
         display: block;
-        color: #ffffff; }
+        color: #ffffff;
+        word-spacing: -5px; }
     header .about p {
       font-size: 18px;
-      color: #f2f2f2;
+      color: #e6e6e6;
       margin-top: 20px; }
     header .about .form-group {
       margin-top: 65px; }
       header .about .form-group ::-webkit-input-placeholder {
         color: #000000; }
       header .about .form-group input[type=search] {
-        width: 0;
+        color: #000000;
+        width: 100%;
         position: relative;
-        right: 45%;
+        right: 0;
         background-color: transparent;
         background-image: url("../img/search.svg");
-        background-position: center;
+        background-position: 99%;
         background-repeat: no-repeat;
         padding: 20px 45px;
         border-color: transparent;
         border-radius: 25px;
-        transition: all 0.4s ease; }
-        header .about .form-group input[type=search]:focus, header .about .form-group input[type=search]:hover {
-          right: 0;
-          width: 100%;
-          background-position: 99%;
-          color: #000000;
-          border-color: transparent;
-          box-shadow: 0 0 35px -11px #000000; }
+        box-shadow: 0 0 35px -11px #000000; }
       header .about .form-group a {
-        font-size: 55px;
-        color: #f2f2f2;
+        color: #e6e6e6;
         border-radius: 50%;
         box-shadow: 0 0 35px -11px #000000;
         display: block;
@@ -91,17 +101,26 @@ header {
         right: 45%; }
         header .about .form-group a:hover {
           color: #594AA9; }
+        header .about .form-group a i {
+          font-size: 45px;
+          height: 100%;
+          width: 100%;
+          padding: 13px;
+          border-radius: 50%;
+          transition: all 0.5s ease; }
+          header .about .form-group a i:hover {
+            transform: translateY(15px); }
 
 #gallery {
   background-color: #594AA9;
-  padding: 70px 0px; }
+  padding: 70px 0px 120px; }
   #gallery h1 {
     color: #ffffff;
     font-weight: bold;
     font-size: 55px;
     margin-bottom: 70px; }
   #gallery .item {
-    height: 370px;
+    height: 380px;
     padding: 0 100px; }
     #gallery .item img {
       height: 100%;
@@ -112,3 +131,54 @@ header {
       #gallery .item img:hover {
         transform: scale(1.05);
         box-shadow: 0 0 45px -11px #000000; }
+
+#contact {
+  background-color: #3F4560; }
+  #contact ul {
+    margin: 10px; }
+    #contact ul li {
+      color: #ffffff;
+      font-size: 16px;
+      display: inline; }
+      #contact ul li:not(:last-child) {
+        margin-left: 14%; }
+      #contact ul li a {
+        color: #ffffff; }
+        #contact ul li a:hover {
+          text-decoration: none; }
+      #contact ul li i {
+        color: #ffffff;
+        font-size: 25px;
+        margin-right: 5px; }
+
+.map-box {
+  margin: 0;
+  padding: 0; }
+  .map-box #map {
+    padding: 0;
+    height: 500px; }
+    .map-box #map iframe {
+      height: 100%;
+      width: 100%;
+      border: 0; }
+
+footer {
+  color: white;
+  background-color: #3F4560;
+  height: 100%;
+  padding: 0px; }
+  footer .icon-top {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    right: -30%; }
+    footer .icon-top a {
+      display: inline-block;
+      transform: rotate(85deg); }
+      footer .icon-top a i {
+        color: black;
+        background-color: aliceblue;
+        border-radius: 50%;
+        padding: 5px; }
+  footer p {
+    margin: -15px 0 8px; }

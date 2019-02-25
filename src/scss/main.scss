@@ -1,51 +1,70 @@
 @import './style.css';
 @import './variables';
 @import './mixins';
-@import url('https://fonts.googleapis.com/css?family=Amiri:700|Aref+Ruqaa|Reem+Kufi|Tajawal:500');
+@import url('https://fonts.googleapis.com/css?family=Amiri:700|Aref+Ruqaa|Reem+Kufi|Tajawal');
+@import url('https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');
 
 
 body{
     padding: 0;
     margin: 0;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Droid Arabic Kufi', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 9px;
+    background-color: $color-white-dark;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background-color: darken($color-brand, 15%);
+}
+
+//noTransparrent
+nav.navbar.noTransparrent {
+    transition: all 0.5s ease;
+    #brand{
+        img{
+            height: 70px;
+            width: 70px;
+        }
+        h5{
+            font-size: 15px;
+            top: 9px;
+        }
+    }
 }
 
 // HEADER
 header{
     background: linear-gradient(45deg, #FE7F77, #FFAA79);
     min-height: 100%;
-    
+    //navar
     nav{
+        padding: 0px 10px !important;
         ul li{
             margin-left: 30px;
+            &:last-of-type{
+                margin: 8px 0px 0 20px;
+            }
             a{
                 color: $color-white-dark;
                 font-size: 20px;
                 font-weight: lighter;
                 padding: 0px 5px;
-                &:hover{
+                transition: all 0.3s ease;
+                &:hover,
+                &.active{
                     color: $color-white;
+                    text-shadow: 0 0 40px $color-white;
                 }
             }
-            .cool-link::after{
-                content: "";
-                display: block;
-                width: 0;
-                height: 2px;
-                background:$color-brand;
-                transition: width .3s;
-            }
-            .cool-link:hover::after{
-                width: 100%;
-                transition: width .3s;      
-            }
         }
-
+        //الشعار
         #brand{
             img {
                 height: 125px;
                 width: 125px;
-                
+                transition: all 0.5s ease;
             }
             a:hover{
                 color: transparent;
@@ -56,23 +75,25 @@ header{
                 display: inline-block;
                 margin: 0px;
                 position: relative;
-                top: 20px;
-                right: -5px
+                top: 15px;
+                right: -9px;
+                transition: all 0.5s ease;
             }
         }
     }
+    //التعريف
     .about{
         padding: 140px 53px 125px;
         h1{
-            font-size: 60px;
+            font-size: 70px;
             font-weight: bold;
             color: $color-brand;
-            // margin-top: 37px;
             span{
                 font-size: 45px;
                 font-weight: 400;
                 display: block;
                 color: $color-white;
+                word-spacing: -5px;
             }
         }
         p{
@@ -86,29 +107,21 @@ header{
                 color: $color-black;
             }
             input[type=search]{
-                width: 0;
+                color: $color-black;
+                width: 100%;
                 position: relative;
-                right: 45%;
+                right: 0;
                 background-color: transparent;
                 background-image: url('../img/search.svg');
-                background-position: center; 
+                background-position: 99%; 
                 background-repeat: no-repeat;
                 padding: 20px 45px;
                 border-color: transparent;
                 border-radius: 25px;
-                transition: all 0.4s ease;
-                &:focus,&:hover {
-                    right: 0;
-                    width: 100%;
-                    background-position: 99%;
-                    color: $color-black;
-                    border-color: transparent;
-                    box-shadow: 0 0 35px -11px $color-black;
-                    
-                }
+                box-shadow: 0 0 35px -11px $color-black;
+                
             }
-            a{
-                font-size: 55px;
+            a{//زر السفلي
                 color: $color-white-dark;
                 border-radius: 50%;               
                 box-shadow: 0 0 35px -11px $color-black;
@@ -121,14 +134,25 @@ header{
                 &:hover{
                     color: $color-brand;
                 }
+                i{
+                    font-size: 45px;
+                    height: 100%;
+                    width: 100%;
+                    padding: 13px;
+                    border-radius: 50%;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        transform: translateY(15px);
+                    }
+                }
             }           
         }
     }
 }
-
+//المعرض
 #gallery{
     background-color: $color-brand;
-    padding: 70px 0px;
+    padding: 70px 0px 120px;
     h1{
         color: $color-white;
         font-weight: bold;
@@ -136,7 +160,7 @@ header{
         margin-bottom: 70px;
     }
     .item{
-        height: 370px;
+        height: 380px;
         padding: 0 100px;
         img{
             height: 100%;
@@ -151,10 +175,72 @@ header{
         }
     }
 }
+//تواصل معنا
+#contact{
+    background-color: $color-grey-dark;
+    ul{
+        margin: 10px;
+        li{
+            color: $color-white;
+            font-size: 16px;
+            display: inline;
+            &:not(:last-child){
+                margin-left: 14%;
+            }
+            a{
+                color: $color-white;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            i{
+                color: $color-white;
+                font-size: 25px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+//خريطة
+.map-box{
+    margin: 0;
+    padding: 0;
+    #map{
+        padding: 0;
+        height: 500px;
+        iframe{
+            height: 100%;
+            width: 100%;
+            border: 0;
+        }
+    }
+}
 
-
-
-
+footer{
+    color: white;
+    background-color: $color-grey-dark;
+    height: 100%;
+    padding: 0px;
+    .icon-top{
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        right: -30%;
+        a{
+            display: inline-block;
+            transform: rotate(85deg);
+            i{
+                color: black;
+                background-color: aliceblue;
+                border-radius: 50%;
+                padding: 5px;
+            }
+        }
+    }
+    p{
+        margin: -15px 0 8px;
+    }
+}
 
 
 

@@ -17,7 +17,7 @@
   <header id="header">
     <div class="container">
   
-      <nav class="navbar navbar-toggleable-sm">
+      <nav class="navbar navbar-toggleable-sm" id="navBar">
         <div id="brand">
           <a href="#" class="navabr-brand">
             <img src="img/logo.svg" alt="logo">
@@ -26,14 +26,19 @@
         </div>
   
         <ul class="nav">
-          <li class="nav-item">
-            <a href="#header" class="nav-link cool-link">الرئيسية</a>
+          <li class="nav-item ">
+            <a href="#header" class="nav-link cool-link scroll active">الرئيسية</a>
           </li>
           <li class="nav-item">
-            <a href="#gallery" class="nav-link cool-link">اخترنا لكم</a>
+            <a href="#gallery" class="nav-link cool-link scroll">اخترنا لكم</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link cool-link">اتصل بنا</a>
+            <a href="#contact" class="nav-link cool-link scroll">اتصل بنا</a>
+          </li>
+          <li class="d-none d-md-block">
+            <a href="#" title="عربة الشراء" data-toggle="tooltip" data-placement="bottom">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
           </li>
         </ul>
       </nav>
@@ -52,11 +57,11 @@
   
           <form action="" class="search-form">
             <div class="form-group col-6 mr-auto ml-auto">
-              <input class="form-control" type="search" id="search" placeholder="ابحث...">
-              <a href="#gallery"><i class="fa fa-angle-double-down"></i></a>
+              <input class="form-control" type="search" id="search">
+              <a href="#gallery" class="scroll"><i class="fa fa-angle-double-down"></i></a>
             </div>
           </form>
-  
+
         </div>
       </div>
   
@@ -76,13 +81,44 @@
   </section>
 
  
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 links">
+          <ul class="list-unstyled text-center">
+            <li><a href="tell:012 3456 789">012 3456 789<i class="fa fa-phone"></i></a></li>
+          
+            <li><a href="mailto:Ammar@hotmail.com">Ammar@hotmail.com<i class="fa fa-envelope-o"></i></a></li>
+
+            <li>شارع قصر العيني<i class="fa fa-map-marker"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid  map-box">
+    <div class="row text-center map-box">
+      <div class="col-12" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10168.116689290919!2d31.2337632!3d30.033158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847334fa4b8c1%3A0x3ff9a1c396a2dcad!2z2KfZhNmC2LXYsSDYp9mE2LnZitmG2YrYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKzYjCDZhdi12LE!5e1!3m2!1sar!2ssa!4v1551026884952"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center">
+    <div class="icon-top">
+      <a href="#header" class="scroll" title="رجوع للأعلى" data-toggle="tooltip" data-placement="right">
+        <i class="fa fa-reply"></i>
+      </a>
+    </div>
+    <p>جميع الحقوق محفوظة &copy;</p>
+  </footer>
 
 
-
-
-  <script src="js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
