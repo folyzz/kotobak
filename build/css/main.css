@@ -179,7 +179,6 @@ header {
 footer {
   color: white;
   background-color: #3F4560;
-  height: 100%;
   padding: 0px; }
   footer .icon-top {
     display: inline-block;
@@ -195,35 +194,41 @@ footer {
         border-radius: 50%;
         padding: 5px; }
   footer p {
-    margin: -15px 0 8px; }
+    margin: -10px 0 0px;
+    position: relative;
+    top: -7px; }
 
 @media (max-width: 1199px) {
-  header nav ul {
-    position: relative;
-    right: 44%; } }
-
-@media (max-width: 991px) {
-  header nav {
-    padding: 0px 0px !important; }
-    header nav #brand {
-      position: relative;
-      right: -6%; }
+  header {
+    min-height: 95%; }
     header nav ul {
       position: relative;
-      right: 25%;
-      margin: 25px 0px 0 -75px;
-      padding: 0; }
-  header .about {
-    padding: 140px 0px 125px; }
-    header .about h1 {
-      font-size: 65px; }
-      header .about h1 span {
-        font-size: 40px; }
-    header .about p {
-      font-size: 16px; }
-    header .about .form-group input[type=search] {
-      background-position: 98%;
-      background-size: 35px; }
+      right: 44%; } }
+
+@media (max-width: 991px) {
+  header {
+    min-height: 95%; }
+    header nav {
+      padding: 0px 0px !important; }
+      header nav #brand {
+        position: relative;
+        right: -6%; }
+      header nav ul {
+        position: relative;
+        right: 25%;
+        margin: 25px 0px 0 -75px;
+        padding: 0; }
+    header .about {
+      padding: 140px 0px 125px; }
+      header .about h1 {
+        font-size: 65px; }
+        header .about h1 span {
+          font-size: 40px; }
+      header .about p {
+        font-size: 16px; }
+      header .about .form-group input[type=search] {
+        background-position: 98%;
+        background-size: 35px; }
   #gallery .item {
     max-height: 380px;
     padding: 0px 30px; }
@@ -233,31 +238,33 @@ footer {
     height: 400px; } }
 
 @media (max-width: 767px) {
-  header nav #brand img {
-    height: 100px;
-    width: 100px; }
-  header nav #brand h5 {
-    top: 12px;
-    font-size: 16px; }
-  header nav ul {
-    position: relative;
-    right: -5%; }
-    header nav ul li {
-      margin-left: 0px;
-      margin-bottom: 12px; }
-      header nav ul li a {
-        font-size: 28px; }
-  header .about p {
-    font-size: 13px; }
-  header .about h1 {
-    font-size: 60px; }
-    header .about h1 span {
-      font-size: 35px; }
-  header .about .form-group input[type=search] {
-    font-size: 15px;
-    width: 55%;
-    background-size: 30px;
-    padding: 20px 35px; }
+  header {
+    min-height: 88%; }
+    header nav #brand img {
+      height: 100px;
+      width: 100px; }
+    header nav #brand h5 {
+      top: 12px;
+      font-size: 16px; }
+    header nav ul {
+      position: relative;
+      right: -5%; }
+      header nav ul li {
+        margin-left: 0px;
+        margin-bottom: 12px; }
+        header nav ul li a {
+          font-size: 28px; }
+    header .about p {
+      font-size: 13px; }
+    header .about h1 {
+      font-size: 60px; }
+      header .about h1 span {
+        font-size: 35px; }
+    header .about .form-group input[type=search] {
+      font-size: 15px;
+      width: 55%;
+      background-size: 30px;
+      padding: 20px 35px; }
   #gallery {
     padding: 45px 0px 120px; }
     #gallery h1 {
@@ -272,27 +279,35 @@ footer {
     font-size: 20px !important; } }
 
 @media (max-width: 575px) {
-  header nav #brand {
-    position: relative;
-    right: 0%; }
-  header nav ul {
-    margin: 0;
-    width: 65%;
-    position: relative;
-    right: 15%; }
-    header nav ul li a {
-      display: inline; }
-  header .about h1 {
-    font-size: 50px; }
-    header .about h1 span {
-      font-size: 30px; }
-  header .about p {
-    font-size: 9px; }
-  header .about .form-group input[type=search] {
-    font-size: 11px;
-    width: 55%;
-    background-size: 25px;
-    padding: 20px 30px; }
+  header {
+    min-height: 82%; }
+    header nav #brand {
+      position: relative;
+      right: 0%; }
+    header nav ul {
+      margin: 0;
+      width: 65%;
+      position: relative;
+      right: 15%; }
+      header nav ul li a {
+        display: inline; }
+    header .about h1 {
+      font-size: 50px; }
+      header .about h1 span {
+        font-size: 30px; }
+    header .about p {
+      font-size: 9px; }
+    header .about .form-group input[type=search] {
+      font-size: 11px;
+      width: 55%;
+      background-size: 25px;
+      padding: 20px 30px; }
+  #gallery {
+    padding: 45px 0px 45px; }
+    #gallery .item {
+      max-height: 380px;
+      padding: 0px 70px;
+      margin-bottom: 60px; }
   #contact ul {
     padding: 0;
     margin: 5px 0; }

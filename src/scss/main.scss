@@ -238,7 +238,6 @@ header{
 footer{
     color: white;
     background-color: $color-grey-dark;
-    height: 100%;
     padding: 0px;
     .icon-top{
         display: inline-block;
@@ -257,12 +256,15 @@ footer{
         }
     }
     p{
-        margin: -15px 0 8px;
+        margin: -10px 0 0px;
+        position: relative;
+        top: -7px;
     }
 }
 
 @media (max-width: 1199px){
     header{
+        min-height: 95%;
         nav{
             ul{
                 position: relative;
@@ -273,6 +275,7 @@ footer{
 }
 @media (max-width: 991px){
     header {
+        min-height: 95%;
         nav {
             padding: 0px 0px !important;
             #brand{
@@ -317,8 +320,8 @@ footer{
 
 @media (max-width: 767px){
     header{
+        min-height: 88%;
         nav {
-            
             #brand {
                 img {
                     height: 100px;
@@ -384,6 +387,7 @@ footer{
 
 @media (max-width: 575px){
     header{
+        min-height: 82%;
         nav{
             #brand{
                 position: relative;
@@ -419,6 +423,14 @@ footer{
             }
         }
     }
+    #gallery{
+        padding: 45px 0px 45px;
+        .item{
+            max-height: 380px;
+            padding: 0px 70px;
+            margin-bottom: 60px;
+        }
+    } 
     #contact ul {
         padding: 0;
         margin: 5px 0;
