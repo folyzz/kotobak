@@ -14,7 +14,8 @@ $(document).ready(function(){
     });
 
     
-
+    new WOW().init();
+    
     $('[data-toggle="tooltip"]').tooltip();
 
     var typed = new Typed('#search', {

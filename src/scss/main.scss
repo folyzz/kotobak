@@ -40,22 +40,40 @@ header{
     min-height: 100%;
     //navar
     nav{
-        padding: 0px 10px !important;
-        ul li{
-            margin-left: 30px;
-            &:last-of-type{
-                margin: 8px 0px 0 20px;
+        padding: 0px 0px !important;
+        .custom-collapse{
+            .nav-cart{
+                color: $color-white;
+                font-size: 30px;
+                position: relative;
+                top: 4px;
             }
-            a{
-                color: $color-white-dark;
-                font-size: 20px;
-                font-weight: lighter;
-                padding: 0px 5px;
-                transition: all 0.3s ease;
-                &:hover,
-                &.active{
-                    color: $color-white;
-                    text-shadow: 0 0 40px $color-white;
+            .nav-bar{ //navbarIcon
+                color: $color-white;
+                font-size: 30px;
+                margin-top: 20px;
+            }
+        }
+        ul {
+            position: relative;
+            right: 50%;
+            margin-top: 20px;
+            li{
+                margin-left: 30px;
+                &:last-of-type{
+                    margin: 8px 0px 0 20px;
+                }
+                a{
+                    color: $color-white-dark;
+                    font-size: 20px;
+                    font-weight: lighter;
+                    padding: 0px 5px;
+                    transition: all 0.3s ease;
+                    &:hover,
+                    &.active{
+                        color: $color-white;
+                        text-shadow: 0 0 40px $color-white;
+                    }
                 }
             }
         }
@@ -108,7 +126,8 @@ header{
             }
             input[type=search]{
                 color: $color-black;
-                width: 100%;
+                width: 50%;
+                display: inline;
                 position: relative;
                 right: 0;
                 background-color: transparent;
@@ -160,7 +179,7 @@ header{
         margin-bottom: 70px;
     }
     .item{
-        height: 380px;
+        max-height: 380px;
         padding: 0 100px;
         img{
             height: 100%;
@@ -242,9 +261,178 @@ footer{
     }
 }
 
+@media (max-width: 1199px){
+    header{
+        nav{
+            ul{
+                position: relative;
+                right: 44%;    
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    header {
+        nav {
+            padding: 0px 0px !important;
+            #brand{
+                position: relative;
+                right: -6%;
+            }
+            ul{
+                position: relative;
+                right: 25%;
+                margin: 25px 0px 0 -75px;
+                padding: 0;
+            }
+        }
+        .about{
+            padding: 140px 0px 125px;
+            h1{
+                font-size: 65px;
+                span{
+                    font-size: 40px;
+                }
+            }
+            p{
+                font-size: 16px;
+            }
+            .form-group input[type=search]{
+                background-position: 98%;
+                background-size: 35px;
+            }
+        } 
+    }
+    #gallery .item {
+        max-height: 380px;
+        padding: 0px 30px;
+    }
+    #contact ul {
+        margin: 10px 0;
+    }
+    .map-box #map {
+        height: 400px;
+    }
+}
 
+@media (max-width: 767px){
+    header{
+        nav {
+            
+            #brand {
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+                h5{
+                    top: 12px;
+                    font-size: 16px;
+                }
+            }
+            ul{
+                position: relative;
+                right: -5%;
+                li {
+                    margin-left: 0px;
+                    margin-bottom: 12px;
+                    a{
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+        .about {
+            p {
+                font-size: 13px;
+            }
+            h1 {
+                font-size: 60px;
+                span {
+                    font-size: 35px;
+                }
+            }
+            .form-group input[type=search] {
+                font-size: 15px;
+                width: 55%;
+                background-size: 30px;
+                padding: 20px 35px;
+            }
+        }
+    }
+    #gallery{
+        padding: 45px 0px 120px;
+        h1{
+            font-size: 45px;
+        }
+        .item{
+            padding: 0px 20px;
+        }
+    }
+    #contact ul {
+        li
+        {
+            &:not(:last-child) {
+                margin-left: 10%;
+            }
+            font-size: 12px;
+        }
+        i{
+            font-size: 20px !important;
+        }
+    }
+}
 
-
+@media (max-width: 575px){
+    header{
+        nav{
+            #brand{
+                position: relative;
+                right: 0%;
+            }
+            ul{
+                margin: 0;
+                width: 65%;
+                position: relative;
+                right: 15%;
+                li{
+                    a{
+                        display: inline;
+                    }
+                }
+            }
+        }
+        .about{
+            h1{
+                font-size: 50px;
+                span{
+                    font-size: 30px;
+                }
+            }
+            p{
+                font-size: 9px;
+            }
+            .form-group input[type=search] {
+                font-size: 11px;
+                width: 55%;
+                background-size: 25px;
+                padding: 20px 30px;
+            }
+        }
+    }
+    #contact ul {
+        padding: 0;
+        margin: 5px 0;
+        li{
+            &:not(:last-child) {
+                margin-left: 3%;
+            }
+            font-size: 10px;
+        }
+        i{
+            font-size: 15px !important;
+        }
+    }
+}
 
 
 
