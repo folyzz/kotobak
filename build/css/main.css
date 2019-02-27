@@ -8,11 +8,11 @@ body {
 
 ::-webkit-scrollbar {
   width: 9px;
-  background-color: #e6e6e6; }
+  background-color: #4e4e4e; }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 15px;
-  background-color: #3d3374; }
+  background-color: #cccccc; }
 
 nav.navbar.noTransparrent {
   transition: all 0.5s ease; }
@@ -179,12 +179,12 @@ header {
 footer {
   color: white;
   background-color: #3F4560;
-  padding: 0px; }
+  padding: 2px; }
   footer .icon-top {
     display: inline-block;
     position: relative;
-    top: 10px;
-    right: -30%; }
+    top: 5px;
+    right: -27%; }
     footer .icon-top a {
       display: inline-block;
       transform: rotate(85deg); }
@@ -194,9 +194,127 @@ footer {
         border-radius: 50%;
         padding: 5px; }
   footer p {
-    margin: -10px 0 0px;
+    padding: 10px;
+    display: inline-block;
+    margin: -6px 0 0px;
     position: relative;
-    top: -7px; }
+    top: 1px; }
+
+#header2 {
+  background: linear-gradient(90deg, #b1d9d8, #b1d9d8, #dbeedb);
+  min-height: 90px; }
+  #header2 nav #brand {
+    height: 90px; }
+    #header2 nav #brand img {
+      height: 90px;
+      width: 115px; }
+    #header2 nav #brand h5 {
+      top: 10px;
+      right: -20px; }
+  #header2 nav ul {
+    margin-top: 10px; }
+    #header2 nav ul li a {
+      color: #ffffff; }
+
+#detail .about-book {
+  padding: 80px 30px; }
+  #detail .about-book .work-book {
+    height: 430px;
+    width: 350px;
+    margin-right: -10%; }
+    #detail .about-book .work-book img {
+      height: 100%;
+      width: 100%;
+      border-radius: 1%;
+      box-shadow: 0px 7px 145px -40px #000000; }
+    #detail .about-book .work-book h6 {
+      margin-top: 35px;
+      font-weight: bold;
+      color: #6cb8b6; }
+  #detail .about-book .book-details {
+    margin-left: -45px; }
+    #detail .about-book .book-details h6 {
+      font-weight: bold;
+      color: #bfbfbf; }
+    #detail .about-book .book-details h1 {
+      color: #6cb8b6;
+      font-weight: bold;
+      margin-bottom: 33px; }
+    #detail .about-book .book-details p {
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 26px;
+      width: 480px; }
+  #detail .about-book .box {
+    font-size: 32px;
+    background-color: #61ddbc;
+    border: 2px solid #35ba9b;
+    border-radius: 30px;
+    width: 450px;
+    overflow: hidden;
+    box-shadow: 0px 0px 33px -3px #61ddbc; }
+    #detail .about-book .box a {
+      color: #fff;
+      font-size: 20px;
+      position: relative;
+      top: -4px;
+      right: -60px;
+      transition: all 0.5s ease; }
+      #detail .about-book .box a:hover {
+        text-decoration: none;
+        text-shadow: 0px 0px 20px #fff; }
+    #detail .about-book .box .nice-number {
+      width: 145px;
+      padding: 3px 15px;
+      direction: ltr;
+      border: none;
+      background-color: #fff;
+      margin-left: -148px; }
+      #detail .about-book .box .nice-number button {
+        cursor: pointer;
+        color: #bfbfbf;
+        border: none;
+        background-color: transparent; }
+        #detail .about-book .box .nice-number button:focus {
+          outline: transparent; }
+      #detail .about-book .box .nice-number input {
+        color: #35ba9b;
+        border: none;
+        margin: 0px 3px; }
+  #detail .about-book .box2 {
+    width: 450px;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 23px -1px #f76c82; }
+    #detail .about-book .box2 button {
+      width: 100%;
+      line-height: 35px;
+      background-color: #f76c82;
+      border: 2px solid #d94452;
+      border-radius: 30px;
+      cursor: pointer; }
+      #detail .about-book .box2 button:focus {
+        box-shadow: none;
+        outline: none; }
+      #detail .about-book .box2 button:hover .heart-text {
+        opacity: 0; }
+      #detail .about-book .box2 button:hover .heart-icon {
+        top: 5px; }
+      #detail .about-book .box2 button .heart-text {
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+        left: -17px;
+        transition: all 0.3s ease; }
+      #detail .about-book .box2 button .heart-icon {
+        color: red;
+        font-size: 36px;
+        position: relative;
+        right: -83px;
+        top: 50px;
+        transition: all 0.3s ease; }
 
 @media (max-width: 1199px) {
   header {
