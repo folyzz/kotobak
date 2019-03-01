@@ -3,13 +3,12 @@ $(document).ready(function(){
         var hash = this.hash;
         $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){});
     });
-
     $('#flipbook').turn({
         height: 380,
-        width: 500,
-        gradients: true
+        width: 300,
+        gradients: true,
+        display: 'single'
     });
-    
     $('[data-toggle="tooltip"]').tooltip();
 
 

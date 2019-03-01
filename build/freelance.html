@@ -48,7 +48,7 @@
               <a href="." class="nav-link cool-link scroll">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a href="#gallery" class="nav-link cool-link scroll">اخترنا لكم</a>
+              <a href="." class="nav-link cool-link scroll">اخترنا لكم</a>
             </li>
             <li class="nav-item">
               <a href="#contact" class="nav-link cool-link scroll">اتصل بنا</a>
@@ -69,52 +69,54 @@
     <div class="container about-book">
         <div class="row">
           <!-- صورة الكتاب -->
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 wow fadeInRight">
                 <div class="work-book text-center">
                     <img src="./img/slider/work1.png" alt="work book" class="img-fluid">
                     <h6>عمرو النواوي</h6>
                 </div>
             </div>
             <!-- تفاصيل الكتاب -->
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 for-md">
                 <div class="book-details text-right">
                     <h6>اسم الكتاب</h6>
-                    <h1>العمل عبر الإنترنت</h1>
+                    <h1 class="wow flipInX">العمل عبر الإنترنت</h1>
                     <h6>وصف الكتاب</h6>
-                    <p>
+                    <p class="wow flipInX">
                         دعوة إلى الحياة بحرية أكبر خارج دائرة مثل "اربط الحمار في المكان الذي يريده صاحبه"
                         مثل هذه المفاهيم ما زالت- سبب في تأخر أمة بأكملها
                         أكثر مفهوم سيسعى هذا الكتاب إلى تحطيمه هو أنه يجب عليك أن تذهب إلى العمل كل يوم.
                     </p>
                 </div>
                 <!-- زري السلة والمفضلة -->
-                <div class="box text-center">
+                <div class="buttons">
+                  <div class="box text-center wow zoomIn">
                     <a href="#" data-add-to-cart="">إضافة إلى السلة</a>
                     <input type="number" value="1" min="1" max="9">
-                </div>
-                <div class="box2 text-center" data-add-to-favorite="">
+                  </div>
+                  <div class="box2 text-center wow zoomIn" data-add-to-favorite="">
                     <button class="btn">
-                      <span class="heart-text">إضافة إلى المفضلة</span> 
+                      <span class="heart-text">إضافة إلى المفضلة</span>
                       <span class="heart-icon"><i class="fa fa-heart"></i></span>
                     </button>
+                  </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
+<!-- قسم عرض صفحات الكتاب -->
 <section id="view-book">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
         <img src="./img/3D/work.png" alt="work book">
         <div class="shadow text-center"></div><br>
-        <button id="btn-show" class="btn">اضغط هنا لتصفح الفصل الأول</button>
+        <button id="btn-show" class="btn wow heartBeat">اضغط هنا لتصفح الفصل الأول</button>
       </div>
     </div>
   </div>
 </section>
-
+<!-- الصفحات -->
 <div class="container-fluid">
   <div class="row">
     <div class="col-12" id="flippage">

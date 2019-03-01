@@ -4,7 +4,8 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Droid Arabic Kufi', sans-serif; }
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  overflow-x: hidden; }
 
 ::-webkit-scrollbar {
   width: 9px;
@@ -208,7 +209,7 @@ footer {
       color: #ffffff; }
 
 #detail .about-book {
-  padding: 50px 30px 0px;
+  padding: 50px 0px 0px;
   height: 650; }
   #detail .about-book .work-book {
     height: 430px;
@@ -223,22 +224,20 @@ footer {
       margin-top: 35px;
       font-weight: bold;
       color: #6ACAD4; }
-  #detail .about-book .book-details {
-    margin-left: -45px; }
-    #detail .about-book .book-details h6 {
-      font-weight: bold;
-      color: #bfbfbf; }
-    #detail .about-book .book-details h1 {
-      color: #6cb8b6;
-      font-weight: bold;
-      margin-bottom: 33px; }
-    #detail .about-book .book-details p {
-      color: #000000;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 26px;
-      width: 480px;
-      margin-bottom: 40px; }
+  #detail .about-book .book-details h6 {
+    font-weight: bold;
+    color: #bfbfbf; }
+  #detail .about-book .book-details h1 {
+    color: #6cb8b6;
+    font-weight: bold;
+    margin-bottom: 33px; }
+  #detail .about-book .book-details p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-bottom: 40px;
+    padding-left: 10px; }
   #detail .about-book .box {
     font-size: 32px;
     background-color: #61ddbc;
@@ -352,21 +351,20 @@ footer {
   display: none; }
   #flippage #flipbook {
     direction: ltr;
-    margin: 0px auto;
-    width: 600px;
-    height: 500px; }
+    margin: 0px auto; }
     #flippage #flipbook img {
       height: 100%;
       width: 100%; }
   #flippage button {
     font-size: 25px;
-    color: #f76c82;
+    color: #d94452;
     display: inline;
     position: absolute;
-    top: 5px;
-    right: 40px; }
+    top: 20px;
+    right: 5px;
+    z-index: 6; }
     #flippage button:hover, #flippage button:focus {
-      color: #d94452;
+      color: #f76c82;
       box-shadow: none; }
 
 @media (max-width: 1199px) {
@@ -374,7 +372,11 @@ footer {
     min-height: 95%; }
     header nav ul {
       position: relative;
-      right: 44%; } }
+      right: 44%; }
+  #detail .about-book .book-details p {
+    padding-left: 0px; }
+  #detail .about-book .work-book {
+    margin-right: 10%; } }
 
 @media (max-width: 991px) {
   header {
@@ -406,7 +408,30 @@ footer {
   #contact ul {
     margin: 10px 0; }
   .map-box #map {
-    height: 400px; } }
+    height: 400px; }
+  #detail .about-book {
+    padding: 50px 15px 0px; }
+    #detail .about-book .work-book {
+      height: 400px;
+      width: 300px;
+      margin-right: -4%; }
+    #detail .about-book .book-details p {
+      margin-bottom: 25px; }
+    #detail .about-book .book-details h1 {
+      font-size: 35px;
+      margin-bottom: 20px; }
+    #detail .about-book .box {
+      width: 335px;
+      margin-bottom: 15px; }
+      #detail .about-book .box a {
+        right: -30px; }
+      #detail .about-book .box .nice-number {
+        width: 110px;
+        margin-left: -65px; }
+        #detail .about-book .box .nice-number input {
+          width: 30px; }
+    #detail .about-book .box2 {
+      width: 335px; } }
 
 @media (max-width: 767px) {
   header {
@@ -447,7 +472,25 @@ footer {
     #contact ul li:not(:last-child) {
       margin-left: 10%; }
   #contact ul i {
-    font-size: 20px !important; } }
+    font-size: 20px !important; }
+  .map-box #map {
+    height: 280px; }
+  #detail {
+    height: 65rem; }
+    #detail .about-book .buttons {
+      display: inline-block; }
+    #detail .about-book .work-book {
+      margin: 0px auto 100px; }
+    #detail .about-book .for-md {
+      text-align: center; }
+    #detail .about-book .book-details {
+      text-align: center !important; }
+      #detail .about-book .book-details h1 {
+        margin-bottom: 30px; }
+      #detail .about-book .book-details p {
+        margin-bottom: 30px; }
+  #flippage {
+    top: 1087px; } }
 
 @media (max-width: 575px) {
   header {
@@ -487,4 +530,14 @@ footer {
       #contact ul li:not(:last-child) {
         margin-left: 3%; }
     #contact ul i {
-      font-size: 15px !important; } }
+      font-size: 15px !important; }
+  #detail .about-book .book-details h1 {
+    font-size: 26px; }
+  #detail .about-book .book-details p {
+    font-size: 15px; }
+  #view-book img {
+    height: 190px;
+    width: 190px;
+    top: -35px; }
+  #view-book button {
+    top: 85px; } }

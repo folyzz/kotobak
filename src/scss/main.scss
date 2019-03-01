@@ -9,6 +9,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Droid Arabic Kufi', sans-serif;
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar{
     width: 9px;
@@ -250,7 +251,8 @@ footer{
     }
 }
 
-
+//*************************************** FREELANCE PAGE 
+//*************************************** FREELANCE PAGE 
 //*************************************** FREELANCE PAGE 
 //*************************************** FREELANCE PAGE 
 #header2{
@@ -279,7 +281,7 @@ footer{
 // قسم تفاصيل الكتاب
 #detail{
     .about-book{
-        padding: 50px 30px 0px;
+        padding: 50px 0px 0px;
         height: 650;
         // صورة الكتاب
         .work-book{
@@ -300,7 +302,6 @@ footer{
         }
         // تفاصيل الكتاب
         .book-details{
-            margin-left: -45px;
             h6{
                 font-weight: bold;
                 color: darken($color-white,25%);
@@ -315,8 +316,8 @@ footer{
                 font-size: 16px;
                 font-weight: bold;
                 line-height: 26px;
-                width:480px;
                 margin-bottom: 40px;
+                padding-left: 10px;
             }
         }
         //زر الطلب
@@ -456,8 +457,6 @@ footer{
     #flipbook{
         direction: ltr;
         margin: 0px auto;
-        width: 600px;
-        height: 500px;
         img{
             height: 100%;
             width: 100%;
@@ -465,18 +464,18 @@ footer{
     }
     button{
         font-size: 25px;
-        color: #f76c82;
+        color: #d94452;
         display: inline;
         position: absolute;
-        top: 5px;
-        right: 40px;
+        top: 20px;
+        right: 5px;
+        z-index: 6;
         &:hover,&:focus{
-            color: #d94452;
+            color: #f76c82;
             box-shadow: none;
         }
     }
 }
-
 
 
 @media (max-width: 1199px){
@@ -489,7 +488,21 @@ footer{
             }
         }
     }
+    /////////////////////////////freelance
+    #detail{
+        .about-book{
+            .book-details{
+                p{
+                    padding-left: 0px;
+                }
+            }
+            .work-book {
+                margin-right: 10%;
+            }
+        }
+    }    
 }
+
 @media (max-width: 991px){
     header {
         min-height: 95%;
@@ -532,6 +545,43 @@ footer{
     }
     .map-box #map {
         height: 400px;
+    }
+    /////////////////////////////freelance
+    #detail{
+        .about-book{
+            padding: 50px 15px 0px;
+            .work-book{
+                height: 400px;
+                width: 300px;
+                margin-right: -4%;
+            }
+            .book-details {
+                p{
+                    margin-bottom: 25px;
+                }
+                h1{
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                }
+            }
+            .box{
+                width: 335px;
+                margin-bottom: 15px;
+                a{
+                    right: -30px;
+                }
+                .nice-number{
+                    width: 110px;
+                    margin-left: -65px;
+                    input{
+                        width: 30px;
+                    }
+                }
+            }
+            .box2{
+                width: 335px;
+            }
+        }
     }
 }
 @media (max-width: 767px){
@@ -599,6 +649,36 @@ footer{
             font-size: 20px !important;
         }
     }
+    .map-box #map {
+        height: 280px;
+    }
+    /////////////////////////////freelance
+    #detail{
+        height: 65rem;
+        .about-book{
+            .buttons{
+                display: inline-block;
+            }
+            .work-book{
+                margin: 0px auto 100px;
+            }
+            .for-md{
+                text-align: center;
+            }
+            .book-details{
+                text-align: center !important;
+                h1{
+                    margin-bottom: 30px
+                }
+                p{
+                    margin-bottom: 30px
+                }
+            }
+        }
+    }
+    #flippage{
+        top: 1087px;
+    }
 }
 @media (max-width: 575px){
     header{
@@ -659,6 +739,34 @@ footer{
             font-size: 15px !important;
         }
     }
+    /////////////////////////////freelance
+    #detail{
+        .about-book{
+            .book-details{
+                h1{
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    #view-book{
+        img {
+            height: 190px;
+            width: 190px;
+            top: -35px;
+        }
+        button{
+            top: 85px;
+        }
+    }
+    // #flipbook .page{
+    //     height: 300px !important;
+    //     width: 300px !important;
+    // }
+    
 }
 
 
