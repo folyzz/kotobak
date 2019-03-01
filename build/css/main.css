@@ -14,15 +14,6 @@ body {
   border-radius: 15px;
   background-color: #cccccc; }
 
-nav.navbar.noTransparrent {
-  transition: all 0.5s ease; }
-  nav.navbar.noTransparrent #brand img {
-    height: 70px;
-    width: 70px; }
-  nav.navbar.noTransparrent #brand h5 {
-    font-size: 15px;
-    top: 9px; }
-
 header {
   background: linear-gradient(45deg, #FE7F77, #FFAA79);
   min-height: 100%; }
@@ -201,7 +192,7 @@ footer {
     top: 1px; }
 
 #header2 {
-  background: linear-gradient(90deg, #b1d9d8, #b1d9d8, #dbeedb);
+  background: linear-gradient(90deg, #dbeedb, #b1d9d8);
   min-height: 90px; }
   #header2 nav #brand {
     height: 90px; }
@@ -217,7 +208,8 @@ footer {
       color: #ffffff; }
 
 #detail .about-book {
-  padding: 80px 30px; }
+  padding: 50px 30px 0px;
+  height: 650; }
   #detail .about-book .work-book {
     height: 430px;
     width: 350px;
@@ -226,11 +218,11 @@ footer {
       height: 100%;
       width: 100%;
       border-radius: 1%;
-      box-shadow: 0px 7px 145px -40px #000000; }
+      box-shadow: 0px 25px 145px -50px #000000; }
     #detail .about-book .work-book h6 {
       margin-top: 35px;
       font-weight: bold;
-      color: #6cb8b6; }
+      color: #6ACAD4; }
   #detail .about-book .book-details {
     margin-left: -45px; }
     #detail .about-book .book-details h6 {
@@ -245,13 +237,15 @@ footer {
       font-size: 16px;
       font-weight: bold;
       line-height: 26px;
-      width: 480px; }
+      width: 480px;
+      margin-bottom: 40px; }
   #detail .about-book .box {
     font-size: 32px;
     background-color: #61ddbc;
     border: 2px solid #35ba9b;
     border-radius: 30px;
     width: 450px;
+    margin-bottom: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 33px -3px #61ddbc; }
     #detail .about-book .box a {
@@ -298,9 +292,11 @@ footer {
       #detail .about-book .box2 button:focus {
         box-shadow: none;
         outline: none; }
-      #detail .about-book .box2 button:hover .heart-text {
+      #detail .about-book .box2 button:hover .heart-text,
+      #detail .about-book .box2 button:focus .heart-text {
         opacity: 0; }
-      #detail .about-book .box2 button:hover .heart-icon {
+      #detail .about-book .box2 button:hover .heart-icon,
+      #detail .about-book .box2 button:focus .heart-icon {
         top: 5px; }
       #detail .about-book .box2 button .heart-text {
         color: #fff;
@@ -315,6 +311,63 @@ footer {
         right: -83px;
         top: 50px;
         transition: all 0.3s ease; }
+
+#view-book {
+  background: linear-gradient(90deg, #dbeedb, #b1d9d8);
+  height: 337px; }
+  #view-book img {
+    height: 230px;
+    width: 230px;
+    position: relative;
+    top: -43px;
+    right: 55px;
+    z-index: 2; }
+  #view-book .shadow {
+    height: 20px;
+    width: 130px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 60px 30px rgba(0, 0, 0, 0.15) !important;
+    position: relative;
+    top: 30px;
+    right: -140px;
+    z-index: 1; }
+  #view-book button {
+    font-size: 14px;
+    color: #fff;
+    background-color: #6ACAD4;
+    border-color: #42bcc9;
+    border-radius: 20px;
+    width: 275px;
+    position: relative;
+    top: 50px; }
+
+#flippage {
+  background: linear-gradient(90deg, #dbeedb, #b1d9d8);
+  height: 380px;
+  margin: 0;
+  position: absolute;
+  top: 697px;
+  z-index: 3;
+  display: none; }
+  #flippage #flipbook {
+    direction: ltr;
+    margin: 0px auto;
+    width: 600px;
+    height: 500px; }
+    #flippage #flipbook img {
+      height: 100%;
+      width: 100%; }
+  #flippage button {
+    font-size: 25px;
+    color: #f76c82;
+    display: inline;
+    position: absolute;
+    top: 5px;
+    right: 40px; }
+    #flippage button:hover, #flippage button:focus {
+      color: #d94452;
+      box-shadow: none; }
 
 @media (max-width: 1199px) {
   header {

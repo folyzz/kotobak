@@ -68,12 +68,14 @@
     <!-- about-book -->
     <div class="container about-book">
         <div class="row">
+          <!-- صورة الكتاب -->
             <div class="col-md-6 col-12">
                 <div class="work-book text-center">
                     <img src="./img/slider/work1.png" alt="work book" class="img-fluid">
                     <h6>عمرو النواوي</h6>
                 </div>
             </div>
+            <!-- تفاصيل الكتاب -->
             <div class="col-md-6 col-12">
                 <div class="book-details text-right">
                     <h6>اسم الكتاب</h6>
@@ -85,7 +87,7 @@
                         أكثر مفهوم سيسعى هذا الكتاب إلى تحطيمه هو أنه يجب عليك أن تذهب إلى العمل كل يوم.
                     </p>
                 </div>
-    
+                <!-- زري السلة والمفضلة -->
                 <div class="box text-center">
                     <a href="#" data-add-to-cart="">إضافة إلى السلة</a>
                     <input type="number" value="1" min="1" max="9">
@@ -100,7 +102,36 @@
         </div>
     </div>
 </section>
-    
+
+<section id="view-book">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <img src="./img/3D/work.png" alt="work book">
+        <div class="shadow text-center"></div><br>
+        <button id="btn-show" class="btn">اضغط هنا لتصفح الفصل الأول</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12" id="flippage">
+        <div id="flipbook">
+            <div><img src="./img/3D/1.jpg" alt="3d work book"></div>
+            <div><img src="./img/3D/2.jpg" alt="3d work book"></div>
+            <div><img src="./img/3D/3.jpg" alt="3d work book"></div>
+            <div><img src="./img/3D/4.jpg" alt="3d work book"></div>
+            <div><img src="./img/3D/5.jpg" alt="3d work book"></div>
+            <div><img src="./img/3D/6.jpg" alt="3d work book"></div>
+        </div>
+        <button id="btn-hide" class="btn">X</button>
+    </div>
+  </div>
+</div>
+
+
 
 
   <!-- تواصل  -->
@@ -139,14 +170,19 @@
   </footer>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
-  <script src="./js/jquery.nice-number.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous"></script>
 
+   <script src="./js/turn.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+   <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+   <script src="./js/jquery.nice-number.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <script src="js/freelance.js"></script>
 
 </body>
 </html>

@@ -19,20 +19,6 @@ body{
     background-color: darken($color-white, 20%) ;
 }
 
-//noTransparrent
-nav.navbar.noTransparrent {
-    transition: all 0.5s ease;
-    #brand{
-        img{
-            height: 70px;
-            width: 70px;
-        }
-        h5{
-            font-size: 15px;
-            top: 9px;
-        }
-    }
-}
 
 // HEADER
 header{
@@ -264,10 +250,11 @@ footer{
     }
 }
 
+
 //*************************************** FREELANCE PAGE 
 //*************************************** FREELANCE PAGE 
 #header2{
-    background: linear-gradient(90deg, $color-freelance,$color-freelance, $color-freelance-two);
+    background: linear-gradient(90deg, $color-freelance-two,$color-freelance );
     min-height: 90px;
     nav{
         #brand{
@@ -292,7 +279,8 @@ footer{
 // قسم تفاصيل الكتاب
 #detail{
     .about-book{
-        padding: 80px 30px;
+        padding: 50px 30px 0px;
+        height: 650;
         // صورة الكتاب
         .work-book{
             height: 430px;
@@ -302,12 +290,12 @@ footer{
                 height: 100%;
                 width: 100%;
                 border-radius: 1%;
-                box-shadow: 0px 7px 145px -40px $color-black;
+                box-shadow: 0px 25px 145px -50px $color-black;
             }
             h6{
                 margin-top: 35px;
                 font-weight: bold;
-                color: darken($color-freelance,20%);
+                color: $color-freelance-three;
             }
         }
         // تفاصيل الكتاب
@@ -328,6 +316,7 @@ footer{
                 font-weight: bold;
                 line-height: 26px;
                 width:480px;
+                margin-bottom: 40px;
             }
         }
         //زر الطلب
@@ -337,6 +326,7 @@ footer{
             border: 2px solid #35ba9b;
             border-radius: 30px;
             width: 450px;
+            margin-bottom: 20px;
             overflow: hidden;
             box-shadow: 0px 0px 33px -3px #61ddbc;
             a{
@@ -392,10 +382,12 @@ footer{
                     box-shadow: none;
                     outline: none;
                 }
-                &:hover .heart-text{
+                &:hover .heart-text,
+                &:focus .heart-text{
                     opacity: 0;
                 }
-                &:hover .heart-icon{
+                &:hover .heart-icon,
+                &:focus .heart-icon{
                     top: 5px;
                 }
                 .heart-text{
@@ -418,9 +410,72 @@ footer{
     }
 }
 
-
-
-
+//قسم عرض الكتاب
+#view-book{
+    background: linear-gradient(90deg, $color-freelance-two,$color-freelance);
+    height: 337px;
+    img{
+        height: 230px;
+        width: 230px;
+        position: relative;
+        top: -43px;
+        right: 55px;
+        z-index: 2;
+    }
+    .shadow{
+        height: 20px;
+        width: 130px;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 60px 30px rgba(0, 0, 0, 0.15) !important;
+        position: relative;
+        top: 30px;
+        right: -140px;
+        z-index: 1;
+    }
+    button{
+        font-size: 14px;
+        color: #fff;
+        background-color: $color-freelance-three;
+        border-color: darken($color-freelance-three, 10%);
+        border-radius: 20px;
+        width: 275px;
+        position: relative;
+        top: 50px;
+    } 
+}
+// flipppages
+#flippage{
+    background: linear-gradient(90deg, $color-freelance-two,$color-freelance);
+    height: 380px;
+    margin: 0;
+    position: absolute;
+    top: 697px;
+    z-index: 3;
+    display: none;
+    #flipbook{
+        direction: ltr;
+        margin: 0px auto;
+        width: 600px;
+        height: 500px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    button{
+        font-size: 25px;
+        color: #f76c82;
+        display: inline;
+        position: absolute;
+        top: 5px;
+        right: 40px;
+        &:hover,&:focus{
+            color: #d94452;
+            box-shadow: none;
+        }
+    }
+}
 
 
 
