@@ -1,0 +1,221 @@
+
+//***************************** for book page
+@mixin header ($background-color){
+    background: $background-color;
+    min-height: 90px;
+    nav{
+        #brand{
+            height: 90px;
+            img {
+                height: 90px;
+                width: 115px;
+            }
+            h5{
+                top: 10px;
+                right: -20px;
+            }
+        }
+        ul{
+            margin-top: 10px;
+            li a{
+                color: $color-white;
+            }
+        }
+    }
+}
+// زر الطلب
+@mixin box {
+    font-size: 32px;
+    background-color: #61ddbc;
+    border: 2px solid #35ba9b;
+    border-radius: 30px;
+    width: 450px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 33px -3px #61ddbc;
+    a{
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+        top: -4px;
+        right: -60px;
+        transition: all 0.5s ease;
+        &:hover{
+            text-decoration: none;
+            text-shadow: 0px 0px 20px #fff;
+        }
+    }
+    .nice-number{// الصنف من المكتبة 
+        width: 145px;
+        padding: 3px 15px;
+        direction: ltr;
+        border:none;
+        background-color: #fff;
+        margin-left: -148px;
+        button{
+            cursor: pointer;
+            color: darken($color-white, 25%);
+            border: none;
+            background-color: transparent;
+            &:focus{
+                outline: transparent;
+            }
+        }
+        input{
+            color: #35ba9b;
+            border: none;
+            margin: 0px 3px;
+        }
+    }
+}
+// زر المفضلة
+@mixin box2 {
+    width: 450px;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 23px -1px #f76c82;
+    button{
+        width: 100%;
+        line-height: 35px;
+        background-color: #f76c82;
+        border: 2px solid #d94452;
+        border-radius: 30px;
+        cursor: pointer;
+        &:focus{
+            box-shadow: none;
+            outline: none;
+        }
+        &:hover .heart-text,
+        &:focus .heart-text{
+            opacity: 0;
+        }
+        &:hover .heart-icon,
+        &:focus .heart-icon{
+            top: 5px;
+        }
+        .heart-text{
+            color: #fff;
+            font-size: 20px;
+            position: relative;
+            left: -17px;
+            transition: all 0.3s ease;
+        }
+        .heart-icon{
+            color: red;
+            font-size: 36px;
+            position: relative;
+            right: -83px;
+            top: 50px;
+            transition: all 0.3s ease;
+        }
+    }
+}
+// عن الكتاب
+@mixin about-book ($color){
+    padding: 50px 0px 0px;
+    height: 650px;
+    // صورة الكتاب
+    .work-book{
+        height: 430px;
+        width: 350px;
+        margin-right: -10%;
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 1%;
+            box-shadow: 0px 25px 145px -50px $color-black;
+        }
+        h6{
+            margin-top: 35px;
+            font-weight: bold;
+            color: $color;
+        }
+    }    
+}
+// تفاصيل الكتاب
+@mixin book-details ($color){
+    h6{
+        font-weight: bold;
+        color: darken($color-white,25%);
+    }
+    h1{
+        color: $color;
+        font-weight: bold;
+        margin-bottom: 33px;
+    }
+    p{
+        color: $color-black;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 26px;
+        margin-bottom: 40px;
+        padding-left: 10px;
+    }
+}
+// صفحات الكتاب
+@mixin view-book ($background-color, $button-background, $button-border){
+    background: $background-color;
+    height: 337px;
+    img{
+        height: 230px;
+        width: 230px;
+        position: relative;
+        top: -43px;
+        right: 55px;
+        z-index: 2;
+    }
+    .shadow{
+        height: 20px;
+        width: 130px;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 60px 30px rgba(0, 0, 0, 0.15) !important;
+        position: relative;
+        top: 30px;
+        right: -140px;
+        z-index: 1;
+    }
+    button{
+        font-size: 14px;
+        color: #fff;
+        background-color: $button-background;
+        border-color: $button-border;
+        border-radius: 20px;
+        width: 275px;
+        position: relative;
+        top: 50px;
+    }
+}
+// طبقة الصفحات
+@mixin flippage ($background-color){
+    background: $background-color;
+    height: 380px;
+    margin: 0;
+    position: absolute;
+    top: 697px;
+    z-index: 3;
+    display: none;
+    #flipbook{
+        direction: ltr;
+        margin: 0px auto;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    button{
+        font-size: 25px;
+        color: #d94452;
+        display: inline;
+        position: absolute;
+        top: 20px;
+        right: 5px;
+        z-index: 6;
+        &:hover,&:focus{
+            color: #f76c82;
+            box-shadow: none;
+        }
+    }
+}
+//***************************** for book page END

@@ -210,7 +210,7 @@ footer {
 
 #detail .about-book {
   padding: 50px 0px 0px;
-  height: 650; }
+  height: 650px; }
   #detail .about-book .work-book {
     height: 430px;
     width: 350px;
@@ -367,15 +367,190 @@ footer {
       color: #f76c82;
       box-shadow: none; }
 
+#header3 {
+  background: linear-gradient(90deg, #DCA689, #DAAE87);
+  min-height: 90px; }
+  #header3 nav #brand {
+    height: 90px; }
+    #header3 nav #brand img {
+      height: 90px;
+      width: 115px; }
+    #header3 nav #brand h5 {
+      top: 10px;
+      right: -20px; }
+  #header3 nav ul {
+    margin-top: 10px; }
+    #header3 nav ul li a {
+      color: #ffffff; }
+
+#detail2 .about-book {
+  padding: 50px 0px 0px;
+  height: 650px; }
+  #detail2 .about-book .work-book {
+    height: 430px;
+    width: 350px;
+    margin-right: -10%; }
+    #detail2 .about-book .work-book img {
+      height: 100%;
+      width: 100%;
+      border-radius: 1%;
+      box-shadow: 0px 25px 145px -50px #000000; }
+    #detail2 .about-book .work-book h6 {
+      margin-top: 35px;
+      font-weight: bold;
+      color: #80401A; }
+  #detail2 .about-book .book-details h6 {
+    font-weight: bold;
+    color: #bfbfbf; }
+  #detail2 .about-book .book-details h1 {
+    color: #c07a3b;
+    font-weight: bold;
+    margin-bottom: 33px; }
+  #detail2 .about-book .book-details p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-bottom: 40px;
+    padding-left: 10px; }
+  #detail2 .about-book .box {
+    font-size: 32px;
+    background-color: #61ddbc;
+    border: 2px solid #35ba9b;
+    border-radius: 30px;
+    width: 450px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 33px -3px #61ddbc; }
+    #detail2 .about-book .box a {
+      color: #fff;
+      font-size: 20px;
+      position: relative;
+      top: -4px;
+      right: -60px;
+      transition: all 0.5s ease; }
+      #detail2 .about-book .box a:hover {
+        text-decoration: none;
+        text-shadow: 0px 0px 20px #fff; }
+    #detail2 .about-book .box .nice-number {
+      width: 145px;
+      padding: 3px 15px;
+      direction: ltr;
+      border: none;
+      background-color: #fff;
+      margin-left: -148px; }
+      #detail2 .about-book .box .nice-number button {
+        cursor: pointer;
+        color: #bfbfbf;
+        border: none;
+        background-color: transparent; }
+        #detail2 .about-book .box .nice-number button:focus {
+          outline: transparent; }
+      #detail2 .about-book .box .nice-number input {
+        color: #35ba9b;
+        border: none;
+        margin: 0px 3px; }
+  #detail2 .about-book .box2 {
+    width: 450px;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 23px -1px #f76c82; }
+    #detail2 .about-book .box2 button {
+      width: 100%;
+      line-height: 35px;
+      background-color: #f76c82;
+      border: 2px solid #d94452;
+      border-radius: 30px;
+      cursor: pointer; }
+      #detail2 .about-book .box2 button:focus {
+        box-shadow: none;
+        outline: none; }
+      #detail2 .about-book .box2 button:hover .heart-text,
+      #detail2 .about-book .box2 button:focus .heart-text {
+        opacity: 0; }
+      #detail2 .about-book .box2 button:hover .heart-icon,
+      #detail2 .about-book .box2 button:focus .heart-icon {
+        top: 5px; }
+      #detail2 .about-book .box2 button .heart-text {
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+        left: -17px;
+        transition: all 0.3s ease; }
+      #detail2 .about-book .box2 button .heart-icon {
+        color: red;
+        font-size: 36px;
+        position: relative;
+        right: -83px;
+        top: 50px;
+        transition: all 0.3s ease; }
+
+#view-book2 {
+  background: linear-gradient(90deg, #DCA689, #DAAE87, #DAAE87);
+  height: 337px; }
+  #view-book2 img {
+    height: 230px;
+    width: 230px;
+    position: relative;
+    top: -43px;
+    right: 55px;
+    z-index: 2; }
+  #view-book2 .shadow {
+    height: 20px;
+    width: 130px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 60px 30px rgba(0, 0, 0, 0.15) !important;
+    position: relative;
+    top: 30px;
+    right: -140px;
+    z-index: 1; }
+  #view-book2 button {
+    font-size: 14px;
+    color: #fff;
+    background-color: #80401A;
+    border-color: #562b11;
+    border-radius: 20px;
+    width: 275px;
+    position: relative;
+    top: 50px; }
+
+#flippage2 {
+  background: linear-gradient(90deg, #DCA689, #DAAE87, #DAAE87);
+  height: 380px;
+  margin: 0;
+  position: absolute;
+  top: 697px;
+  z-index: 3;
+  display: none; }
+  #flippage2 #flipbook {
+    direction: ltr;
+    margin: 0px auto; }
+    #flippage2 #flipbook img {
+      height: 100%;
+      width: 100%; }
+  #flippage2 button {
+    font-size: 25px;
+    color: #d94452;
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    z-index: 6; }
+    #flippage2 button:hover, #flippage2 button:focus {
+      color: #f76c82;
+      box-shadow: none; }
+
 @media (max-width: 1199px) {
   header {
     min-height: 95%; }
     header nav ul {
       position: relative;
       right: 44%; }
-  #detail .about-book .book-details p {
+  #detail .about-book .book-details p, #detail2 .about-book .book-details p {
     padding-left: 0px; }
-  #detail .about-book .work-book {
+  #detail .about-book .work-book, #detail2 .about-book .work-book {
     margin-right: 10%; } }
 
 @media (max-width: 991px) {
@@ -409,28 +584,28 @@ footer {
     margin: 10px 0; }
   .map-box #map {
     height: 400px; }
-  #detail .about-book {
+  #detail .about-book, #detail2 .about-book {
     padding: 50px 15px 0px; }
-    #detail .about-book .work-book {
+    #detail .about-book .work-book, #detail2 .about-book .work-book {
       height: 400px;
       width: 300px;
       margin-right: -4%; }
-    #detail .about-book .book-details p {
+    #detail .about-book .book-details p, #detail2 .about-book .book-details p {
       margin-bottom: 25px; }
-    #detail .about-book .book-details h1 {
+    #detail .about-book .book-details h1, #detail2 .about-book .book-details h1 {
       font-size: 35px;
       margin-bottom: 20px; }
-    #detail .about-book .box {
+    #detail .about-book .box, #detail2 .about-book .box {
       width: 335px;
       margin-bottom: 15px; }
-      #detail .about-book .box a {
+      #detail .about-book .box a, #detail2 .about-book .box a {
         right: -30px; }
-      #detail .about-book .box .nice-number {
+      #detail .about-book .box .nice-number, #detail2 .about-book .box .nice-number {
         width: 110px;
         margin-left: -65px; }
-        #detail .about-book .box .nice-number input {
+        #detail .about-book .box .nice-number input, #detail2 .about-book .box .nice-number input {
           width: 30px; }
-    #detail .about-book .box2 {
+    #detail .about-book .box2, #detail2 .about-book .box2 {
       width: 335px; } }
 
 @media (max-width: 767px) {
@@ -475,21 +650,21 @@ footer {
     font-size: 20px !important; }
   .map-box #map {
     height: 280px; }
-  #detail {
+  #detail, #detail2 {
     height: 65rem; }
-    #detail .about-book .buttons {
+    #detail .about-book .buttons, #detail2 .about-book .buttons {
       display: inline-block; }
-    #detail .about-book .work-book {
+    #detail .about-book .work-book, #detail2 .about-book .work-book {
       margin: 0px auto 100px; }
-    #detail .about-book .for-md {
+    #detail .about-book .for-md, #detail2 .about-book .for-md {
       text-align: center; }
-    #detail .about-book .book-details {
+    #detail .about-book .book-details, #detail2 .about-book .book-details {
       text-align: center !important; }
-      #detail .about-book .book-details h1 {
+      #detail .about-book .book-details h1, #detail2 .about-book .book-details h1 {
         margin-bottom: 30px; }
-      #detail .about-book .book-details p {
+      #detail .about-book .book-details p, #detail2 .about-book .book-details p {
         margin-bottom: 30px; }
-  #flippage {
+  #flippage, #flippage2 {
     top: 1087px; } }
 
 @media (max-width: 575px) {
@@ -531,9 +706,9 @@ footer {
         margin-left: 3%; }
     #contact ul i {
       font-size: 15px !important; }
-  #detail .about-book .book-details h1 {
+  #detail .about-book .book-details h1, #detail2 .about-book .book-details h1 {
     font-size: 26px; }
-  #detail .about-book .book-details p {
+  #detail .about-book .book-details p, #detail2 .about-book .book-details p {
     font-size: 15px; }
   #view-book img {
     height: 190px;

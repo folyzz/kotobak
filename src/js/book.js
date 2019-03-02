@@ -9,6 +9,7 @@ $(document).ready(function(){
         gradients: true,
         display: 'single'
     });
+    
     $('[data-toggle="tooltip"]').tooltip();
 
 
@@ -30,10 +31,10 @@ $(document).ready(function(){
 
 
     $('#btn-show').on('click',function(){
-        $('#flippage').show('drop');
+        $('#flippage,#flippage2').show('drop');
     });
     $('#btn-hide').on('click',function(){
-        $('#flippage').hide('drop');
+        $('#flippage,#flippage2').hide('drop');
     });
 
     $('input[type="number"]').niceNumber({
