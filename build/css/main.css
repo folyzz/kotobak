@@ -542,6 +542,176 @@ footer {
       color: #f76c82;
       box-shadow: none; }
 
+header#payment {
+  background: linear-gradient(90deg, #774BFD, #3A34F0);
+  height: 100%; }
+  header#payment ul a:hover {
+    text-decoration: none;
+    text-shadow: none; }
+  header#payment ul i {
+    font-size: 40px; }
+  header#payment .request-col {
+    right: 35%;
+    padding: 0px 90px 0px 0px; }
+    header#payment .request-col .table-title {
+      color: #FFF;
+      font-weight: bold;
+      margin-bottom: 40px; }
+    header#payment .request-col form table {
+      width: 100%; }
+      header#payment .request-col form table tbody tr {
+        border-bottom: 1px solid gray;
+        display: inline-block;
+        margin-bottom: 30px; }
+        header#payment .request-col form table tbody tr td {
+          display: inline-block;
+          padding: 20px 0px; }
+          header#payment .request-col form table tbody tr td:first-child {
+            width: 250px;
+            text-align: center; }
+          header#payment .request-col form table tbody tr td:not(:first-child) {
+            margin: 0px 30px; }
+          header#payment .request-col form table tbody tr td .media .custom-img {
+            height: 80px;
+            width: 70px; }
+            header#payment .request-col form table tbody tr td .media .custom-img img {
+              height: 100%;
+              width: 100%; }
+          header#payment .request-col form table tbody tr td .media .media-body {
+            color: #ffffff;
+            position: relative;
+            top: 25px; }
+          header#payment .request-col form table tbody tr td .box {
+            direction: ltr;
+            margin: 0px 20px; }
+            header#payment .request-col form table tbody tr td .box select {
+              color: #ffffff;
+              background: transparent;
+              border: 1px solid gray; }
+              header#payment .request-col form table tbody tr td .box select:focus {
+                box-shadow: none; }
+              header#payment .request-col form table tbody tr td .box select option {
+                color: #ffffff;
+                background: #774BFD; }
+            header#payment .request-col form table tbody tr td .box input {
+              color: #bfbfbf;
+              text-align: center;
+              background: transparent;
+              border: 1px solid #9573fd;
+              border-radius: 6px;
+              font-size: 16px;
+              padding: 13px 10;
+              margin: 0 5px; }
+              header#payment .request-col form table tbody tr td .box input:focus {
+                outline: none; }
+        header#payment .request-col form table tbody tr .total-price-for-book {
+          color: #ffffff; }
+        header#payment .request-col form table tbody tr .remove-btn {
+          color: #b3b3b3; }
+          header#payment .request-col form table tbody tr .remove-btn:hover {
+            color: red; }
+      header#payment .request-col form table tfoot {
+        transition: all 0.5s ease; }
+        header#payment .request-col form table tfoot .text-price {
+          color: #ffffff; }
+          header#payment .request-col form table tfoot .text-price .custom-text-price {
+            font-size: 13px;
+            color: #b3b3b3; }
+        header#payment .request-col form table tfoot .continue-shopping {
+          float: left;
+          margin-left: 20px; }
+          header#payment .request-col form table tfoot .continue-shopping a {
+            color: #ffffff;
+            transition: all 0.3s ease; }
+            header#payment .request-col form table tfoot .continue-shopping a:hover {
+              color: transparent;
+              text-shadow: 0 0 1px black;
+              text-decoration: none; }
+  header#payment .data-col {
+    left: 66%; }
+    header#payment .data-col aside {
+      width: 400px;
+      background: linear-gradient(60deg, #774BFD, #3A34F0);
+      box-shadow: 0 0 45px -17px #000000;
+      border-radius: 10px;
+      padding: 30px; }
+      header#payment .data-col aside #personal-data h2 {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold; }
+      header#payment .data-col aside #personal-data .form-group {
+        margin-bottom: 10px; }
+        header#payment .data-col aside #personal-data .form-group input {
+          color: #ffffff;
+          background: transparent;
+          padding-right: 0;
+          border: none;
+          border-bottom: 1px solid #666666;
+          border-radius: 0; }
+          header#payment .data-col aside #personal-data .form-group input::placeholder {
+            color: #b3b3b3; }
+          header#payment .data-col aside #personal-data .form-group input:focus {
+            box-shadow: none; }
+      header#payment .data-col aside #payment-data h2 {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px; }
+      header#payment .data-col aside #payment-data .form-group {
+        margin-bottom: 10px; }
+        header#payment .data-col aside #payment-data .form-group input {
+          color: #cccccc;
+          background: transparent;
+          padding-right: 0;
+          border: none;
+          border-bottom: 1px solid #666666;
+          border-radius: 0; }
+          header#payment .data-col aside #payment-data .form-group input::placeholder {
+            color: #b3b3b3; }
+          header#payment .data-col aside #payment-data .form-group input:focus {
+            box-shadow: none; }
+        header#payment .data-col aside #payment-data .form-group label input {
+          display: none; }
+          header#payment .data-col aside #payment-data .form-group label input::placeholder {
+            color: #b3b3b3; }
+          header#payment .data-col aside #payment-data .form-group label input:checked ~ span {
+            color: #19E4AD; }
+        header#payment .data-col aside #payment-data .form-group label span {
+          color: #b3b3b3;
+          margin-left: 20px;
+          cursor: pointer;
+          transition: all 0.5s ease; }
+        header#payment .data-col aside #payment-data .form-group h6 {
+          color: #ffffff;
+          margin-bottom: 0; }
+        header#payment .data-col aside #payment-data .form-group select {
+          color: #b3b3b3;
+          background: transparent;
+          width: 85px;
+          border: none;
+          border-bottom: 1px solid #666666;
+          margin-left: 20px; }
+        header#payment .data-col aside #payment-data .form-group .CVV {
+          display: inline-block;
+          width: 85px;
+          position: relative;
+          top: -18px; }
+          header#payment .data-col aside #payment-data .form-group .CVV h6 {
+            margin: 0px; }
+          header#payment .data-col aside #payment-data .form-group .CVV input {
+            position: relative;
+            top: 16px; }
+      header#payment .data-col aside button {
+        color: #fff;
+        box-shadow: 0 0 50px -17px #000000;
+        border-radius: 30px;
+        padding: 15px 125px;
+        position: relative;
+        top: 18px; }
+        header#payment .data-col aside button:focus, header#payment .data-col aside button:hover {
+          background-color: #19E4AD;
+          box-shadow: 0 0 50px -17px #000000; }
+
 @media (max-width: 1199px) {
   header {
     min-height: 95%; }
@@ -606,7 +776,10 @@ footer {
         #detail .about-book .box .nice-number input, #detail2 .about-book .box .nice-number input {
           width: 30px; }
     #detail .about-book .box2, #detail2 .about-book .box2 {
-      width: 335px; } }
+      width: 335px; }
+  #flipbook .page {
+    width: 90px;
+    height: 90px; } }
 
 @media (max-width: 767px) {
   header {

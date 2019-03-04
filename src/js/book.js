@@ -5,10 +5,11 @@ $(document).ready(function(){
     });
     $('#flipbook').turn({
         height: 380,
-        width: 300,
+        width: 390,
         gradients: true,
         display: 'single'
     });
+
     
     $('[data-toggle="tooltip"]').tooltip();
 

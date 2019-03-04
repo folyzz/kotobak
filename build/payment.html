@@ -1,0 +1,196 @@
+<!DOCTYPE >
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>كتبك|الدفع</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/jquery.nice-number.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="icon" href="./img/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <header id="payment">
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-toggleable-md navbar-expand-md" id="navBar">
+        <!--الشعار-->
+        <div id="brand" class="wow zoomIn">
+          <a href="." class="navabr-brand">
+            <img src="img/logo.svg" alt="logo">
+          </a>
+          <h5>كتـبك</h5>
+        </div>
+          <!-- روابط -->
+          <ul class="nav navbar-nav wow bounce">
+            <li>
+              <a href="#" title="سلة الشراء" data-toggle="tooltip" data-placement="left">
+                  Shopping Cart
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </li>
+          </ul>
+      </nav>
+      
+      <div class="row">
+        <div class="col-12 col-lg-8 request-col">
+          <h3 class="table-title text-right">طلبك</h3>
+          <form>
+            <table>
+              <tbody>
+                <tr data-book-info data-book-price="200">
+                  <td>
+                    <div class="media">
+                      <div class="media-right custom-img"><img src="./img/slider/work1.png" alt="work book"></div>
+                      <div class="media-body">
+                        <h5>العمل عبر الإنترنت</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="box text-center wow zoomIn">
+                      <select class="form-control" data-book-quantity>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="total-price-for-book">200 SAR</td>
+                  <td>
+                    <button class="btn remove-btn" data-remove-from-cart>X</button>
+                  </td>
+                </tr>
+                <tr data-book-info data-book-price="250">
+                  <td>
+                    <div class="media">
+                      <div class="media-right custom-img"><img src="./img/slider/ux1.png" alt="work book"></div>
+                      <div class="media-body">
+                        <h5>تجربة المستخدم</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="box text-center wow zoomIn">
+                        <select class="form-control" data-book-quantity>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                    </div>
+                  </td>
+                  <td class="total-price-for-book">250 SAR</td>
+                  <td>
+                    <button class="btn remove-btn" data-remove-from-cart>X</button>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="total-price">
+                    <span class="text-price">
+                      <span class="custom-text-price">السعر الإجمالي:</span>
+                      <span id="total-price-for-all-books">450</span>
+                      SAR
+                    </span>
+                    <span class="continue-shopping">
+                      <a href=".">استمر التسوق
+                        <i class="fa fa-arrow-left"></i>
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+            <button class="btn" type="submit"></button>
+          </form>
+        </div>
+        <div class="col-12 col-lg-4 data-col">
+          <aside class="text-right">
+            <form>
+              <!-- بيانات الشخصية -->
+              <div id="personal-data">
+                <h2>بيانات الشخصية</h2>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="الإسم" name="name" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="العنوان" name="area" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="رقم الجوال" name="number" required>
+                </div>
+              </div>
+              <!-- بيانات الدفع -->
+              <div id="payment-data">
+                <h2>بيانات الدفع</h2>
+                <div class="form-group">
+                  <label class="font-weight-bolb" id="credit-card">
+                    <input type="radio" name="payment_method" value="credit_card" for="credit-card" checked>
+                    <span>بطاقة الائتمانية</span>
+                  </label>
+                  <label class="font-weight-bolb" id="on-delivery">
+                    <input type="radio" name="payment_method" value="on_delivery" for="on-delivery" id="pay">
+                    <span>الدفع عند الإستلام</span>
+                  </label>
+                </div>
+                <!-- قسم بطاقة الائتمانية -->
+                <div id="credit-card-section">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="إسم البطاقة" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="رقم البطاقة" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <h6>صلاحية البطاقة</h6>
+                    <select name="date_month">
+                      <option value="month" disabled selected>شهر</option>
+                      <option value="jan">يناير</option>
+                      <option value="feb">فبراير</option>
+                      <option value="mar">مارس</option>
+                      <option value="apr">أبريل</option>
+                    </select>
+                    <select name="date_year">
+                      <option value="year" disabled selected>سنة</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                    </select>
+                    <div class="CVV">
+                      <h6>CVV</h6>
+                      <input type="text" class="form-control" placeholder="XXX" name="CVV" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- زر الطلب -->
+              <button class="btn" type="submit" id="payment-btn" data-payment>إكمال الشراء</button>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <script src="js/payment.js"></script>
+
+</body>
+</html>

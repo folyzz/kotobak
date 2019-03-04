@@ -280,9 +280,9 @@ footer{
 //قسم عرض الكتاب
 #view-book{
     @include view-book(
-        linear-gradient(90deg, $color-freelance-two,$color-freelance),
-        $color-freelance-three,
-        darken($color-freelance-three, 10%)
+    linear-gradient(90deg, $color-freelance-two,$color-freelance),
+    $color-freelance-three,
+    darken($color-freelance-three, 10%)
     ); 
 }
 // flipppages
@@ -318,16 +318,261 @@ footer{
 //قسم عرض الكتاب
 #view-book2{
     @include view-book(
-        linear-gradient(90deg, $color-ux-two,$color-ux,$color-ux),
-        $color-ux-three,
-        darken($color-ux-three, 10%)
+    linear-gradient(90deg, $color-ux-two,$color-ux,$color-ux),
+    $color-ux-three,
+    darken($color-ux-three, 10%)
     ); 
 }
 // flipppages
 #flippage2{
     @include flippage(linear-gradient(90deg, $color-ux-two,$color-ux,$color-ux));
 }
+//*************************************** payment page . 
+//*************************************** payment page .  
+//*************************************** payment page .  
+//*************************************** payment page . 
+header#payment{
+    background: linear-gradient(90deg, $color-shopping-cart,$color-shopping-cart-four);
+    height: 100%;
+    ul{
+        a:hover{
+            text-decoration: none;
+            text-shadow: none;
+        }
+        i{
+            font-size: 40px;
+        }
+    }
+    // قسم طلبك
+    .request-col{
+        right: 35%;
+        padding: 0px 90px 0px 0px;
+        // عنوان قسم طلبك
+        .table-title{
+            color: #FFF;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        form{
+            table{
+                width: 100%;
+                tbody{
+                    tr{ // سطر طلبك
+                        border-bottom: 1px solid darken($color-white, 50%);
+                        display: inline-block;
+                        margin-bottom: 30px;
+                        td{
+                            display: inline-block;
+                            padding: 20px 0px;
+                            &:first-child{
+                                width: 250px;
+                                text-align: center;
+                            }
+                            &:not(:first-child){
+                                
+                                margin: 0px 30px;
+                            }
+                            .media{ 
+                                .custom-img{ // الصورة 
+                                    height: 80px;
+                                    width: 70px;
+                                    img{
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+                                }
+                                .media-body{ // الإسم
+                                    color: $color-white;
+                                    position: relative;
+                                    top: 25px;
+                                }
+                            }
+                            .box{ // مربع العدد
+                                direction: ltr;
+                                margin: 0px 20px;
+                                select{
+                                    color: $color-white;
+                                    background: transparent;
+                                    border: 1px solid darken($color-white, 50%);
+                                    &:focus{box-shadow: none;}
+                                    option{
+                                        color: $color-white;
+                                        background: $color-shopping-cart;
+                                    }
+                                }
+                                
+                                input{
+                                    color: darken($color-white, 25%);
+                                    text-align: center;
+                                    background: transparent;
+                                    border: 1px solid lighten($color-shopping-cart, 8%);
+                                    border-radius: 6px;
+                                    font-size: 16px;
+                                    padding: 13px 10;
+                                    margin: 0 5px;
+                                    &:focus{
+                                        outline: none;
+                                    }
+                                }
+                                
+                            }
+                        }
+                        .total-price-for-book{
+                            color: $color-white;
+                        }
+                        .remove-btn{
+                            color: darken($color-white,30%);
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                tfoot{
+                    transition: all 0.5s ease;
+                    .text-price{
+                        color: $color-white;
+                        .custom-text-price{
+                            font-size: 13px;
+                            color: darken($color-white,30%);
+                        }
+                    }
+                    .continue-shopping{
+                        float: left;
+                        margin-left: 20px;
+                        a{
+                            color: $color-white;
+                            transition: all 0.3s ease;
+                            &:hover{
+                                color: transparent;
+                                text-shadow: 0 0 1px black;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // قائمة الجانبية
+    .data-col{
+        left: 66%;
+        aside{ // قسم الجانبي
+            width: 400px;
+            background: linear-gradient(60deg, $color-shopping-cart,$color-shopping-cart-four);
+            box-shadow: 0 0 45px -17px $color-black;
+            border-radius: 10px;
+            padding: 30px;
+            #personal-data{ // بيانات الشخصية
+                h2{
+                    color: $color-white;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .form-group{
+                    margin-bottom: 10px;
+                    input{
+                        color: $color-white;
+                        background: transparent;
+                        padding-right: 0;
+                        border: none;
+                        border-bottom: 1px solid darken($color-white, 60%);
+                        border-radius: 0;
+                        &::placeholder{
+                            color: darken($color-white, 30%);
+                        }
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+            #payment-data{ // بيانات الدفع
+                h2{
+                    color: $color-white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 20px;
+                }
+                .form-group{ 
+                    margin-bottom: 10px;
+                    input{
+                        color: darken($color-white, 20%);
+                        background: transparent;
+                        padding-right: 0;
+                        border: none;
+                        border-bottom: 1px solid darken($color-white, 60%);
+                        border-radius: 0;
+                        &::placeholder{
+                            color: darken($color-white, 30%);
+                        }
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                    label{ // الائتمانية && عندالاستلام
+                        input{
+                            display: none;
+                            &::placeholder{
+                                color: darken($color-white, 30%);
+                            }
+                            &:checked ~ span{
+                                color: $color-shopping-cart-three;
+                            }
+                        }
+                        span{ // بطاقة أم عند الاستلام
+                            color: darken($color-white, 30%);
+                            margin-left: 20px;
+                            cursor: pointer;
+                            transition: all 0.5s ease;
+                        }
+                    }
 
+                    h6{ // صلاحية البطاقة && CVV
+                        color: $color-white;
+                        margin-bottom: 0;
+                    }
+                    select{ // قسم صلاحية البطاقة
+                        color: darken($color-white, 30%);
+                        background: transparent;
+                        width: 85px;
+                        border: none;
+                        border-bottom: 1px solid darken($color-white, 60%);
+                        margin-left: 20px;
+                    }
+                    .CVV{ // div CVV
+                        display: inline-block;
+                        width: 85px;
+                        position: relative;
+                        top: -18px;
+                        h6{
+                            margin: 0px;
+                        }
+                        input{
+                            position: relative;
+                            top: 16px;
+                        }
+                    }
+                }
+            }
+            button{ // زر اكمال الشراء
+                color: #fff;
+                box-shadow: 0 0 50px -17px $color-black;
+                border-radius: 30px;
+                padding: 15px 125px;
+                position: relative;
+                top: 18px;
+                &:focus,&:hover{
+                    background-color: $color-shopping-cart-three;
+                    box-shadow: 0 0 50px -17px $color-black;
+                }
+            }
+        }
+    }
+    
+    
+    
+}
 
 
 
@@ -362,7 +607,6 @@ footer{
         }
     }    
 }
-
 @media (max-width: 991px){
     header {
         min-height: 95%;
@@ -442,6 +686,10 @@ footer{
                 width: 335px;
             }
         }
+    }
+    #flipbook .page{
+        width: 90px;
+        height: 90px;
     }
 }
 @media (max-width: 767px){
