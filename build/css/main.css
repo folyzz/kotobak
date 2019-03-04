@@ -544,7 +544,8 @@ footer {
 
 header#payment {
   background: linear-gradient(90deg, #774BFD, #3A34F0);
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
   header#payment ul a:hover {
     text-decoration: none;
     text-shadow: none; }
@@ -633,7 +634,7 @@ header#payment {
       width: 400px;
       background: linear-gradient(60deg, #774BFD, #3A34F0);
       box-shadow: 0 0 45px -17px #000000;
-      border-radius: 10px;
+      border-radius: 30px;
       padding: 30px; }
       header#payment .data-col aside #personal-data h2 {
         color: #ffffff;
@@ -721,7 +722,20 @@ header#payment {
   #detail .about-book .book-details p, #detail2 .about-book .book-details p {
     padding-left: 0px; }
   #detail .about-book .work-book, #detail2 .about-book .work-book {
-    margin-right: 10%; } }
+    margin-right: 10%; }
+  header#payment {
+    height: 750px; }
+    header#payment nav ul {
+      right: 51%; }
+    header#payment .request-col {
+      padding: 0px 100px 0px 0px;
+      right: 35%; }
+      header#payment .request-col table tbody td:not(:first-child) {
+        margin: 0px 10px !important; }
+    header#payment .data-col {
+      left: 68%; }
+      header#payment .data-col aside {
+        padding: 25px; } }
 
 @media (max-width: 991px) {
   header {
@@ -779,7 +793,50 @@ header#payment {
       width: 335px; }
   #flipbook .page {
     width: 90px;
-    height: 90px; } }
+    height: 90px; }
+  header#payment {
+    height: 1050px; }
+    header#payment nav ul {
+      right: 49%; }
+    header#payment .request-col {
+      padding: 0px;
+      right: 0%; }
+      header#payment .request-col .table-title {
+        margin-bottom: 5px;
+        font-size: 20px; }
+      header#payment .request-col table tbody tr {
+        margin-bottom: 22px !important; }
+        header#payment .request-col table tbody tr td:first-child {
+          width: 235px !important; }
+        header#payment .request-col table tbody tr td .media .media-body {
+          padding: 0px 15px;
+          display: inline-flex; }
+          header#payment .request-col table tbody tr td .media .media-body h5 {
+            font-size: 16px; }
+        header#payment .request-col table tbody tr td:not(:first-child) {
+          margin: 0px 40px !important; }
+    header#payment .data-col {
+      left: 0%; }
+      header#payment .data-col aside {
+        width: 50%;
+        padding: 20px;
+        position: relative;
+        right: 25%; }
+        header#payment .data-col aside form #personal-data h2 {
+          font-size: 16px; }
+        header#payment .data-col aside form #personal-data input {
+          font-size: 14px; }
+        header#payment .data-col aside form #payment-data h2 {
+          font-size: 16px; }
+        header#payment .data-col aside form #payment-data label {
+          font-size: 13px; }
+        header#payment .data-col aside form #payment-data #credit-card-section input, header#payment .data-col aside form #payment-data #credit-card-section h6 {
+          font-size: 14px; }
+        header#payment .data-col aside form #payment-data #credit-card-section .CVV {
+          width: 60px; }
+        header#payment .data-col aside form button {
+          padding: 10px 100px;
+          right: 10px; } }
 
 @media (max-width: 767px) {
   header {
@@ -838,7 +895,25 @@ header#payment {
       #detail .about-book .book-details p, #detail2 .about-book .book-details p {
         margin-bottom: 30px; }
   #flippage, #flippage2 {
-    top: 1087px; } }
+    top: 1087px; }
+  header#payment nav ul {
+    right: -9%;
+    margin: 5px 0px 0 -75px; }
+    header#payment nav ul li a {
+      font-size: 20px; }
+      header#payment nav ul li a i {
+        font-size: 30px; }
+  header#payment .request-col {
+    padding: 0px;
+    right: 0%; }
+    header#payment .request-col .table-title {
+      margin-bottom: 5px;
+      font-size: 20px; }
+    header#payment .request-col table tbody tr td:not(:first-child) {
+      margin: 0px 11px !important; }
+  header#payment .data-col aside {
+    width: 70%;
+    right: 15%; } }
 
 @media (max-width: 575px) {
   header {
@@ -888,4 +963,51 @@ header#payment {
     width: 190px;
     top: -35px; }
   #view-book button {
-    top: 85px; } }
+    top: 85px; }
+  header#payment {
+    height: 950px; }
+    header#payment nav ul {
+      right: -18%;
+      margin: 5px 0px 0 -75px; }
+      header#payment nav ul li a {
+        font-size: 16px; }
+        header#payment nav ul li a i {
+          font-size: 25px; }
+    header#payment .request-col {
+      padding: 0px 15px;
+      right: 0%; }
+      header#payment .request-col .table-title {
+        margin-bottom: 5px;
+        font-size: 20px; }
+      header#payment .request-col table tbody tr td {
+        padding: 15px 0px !important; }
+        header#payment .request-col table tbody tr td:first-child {
+          width: 163px !important; }
+        header#payment .request-col table tbody tr td .media .custom-img {
+          height: 60px !important;
+          width: 50px !important; }
+        header#payment .request-col table tbody tr td .media .media-body {
+          top: 35px; }
+          header#payment .request-col table tbody tr td .media .media-body h5 {
+            font-size: 11px; }
+        header#payment .request-col table tbody tr td:not(:first-child) {
+          margin: 0px 0px !important; }
+        header#payment .request-col table tbody tr td .box {
+          margin: 0px 0px 0px 10px  !important; }
+      header#payment .request-col table tbody tr .total-price-for-book {
+        font-size: 12px !important; }
+    header#payment .data-col aside {
+      width: 301px;
+      padding: 10px;
+      right: 6%; }
+      header#payment .data-col aside form {
+        margin-bottom: 0px; }
+        header#payment .data-col aside form button {
+          padding: 10px 70px !important;
+          right: 30px;
+          top: 0px; }
+        header#payment .data-col aside form #payment-data #credit-card-section .CVV {
+          width: 50px; }
+        header#payment .data-col aside form #payment-data .form-group select {
+          margin-left: 5px;
+          width: 70px; } }
