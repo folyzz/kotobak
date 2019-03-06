@@ -4,10 +4,8 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){});
     });
     $('#flipbook').turn({
-        height: 380,
-        width: 390,
-        gradients: true,
-        display: 'single'
+        duration: 1000,
+        gradients: true
     });
 
     

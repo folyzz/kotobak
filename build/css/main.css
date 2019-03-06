@@ -9,15 +9,15 @@ body {
 
 ::-webkit-scrollbar {
   width: 9px;
-  background-color: #4e4e4e; }
+  background-color: #000000; }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 15px;
-  background-color: #cccccc; }
+  background-color: #ffffff; }
 
 header {
   background: linear-gradient(45deg, #FE7F77, #FFAA79);
-  min-height: 100%; }
+  height: 860px; }
   header nav {
     padding: 0px 0px !important; }
     header nav .custom-collapse .nav-cart {
@@ -62,11 +62,11 @@ header {
       right: -9px;
       transition: all 0.5s ease; }
   header .about {
-    padding: 140px 53px 125px; }
+    padding: 170px 53px 0px; }
     header .about h1 {
       font-size: 70px;
       font-weight: bold;
-      color: #594AA9; }
+      color: #774BFD; }
       header .about h1 span {
         font-size: 45px;
         font-weight: 400;
@@ -106,7 +106,7 @@ header {
         top: 75px;
         right: 45%; }
         header .about .form-group a:hover {
-          color: #594AA9; }
+          color: #3A34F0; }
         header .about .form-group a i {
           font-size: 45px;
           height: 100%;
@@ -118,7 +118,7 @@ header {
             transform: translateY(15px); }
 
 #gallery {
-  background-color: #594AA9;
+  background: linear-gradient(90deg, #774BFD, #3A34F0);
   padding: 70px 0px 120px; }
   #gallery h1 {
     color: #ffffff;
@@ -126,7 +126,7 @@ header {
     font-size: 55px;
     margin-bottom: 70px; }
   #gallery .item {
-    max-height: 380px;
+    height: 430px;
     padding: 0 100px; }
     #gallery .item img {
       height: 100%;
@@ -194,7 +194,7 @@ footer {
 
 #header2 {
   background: linear-gradient(90deg, #dbeedb, #b1d9d8);
-  min-height: 90px; }
+  height: 90px; }
   #header2 nav #brand {
     height: 90px; }
     #header2 nav #brand img {
@@ -213,8 +213,7 @@ footer {
   height: 650px; }
   #detail .about-book .work-book {
     height: 430px;
-    width: 350px;
-    margin-right: -10%; }
+    width: 350px; }
     #detail .about-book .work-book img {
       height: 100%;
       width: 100%;
@@ -342,19 +341,27 @@ footer {
     top: 50px; }
 
 #flippage {
+  direction: ltr;
   background: linear-gradient(90deg, #dbeedb, #b1d9d8);
   height: 380px;
-  margin: 0;
+  width: 100%;
   position: absolute;
   top: 697px;
   z-index: 3;
   display: none; }
   #flippage #flipbook {
-    direction: ltr;
+    width: 500px;
+    height: 380px;
     margin: 0px auto; }
-    #flippage #flipbook img {
-      height: 100%;
-      width: 100%; }
+    #flippage #flipbook .page {
+      width: 400px;
+      height: 300px; }
+    #flippage #flipbook .page-wrapper {
+      perspective: 2000px; }
+    #flippage #flipbook .odd {
+      box-shadow: inset 0 0 5px #666; }
+    #flippage #flipbook .even {
+      box-shadow: inset 0 0 5px #666; }
   #flippage button {
     font-size: 25px;
     color: #d94452;
@@ -369,7 +376,7 @@ footer {
 
 #header3 {
   background: linear-gradient(90deg, #DCA689, #DAAE87);
-  min-height: 90px; }
+  height: 90px; }
   #header3 nav #brand {
     height: 90px; }
     #header3 nav #brand img {
@@ -388,8 +395,7 @@ footer {
   height: 650px; }
   #detail2 .about-book .work-book {
     height: 430px;
-    width: 350px;
-    margin-right: -10%; }
+    width: 350px; }
     #detail2 .about-book .work-book img {
       height: 100%;
       width: 100%;
@@ -517,19 +523,27 @@ footer {
     top: 50px; }
 
 #flippage2 {
+  direction: ltr;
   background: linear-gradient(90deg, #DCA689, #DAAE87, #DAAE87);
   height: 380px;
-  margin: 0;
+  width: 100%;
   position: absolute;
   top: 697px;
   z-index: 3;
   display: none; }
   #flippage2 #flipbook {
-    direction: ltr;
+    width: 500px;
+    height: 380px;
     margin: 0px auto; }
-    #flippage2 #flipbook img {
-      height: 100%;
-      width: 100%; }
+    #flippage2 #flipbook .page {
+      width: 400px;
+      height: 300px; }
+    #flippage2 #flipbook .page-wrapper {
+      perspective: 2000px; }
+    #flippage2 #flipbook .odd {
+      box-shadow: inset 0 0 5px #666; }
+    #flippage2 #flipbook .even {
+      box-shadow: inset 0 0 5px #666; }
   #flippage2 button {
     font-size: 25px;
     color: #d94452;
@@ -622,7 +636,7 @@ header#payment {
           float: left;
           margin-left: 20px; }
           header#payment .request-col form table tfoot .continue-shopping a {
-            color: #ffffff;
+            color: #19E4AD;
             transition: all 0.3s ease; }
             header#payment .request-col form table tfoot .continue-shopping a:hover {
               color: transparent;
@@ -714,11 +728,13 @@ header#payment {
           box-shadow: 0 0 50px -17px #000000; }
 
 @media (max-width: 1199px) {
-  header {
-    min-height: 95%; }
-    header nav ul {
-      position: relative;
-      right: 44%; }
+  header nav ul {
+    position: relative;
+    right: 40%; }
+  header .about {
+    padding: 140px 53px 0px; }
+  #gallery .item {
+    padding: 0 60px; }
   #detail .about-book .book-details p, #detail2 .about-book .book-details p {
     padding-left: 0px; }
   #detail .about-book .work-book, #detail2 .about-book .work-book {
@@ -739,31 +755,31 @@ header#payment {
 
 @media (max-width: 991px) {
   header {
-    min-height: 95%; }
+    height: 720px; }
     header nav {
       padding: 0px 0px !important; }
       header nav #brand {
         position: relative;
-        right: -6%; }
+        right: -4%; }
       header nav ul {
         position: relative;
-        right: 25%;
+        right: 24%;
         margin: 25px 0px 0 -75px;
         padding: 0; }
     header .about {
-      padding: 140px 0px 125px; }
+      padding: 100px 0px 0px; }
       header .about h1 {
-        font-size: 65px; }
+        font-size: 60px; }
         header .about h1 span {
-          font-size: 40px; }
+          font-size: 37px; }
       header .about p {
         font-size: 16px; }
       header .about .form-group input[type=search] {
         background-position: 98%;
         background-size: 35px; }
   #gallery .item {
-    max-height: 380px;
-    padding: 0px 30px; }
+    height: 395px;
+    padding: 0px 20px; }
   #contact ul {
     margin: 10px 0; }
   .map-box #map {
@@ -791,9 +807,8 @@ header#payment {
           width: 30px; }
     #detail .about-book .box2, #detail2 .about-book .box2 {
       width: 335px; }
-  #flipbook .page {
-    width: 90px;
-    height: 90px; }
+  #flippage, #flippage2 {
+    overflow: hidden; }
   header#payment {
     height: 1050px; }
     header#payment nav ul {
@@ -840,7 +855,13 @@ header#payment {
 
 @media (max-width: 767px) {
   header {
-    min-height: 88%; }
+    height: 685px; }
+    header nav #dropdown-collapse {
+      background: linear-gradient(135deg, #FE7F77, #FFAA79);
+      position: absolute;
+      top: 90px;
+      width: 100%;
+      z-index: 1; }
     header nav #brand img {
       height: 100px;
       width: 100px; }
@@ -855,23 +876,32 @@ header#payment {
         margin-bottom: 12px; }
         header nav ul li a {
           font-size: 28px; }
-    header .about p {
-      font-size: 13px; }
-    header .about h1 {
-      font-size: 60px; }
-      header .about h1 span {
-        font-size: 35px; }
-    header .about .form-group input[type=search] {
-      font-size: 15px;
-      width: 55%;
-      background-size: 30px;
-      padding: 20px 35px; }
+    header .about {
+      padding: 100px 0px 0px; }
+      header .about p {
+        font-size: 13px; }
+      header .about h1 {
+        font-size: 55px; }
+        header .about h1 span {
+          font-size: 32px; }
+      header .about .form-group {
+        margin-top: 55px; }
+        header .about .form-group input[type=search] {
+          font-size: 12px;
+          width: 55%;
+          background-size: 30px;
+          padding: 20px 35px; }
+        header .about .form-group a {
+          height: 65px;
+          width: 65px;
+          top: 70px; }
   #gallery {
     padding: 45px 0px 120px; }
     #gallery h1 {
       font-size: 45px; }
     #gallery .item {
-      padding: 0px 20px; }
+      height: 315px;
+      padding: 0px 10px; }
   #contact ul li {
     font-size: 12px; }
     #contact ul li:not(:last-child) {
@@ -880,6 +910,12 @@ header#payment {
     font-size: 20px !important; }
   .map-box #map {
     height: 280px; }
+  footer .icon-top {
+    right: -20%; }
+  #header2 nav #dropdown-collapse, #header3 nav #dropdown-collapse {
+    background: #fff; }
+    #header2 nav #dropdown-collapse a, #header3 nav #dropdown-collapse a {
+      color: #666666; }
   #detail, #detail2 {
     height: 65rem; }
     #detail .about-book .buttons, #detail2 .about-book .buttons {
@@ -917,7 +953,7 @@ header#payment {
 
 @media (max-width: 575px) {
   header {
-    min-height: 82%; }
+    height: 685px; }
     header nav #brand {
       position: relative;
       right: 0%; }
@@ -929,22 +965,30 @@ header#payment {
       header nav ul li a {
         display: inline; }
     header .about h1 {
-      font-size: 50px; }
+      font-size: 45px; }
       header .about h1 span {
-        font-size: 30px; }
+        font-size: 28px; }
     header .about p {
-      font-size: 9px; }
+      font-size: 12px; }
     header .about .form-group input[type=search] {
       font-size: 11px;
       width: 55%;
       background-size: 25px;
       padding: 20px 30px; }
+    header .about .form-group a {
+      height: 60px;
+      width: 60px;
+      right: 165px; }
   #gallery {
-    padding: 45px 0px 45px; }
+    padding: 20px 0px 0px; }
+    #gallery h1 {
+      margin-bottom: 50px; }
     #gallery .item {
-      max-height: 380px;
-      padding: 0px 70px;
-      margin-bottom: 60px; }
+      height: 350px;
+      padding: 0px 0px;
+      margin-bottom: 30px; }
+      #gallery .item img {
+        width: 280px; }
   #contact ul {
     padding: 0;
     margin: 5px 0; }
@@ -954,16 +998,29 @@ header#payment {
         margin-left: 3%; }
     #contact ul i {
       font-size: 15px !important; }
+  footer .icon-top {
+    right: -10%; }
   #detail .about-book .book-details h1, #detail2 .about-book .book-details h1 {
     font-size: 26px; }
   #detail .about-book .book-details p, #detail2 .about-book .book-details p {
     font-size: 15px; }
-  #view-book img {
+  #view-book img, #view-book2 img {
     height: 190px;
     width: 190px;
     top: -35px; }
-  #view-book button {
+  #view-book button, #view-book2 button {
     top: 85px; }
+  #flippage, #flippage2 {
+    top: 1095px;
+    height: 372px;
+    overflow-x: hidden; }
+    #flippage #flipbook, #flippage2 #flipbook {
+      width: 300px !important;
+      height: 250px !important;
+      margin: 65px auto; }
+      #flippage #flipbook .page, #flippage2 #flipbook .page {
+        width: 150px !important;
+        height: 250px !important; }
   header#payment {
     height: 950px; }
     header#payment nav ul {
@@ -982,7 +1039,7 @@ header#payment {
       header#payment .request-col table tbody tr td {
         padding: 15px 0px !important; }
         header#payment .request-col table tbody tr td:first-child {
-          width: 163px !important; }
+          width: 175px !important; }
         header#payment .request-col table tbody tr td .media .custom-img {
           height: 60px !important;
           width: 50px !important; }
@@ -1005,6 +1062,93 @@ header#payment {
         header#payment .data-col aside form button {
           padding: 10px 70px !important;
           right: 30px;
+          top: 0px; }
+        header#payment .data-col aside form #payment-data #credit-card-section .CVV {
+          width: 50px; }
+        header#payment .data-col aside form #payment-data .form-group select {
+          margin-left: 5px;
+          width: 70px; } }
+
+@media (max-width: 375px) {
+  header {
+    height: 665px; }
+    header nav #brand img {
+      height: 75px;
+      width: 78px; }
+    header nav #brand h5 {
+      top: 6px;
+      font-size: 11px; }
+    header .about .form-group a {
+      height: 60px;
+      width: 60px;
+      right: 135px; }
+      header .about .form-group a i {
+        font-size: 40px; }
+    header .about .form-group input[type=search] {
+      font-size: 10px; }
+  #detail .about-book .box, #detail .about-book .box2, #detail2 .about-book .box, #detail2 .about-book .box2 {
+    width: 300px; }
+  #detail .about-book .book-details h1, #detail2 .about-book .book-details h1 {
+    font-size: 26px; }
+  #detail .about-book .book-details p, #detail2 .about-book .book-details p {
+    font-size: 15px; }
+  header#payment {
+    height: 900px; }
+    header#payment nav #brand h5 {
+      top: 10px;
+      font-size: 14px; }
+    header#payment nav #brand img {
+      height: 90px;
+      width: 90px; }
+    header#payment nav ul {
+      top: 12px;
+      right: -30%;
+      width: 100px; }
+      header#payment nav ul li a {
+        font-size: 10px; }
+        header#payment nav ul li a i {
+          font-size: 25px; }
+    header#payment .request-col {
+      padding: 0px 15px;
+      right: 0%; }
+      header#payment .request-col .table-title {
+        margin-bottom: 5px;
+        font-size: 20px; }
+      header#payment .request-col table tbody tr {
+        margin-bottom: 10px !important; }
+        header#payment .request-col table tbody tr td {
+          padding: 15px 0px !important; }
+          header#payment .request-col table tbody tr td:first-child {
+            width: 150px !important; }
+          header#payment .request-col table tbody tr td .media .custom-img {
+            height: 60px !important;
+            width: 50px !important; }
+          header#payment .request-col table tbody tr td .media .media-body {
+            top: 35px;
+            padding: 0px 6px; }
+            header#payment .request-col table tbody tr td .media .media-body h5 {
+              font-size: 11px; }
+          header#payment .request-col table tbody tr td:not(:first-child) {
+            margin: 0px 0px !important; }
+          header#payment .request-col table tbody tr td .box {
+            margin: 0px 0px 0px 0px  !important; }
+            header#payment .request-col table tbody tr td .box select {
+              padding: 0px; }
+        header#payment .request-col table tbody tr .total-price-for-book {
+          font-size: 12px !important; }
+      header#payment .request-col table tfoot .continue-shopping a {
+        font-size: 14px; }
+      header#payment .request-col table tfoot .text-price {
+        font-size: 13px; }
+    header#payment .data-col aside {
+      width: 280px;
+      padding: 10px;
+      right: 2%; }
+      header#payment .data-col aside form {
+        margin-bottom: 0px; }
+        header#payment .data-col aside form button {
+          padding: 10px 75px !important;
+          right: 11px;
           top: 0px; }
         header#payment .data-col aside form #payment-data #credit-card-section .CVV {
           width: 50px; }

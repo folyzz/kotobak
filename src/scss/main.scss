@@ -13,18 +13,18 @@ body{
 }
 ::-webkit-scrollbar{
     width: 9px;
-    background-color: #4e4e4e;
+    background-color: $color-black;
 }
 ::-webkit-scrollbar-thumb{
     border-radius: 15px;
-    background-color: darken($color-white, 20%) ;
+    background-color: $color-white;
 }
 
 
 // HEADER
 header{
     background: linear-gradient(45deg, #FE7F77, #FFAA79);
-    min-height: 100%;
+    height: 860px;
     //navar
     nav{
         padding: 0px 0px !important;
@@ -88,11 +88,11 @@ header{
     }
     //التعريف
     .about{
-        padding: 140px 53px 125px;
+        padding: 170px 53px 0px;
         h1{
             font-size: 70px;
             font-weight: bold;
-            color: $color-brand;
+            color: $color-shopping-cart;
             span{
                 font-size: 45px;
                 font-weight: 400;
@@ -138,7 +138,7 @@ header{
                 top: 75px;
                 right: 45%;
                 &:hover{
-                    color: $color-brand;
+                    color: $color-shopping-cart-four;
                 }
                 i{
                     font-size: 45px;
@@ -157,7 +157,7 @@ header{
 }
 //المعرض
 #gallery{
-    background-color: $color-brand;
+    background: linear-gradient(90deg, $color-shopping-cart,$color-shopping-cart-four);
     padding: 70px 0px 120px;
     h1{
         color: $color-white;
@@ -166,7 +166,7 @@ header{
         margin-bottom: 70px;
     }
     .item{
-        max-height: 380px;
+        height: 430px;
         padding: 0 100px;
         img{
             height: 100%;
@@ -442,7 +442,7 @@ header#payment{
                         float: left;
                         margin-left: 20px;
                         a{
-                            color: $color-white;
+                            color: $color-shopping-cart-three;
                             transition: all 0.3s ease;
                             &:hover{
                                 color: transparent;
@@ -574,13 +574,16 @@ header#payment{
 
 @media (max-width: 1199px){
     header{
-        min-height: 95%;
         nav{
             ul{
                 position: relative;
-                right: 44%;    
+                right: 40%;    
             }
         }
+        .about{padding: 140px 53px 0px;}
+    }
+    #gallery .item {
+        padding: 0 60px;
     }
     /////////////////////////////freelance&&ux
     #detail,#detail2{
@@ -625,26 +628,26 @@ header#payment{
 }
 @media (max-width: 991px){
     header {
-        min-height: 95%;
+        height: 720px;
         nav {
             padding: 0px 0px !important;
             #brand{
                 position: relative;
-                right: -6%;
+                right: -4%;
             }
             ul{
                 position: relative;
-                right: 25%;
+                right: 24%;
                 margin: 25px 0px 0 -75px;
                 padding: 0;
             }
         }
         .about{
-            padding: 140px 0px 125px;
+            padding: 100px 0px 0px;
             h1{
-                font-size: 65px;
+                font-size: 60px;
                 span{
-                    font-size: 40px;
+                    font-size: 37px;
                 }
             }
             p{
@@ -657,8 +660,8 @@ header#payment{
         } 
     }
     #gallery .item {
-        max-height: 380px;
-        padding: 0px 30px;
+        height: 395px;
+        padding: 0px 20px;
     }
     #contact ul {
         margin: 10px 0;
@@ -703,9 +706,9 @@ header#payment{
             }
         }
     }
-    #flipbook .page{
-        width: 90px;
-        height: 90px;
+    // FlipBook
+    #flippage,#flippage2{
+        overflow: hidden;
     }
     ////////////////////////////shopping cart
     header#payment{
@@ -773,8 +776,15 @@ header#payment{
 }
 @media (max-width: 767px){
     header{
-        min-height: 88%;
+        height: 685px;
         nav {
+            #dropdown-collapse{
+                background: linear-gradient(135deg, #FE7F77, #FFAA79);
+                position: absolute;
+                top: 90px;
+                width: 100%;
+                z-index: 1;
+            }
             #brand {
                 img {
                     height: 100px;
@@ -798,20 +808,29 @@ header#payment{
             }
         }
         .about {
+            padding: 100px 0px 0px;
             p {
                 font-size: 13px;
             }
             h1 {
-                font-size: 60px;
+                font-size: 55px;
                 span {
-                    font-size: 35px;
+                    font-size: 32px;
                 }
             }
-            .form-group input[type=search] {
-                font-size: 15px;
-                width: 55%;
-                background-size: 30px;
-                padding: 20px 35px;
+            .form-group{
+                margin-top: 55px;
+                input[type=search] {
+                    font-size: 12px;
+                    width: 55%;
+                    background-size: 30px;
+                    padding: 20px 35px;
+                }
+                a{
+                    height: 65px;
+                    width: 65px;
+                    top: 70px;
+                }
             }
         }
     }
@@ -821,7 +840,8 @@ header#payment{
             font-size: 45px;
         }
         .item{
-            padding: 0px 20px;
+            height: 315px;
+            padding: 0px 10px;
         }
     }
     #contact ul {
@@ -839,7 +859,16 @@ header#payment{
     .map-box #map {
         height: 280px;
     }
+    footer .icon-top{right: -20%;}
     /////////////////////////////freelance&&ux
+    #header2,#header3{
+        nav{
+            #dropdown-collapse{
+                background: #fff;
+                a{color: darken($color-white,60%);}
+            }
+        }
+    }
     #detail,#detail2{
         height: 65rem;
         .about-book{
@@ -911,7 +940,7 @@ header#payment{
 }
 @media (max-width: 575px){
     header{
-        min-height: 82%;
+        height: 685px;
         nav{
             #brand{
                 position: relative;
@@ -931,28 +960,37 @@ header#payment{
         }
         .about{
             h1{
-                font-size: 50px;
+                font-size: 45px;
                 span{
-                    font-size: 30px;
+                    font-size: 28px;
                 }
             }
             p{
-                font-size: 9px;
+                font-size: 12px;
             }
-            .form-group input[type=search] {
-                font-size: 11px;
-                width: 55%;
-                background-size: 25px;
-                padding: 20px 30px;
+            .form-group {
+                input[type=search] {
+                    font-size: 11px;
+                    width: 55%;
+                    background-size: 25px;
+                    padding: 20px 30px;
+                }
+                a{
+                    height: 60px;
+                    width: 60px;
+                    right: 165px;
+                }
             }
         }
     }
     #gallery{
-        padding: 45px 0px 45px;
+        padding: 20px 0px 0px;
+        h1{margin-bottom: 50px;}
         .item{
-            max-height: 380px;
-            padding: 0px 70px;
-            margin-bottom: 60px;
+            height: 350px;
+            padding: 0px 0px;
+            margin-bottom: 30px;
+            img{width: 280px;}
         }
     } 
     #contact ul {
@@ -968,6 +1006,7 @@ header#payment{
             font-size: 15px !important;
         }
     }
+    footer .icon-top{right: -10%;}
     /////////////////////////////freelance&&ux
     #detail,#detail2{
         .about-book{
@@ -981,7 +1020,7 @@ header#payment{
             }
         }
     }
-    #view-book{
+    #view-book,#view-book2{
         img {
             height: 190px;
             width: 190px;
@@ -989,6 +1028,21 @@ header#payment{
         }
         button{
             top: 85px;
+        }
+    }
+    // FlipBook
+    #flippage,#flippage2{
+        top: 1095px;
+        height: 372px;
+        overflow-x: hidden;
+        #flipbook{
+            width:300px !important;
+            height:250px !important;
+            margin: 65px auto;
+            .page{
+                width:150px !important;
+                height:250px !important;
+            }
         }
     }
     ////////////////////////////shopping cart
@@ -1018,7 +1072,7 @@ header#payment{
                         td{
                             padding: 15px 0px !important;
                             &:first-child{
-                                width: 163px !important;
+                                width: 175px !important;
                             }
                             .media{
                                 .custom-img{
@@ -1069,7 +1123,149 @@ header#payment{
         }
     } 
 }
-
+@media (max-width: 375px){
+    header{
+        height: 665px;
+        nav #brand{
+            img{
+                height: 75px;
+                width: 78px;
+            }
+            h5{
+                top: 6px;
+                font-size: 11px;
+            }
+        } 
+        .about .form-group {
+            a {
+                height: 60px;
+                width: 60px;
+                right: 135px;
+                i{
+                    font-size: 40px;
+                }
+            }
+            input[type=search] {
+                font-size: 10px;
+            }
+        }
+    }
+    /////////////////////////////freelance&&ux
+    #detail,#detail2{
+        .about-book{
+            .box,.box2{width: 300px;}
+            .book-details{
+                h1{
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    ////////////////////////////shopping cart
+    header#payment{
+        height: 900px;
+        nav{
+            #brand{
+                h5{
+                    top: 10px;
+                    font-size: 14px;
+                }
+                img {
+                    height: 90px;
+                    width: 90px;
+                }
+            } 
+            ul{
+                top: 12px;
+                right: -30%;
+                width: 100px;
+                li{
+                    a{
+                        font-size: 10px;
+                        i{font-size: 25px;}
+                    }
+                    
+                }
+            }
+        } 
+        .request-col{
+            padding: 0px 15px;
+            right: 0%;
+            .table-title{
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+            table{
+                tbody{
+                    tr{
+                        margin-bottom: 10px !important;
+                        td{
+                            padding: 15px 0px !important;
+                            &:first-child{
+                                width: 150px !important;
+                            }
+                            .media{
+                                .custom-img{
+                                    height: 60px !important;
+                                    width: 50px !important;
+                                }
+                                .media-body{
+                                    top: 35px;
+                                    padding: 0px 6px;
+                                    h5{font-size: 11px;}
+                                }
+                            }
+                            
+                            &:not(:first-child){
+                                
+                                margin: 0px 0px !important;
+                            }
+                            .box{
+                                margin: 0px 0px 0px 0px  !important;
+                                select{padding: 0px;}
+                            }
+                        }
+                        .total-price-for-book{font-size: 12px !important;}
+                    }
+                }
+                tfoot{
+                    .continue-shopping a {
+                        font-size: 14px;
+                    }
+                    .text-price{font-size: 13px;}
+                }
+            }
+        }
+        .data-col{
+            aside{
+                width: 280px;
+                padding: 10px;
+                right: 2%;
+                form{
+                    margin-bottom: 0px;
+                    button{
+                        padding: 10px 75px !important;
+                        right: 11px;
+                        top: 0px;
+                    }
+                    #payment-data{
+                        #credit-card-section .CVV{
+                            width: 50px;
+                        }
+                        .form-group select{
+                            margin-left: 5px;
+                            width: 70px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    } 
+}
 
 
 
