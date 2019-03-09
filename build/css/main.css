@@ -15,6 +15,13 @@ body {
   border-radius: 15px;
   background-color: #ffffff; }
 
+.tooltip-inner {
+  background-color: transparent;
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 30px -10px #000000; }
+
 header {
   background: linear-gradient(45deg, #FE7F77, #FFAA79);
   height: 860px; }
@@ -740,7 +747,7 @@ header#payment {
   #detail .about-book .work-book, #detail2 .about-book .work-book {
     margin-right: 10%; }
   header#payment {
-    height: 750px; }
+    height: 100%; }
     header#payment nav ul {
       right: 51%; }
     header#payment .request-col {

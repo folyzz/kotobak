@@ -11,6 +11,7 @@ body{
     font-family: 'Droid Arabic Kufi', sans-serif;
     overflow-x: hidden;
 }
+// شريط scroll down
 ::-webkit-scrollbar{
     width: 9px;
     background-color: $color-black;
@@ -19,7 +20,14 @@ body{
     border-radius: 15px;
     background-color: $color-white;
 }
-
+// popper.js
+.tooltip-inner {
+    background-color: transparent;
+    font-family: 'Droid Arabic Kufi', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 30px -10px $color-black;
+}
 
 // HEADER
 header{
@@ -600,7 +608,7 @@ header#payment{
     }
     ////////////////////////////shopping cart
     header#payment{
-        height: 750px;
+        height: 100%;
         nav ul{
             right: 51%;
         }
