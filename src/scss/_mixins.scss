@@ -1,24 +1,53 @@
 
 //***************************** for book page
-@mixin header ($background-color){
-    background: $background-color;
-    height: 90px;
+@mixin header{
+    background: none;
+    height: 0;
+    //navbar
     nav{
-        #brand{
-            height: 90px;
-            img {
-                height: 90px;
-                width: 115px;
+        background: $color-white-dark;
+        box-shadow: 0px 1px 22px -5px;
+        .custom-collapse{ //collapse
+            .nav-cart{
+                color: $color-white;
+                font-size: 30px;
+                position: relative;
+                top: 4px;
             }
-            h5{
-                top: 10px;
-                right: -20px;
+            .nav-bar{ //navbarIcon
+                color: $color-white;
+                font-size: 30px;
+                margin-top: 20px;
             }
         }
         ul{
             margin-top: 10px;
-            li a{
-                color: $color-white;
+            a{
+                color: grey;
+                &:hover,
+                &.active{
+                    color: $color-brand;
+                    text-shadow: 0 0 3px $color-brand;
+                }
+            }
+        }
+        #brand{
+            img{
+                height: 80px;
+                width: 80px;
+            }
+            h5{
+                font-size: 15px;
+                top: 8px;
+            }
+            .back-icon{
+                position: relative;
+                top: 8px;
+                color: grey;
+                &:hover{
+                    color: $color-brand;
+                    text-shadow: 0 0 3px $color-brand;
+                }
             }
         }
     }
@@ -193,7 +222,7 @@
     height: 380px;
     width: 100%;
     position: absolute;
-    top: 697px;
+    top: 686px;
     z-index: 3;
     display: none;
     #flipbook{

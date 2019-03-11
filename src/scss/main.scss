@@ -20,83 +20,99 @@ body{
     border-radius: 15px;
     background-color: $color-white;
 }
-// popper.js
-.tooltip-inner {
-    background-color: transparent;
-    font-family: 'Droid Arabic Kufi', sans-serif;
-    font-size: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 30px -10px $color-black;
-}
 
-// HEADER
-header{
-    background: linear-gradient(45deg, #FE7F77, #FFAA79);
-    height: 860px;
-    //navar
-    nav{
-        padding: 0px 0px !important;
-        .custom-collapse{
-            .nav-cart{
-                color: $color-white;
-                font-size: 30px;
-                position: relative;
-                top: 4px;
-            }
-            .nav-bar{ //navbarIcon
-                color: $color-white;
-                font-size: 30px;
-                margin-top: 20px;
-            }
-        }
-        ul {
+//navbar
+nav{
+    padding: 0px 0px !important;
+    .custom-collapse{ //collapse
+        .nav-cart{
+            color: $color-white;
+            font-size: 30px;
             position: relative;
-            right: 50%;
-            margin-top: 20px;
-            li{
-                margin-left: 30px;
-                &:last-of-type{
-                    margin: 8px 0px 0 20px;
-                }
-                a{
-                    color: $color-white-dark;
-                    font-size: 20px;
-                    font-weight: lighter;
-                    padding: 0px 5px;
-                    transition: all 0.3s ease;
-                    &:hover,
-                    &.active{
-                        color: $color-white;
-                        text-shadow: 0 0 40px $color-white;
-                    }
-                }
-            }
+            top: 4px;
         }
-        //الشعار
-        #brand{
-            img {
-                height: 125px;
-                width: 125px;
-                transition: all 0.5s ease;
+        .nav-bar{ //navbarIcon
+            color: $color-white;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+    }
+    ul {
+        position: relative;
+        right: 50%;
+        margin-top: 20px;
+        li{
+            margin-left: 30px;
+            &:last-of-type{
+                margin: 8px 0px 0 20px;
             }
-            a:hover{
-                color: transparent;
-            }
-            h5{
+            a{
                 color: $color-white;
-                font-family: 'Reem Kufi', cursive;
-                display: inline-block;
-                margin: 0px;
-                position: relative;
-                top: 15px;
-                right: -9px;
-                transition: all 0.5s ease;
+                font-size: 20px;
+                font-weight: lighter;
+                padding: 0px 5px;
+                transition: all 0.3s ease;
+                &:hover,
+                &.active{
+                    color: $color-brand;
+                    text-shadow: 0 0 3px $color-brand;
+                }
             }
         }
     }
+    //الشعار
+    #brand{
+        position: relative;
+        right: 15%;
+        img {
+            height: 100px;
+            width: 100px;
+            transition: all 0.5s ease;
+        }
+        a:hover{
+            color: transparent;
+        }
+        h5{
+            font-size: 19px;
+            color: $color-black;
+            font-family: 'Reem Kufi', cursive;
+            display: inline-block;
+            margin: 0px;
+            position: relative;
+            top: 11px;
+            right: -9px;
+            transition: all 0.5s ease;
+        }
+    }
+}
+.noTransparrent{
+    background: $color-white-dark;
+    box-shadow: 0px 1px 22px -5px;
+    transition: all 0.5s ease;
+    ul{
+        margin-top: 10px;
+        a{
+            color: grey;
+        }
+    }
+    #brand{
+        img{
+            height: 80px;
+            width: 80px;
+        }
+        h5{
+            font-size: 15px;
+            top: 8px;
+        }
+    }
+}
+// HEADER
+header{
+    background: linear-gradient(45deg, #FE7F77, #FFAA79);
+    height: 760px;
     //التعريف
     .about{
-        padding: 140px 53px 0px;
+        padding: 240px 53px 0px;
         h1{
             font-size: 70px;
             font-weight: bold;
@@ -166,7 +182,7 @@ header{
 //المعرض
 #gallery{
     background: linear-gradient(90deg, $color-shopping-cart,$color-shopping-cart-four);
-    padding: 70px 0px 120px;
+    padding: 75px 0px 120px;
     h1{
         color: $color-white;
         font-weight: bold;
@@ -264,10 +280,11 @@ footer{
 //*************************************** FREELANCE PAGE 
 //*************************************** FREELANCE PAGE 
 #header2{
-    @include header(linear-gradient(90deg, $color-freelance-two,$color-freelance ));
+    @include header ();
 }
 // قسم تفاصيل الكتاب
 #detail{
+    margin: 80px auto 0px;
     .about-book{
         //صورة الكتاب
         @include about-book($color-freelance-three);
@@ -302,10 +319,11 @@ footer{
 //*************************************** UX page .  
 //*************************************** UX page . 
 #header3{
-    @include header(linear-gradient(90deg, $color-ux-two,$color-ux ));
+    @include header ();
 }
 // قسم تفاصيل الكتاب
 #detail2{
+    margin: 80px auto 0px;
     .about-book{
         //صورة الكتاب
         @include about-book($color-ux-three);
@@ -581,14 +599,14 @@ header#payment{
 }
 
 @media (max-width: 1199px){
-    header{
-        nav{
-            ul{
-                position: relative;
-                right: 40%;    
-            }
+    nav{
+        ul{
+            position: relative;
+            right: 45%;    
         }
-        .about{padding: 140px 53px 0px;}
+    }
+    header{
+        .about{padding: 240px 53px 0px;}
     }
     #gallery .item {
         padding: 0 60px;
@@ -635,23 +653,20 @@ header#payment{
     }    
 }
 @media (max-width: 991px){
+    nav {
+        #brand{
+            right: 3%;
+        }
+        ul{
+            right: 33%;
+            margin: 25px 0px 0 -75px;
+            padding: 0;
+        }
+    }
     header {
         height: 720px;
-        nav {
-            padding: 0px 0px !important;
-            #brand{
-                position: relative;
-                right: -4%;
-            }
-            ul{
-                position: relative;
-                right: 24%;
-                margin: 25px 0px 0 -75px;
-                padding: 0;
-            }
-        }
         .about{
-            padding: 100px 0px 0px;
+            padding: 200px 0px 0px;
             h1{
                 font-size: 60px;
                 span{
@@ -783,40 +798,36 @@ header#payment{
     }  
 }
 @media (max-width: 767px){
-    header{
-        height: 685px;
-        nav {
-            #dropdown-collapse{
-                background: linear-gradient(135deg, #FE7F77, #FFAA79);
-                position: absolute;
-                top: 90px;
-                width: 100%;
-                z-index: 1;
+    nav {
+        #dropdown-collapse{
+            background: $color-white-dark;
+        }
+        #brand {
+            img {
+                height: 100px;
+                width: 100px;
             }
-            #brand {
-                img {
-                    height: 100px;
-                    width: 100px;
-                }
-                h5{
-                    top: 12px;
-                    font-size: 16px;
-                }
+            h5{
+                top: 12px;
+                font-size: 16px;
             }
-            ul{
-                position: relative;
-                right: -5%;
-                li {
-                    margin-left: 0px;
-                    margin-bottom: 12px;
-                    a{
-                        font-size: 28px;
-                    }
+        }
+        ul{
+            display: inline !important;
+            li {
+                margin-left: 0px;
+                margin-bottom: 12px;
+                a{
+                    font-size: 28px;
+                    color: grey;
                 }
             }
         }
+    }
+    header{
+        height: 685px;
         .about {
-            padding: 100px 0px 0px;
+            padding: 205px 0px 0px;
             p {
                 font-size: 13px;
             }
@@ -947,25 +958,13 @@ header#payment{
     }  
 }
 @media (max-width: 575px){
+    nav{
+        #brand{
+            right: 0%;
+        }
+    }
     header{
         height: 685px;
-        nav{
-            #brand{
-                position: relative;
-                right: 0%;
-            }
-            ul{
-                margin: 0;
-                width: 65%;
-                position: relative;
-                right: 15%;
-                li{
-                    a{
-                        display: inline;
-                    }
-                }
-            }
-        }
         .about{
             h1{
                 font-size: 45px;

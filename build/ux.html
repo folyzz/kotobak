@@ -5,28 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>كتبك|userexperience</title>
-
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/jquery.nice-number.css">
   <link rel="icon" href="./img/logo.png">
   <link rel="stylesheet" href="css/main.css">
-
+  
 </head>
-<body>
-
+<body data-spy="scroll" data-target=".navbar">
+  
   <header id="header3">
     <div class="container">
+      
       <!-- Navbar -->
-      <nav class="navbar navbar-toggleable-md navbar-expand-md" id="navBar">
+      <nav class="navbar navbar-toggleable-md navbar-expand-md fixed-top" id="navBar">
         <!--الشعار-->
-        <div id="brand" class="wow zoomIn"> 
+        <div id="brand"> 
           <a href="." class="navabr-brand">
             <img src="img/logo.svg" alt="logo">
           </a>
           <h5>كتـبك</h5>
+          <a href="." class="back-icon" title="رجوع للرئيسية" data-toggle="tooltip" data-placement="bottom">
+            <i class="fa fa-arrow-right wow fadeInRight"></i>
+          </a>
         </div>
         <!-- collapse -->
         <div class="custom-collapse">
@@ -34,82 +38,83 @@
             <i class="fa fa-shopping-cart nav-cart"></i>
           </a>
           <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#dropdown-collapse"
-            aria-expanded="false">
-            <span class="navbar-toggler-icon nav-bar">
-              <i class="fa fa-bars"></i>
-            </span>
-          </button>
-        </div>
-        <!-- collapse-body -->
-        <div class="navbar-collapse collapse text-center" id="dropdown-collapse">
-          <!-- روابط -->
-          <ul class="nav navbar-nav wow bounce">
-            <li class="nav-item ">
-              <a href="." class="nav-link cool-link scroll">الرئيسية</a>
-            </li>
-            <li class="nav-item">
-              <a href="#gallery-img" class="nav-link cool-link scroll">المعرض</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link cool-link scroll">اتصل بنا</a>
-            </li>
-            <li class="d-none d-md-block">
-              <a href="payment.html" title="سلة الشراء" data-toggle="tooltip" data-placement="bottom">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+          aria-expanded="false">
+          <span class="navbar-toggler-icon nav-bar">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+      </div>
+      <!-- collapse-body -->
+      <div class="navbar-collapse collapse text-center" id="dropdown-collapse">
+        <!-- روابط -->
+        <ul class="nav navbar-nav">
+          <li class="nav-item ">
+            <a href="#detail2" class="nav-link cool-link scroll active">الكتاب</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery-section" class="nav-link cool-link scroll">المعرض</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link cool-link scroll">اتصل بنا</a>
+          </li>
+          <li class="d-none d-md-block">
+            <a href="payment.html" title="سلة الشراء" data-toggle="tooltip" data-placement="bottom">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+  </div>
 </header>
 
 <section id="detail2">
-    <!-- about-book -->
-    <div class="container about-book">
-        <div class="row">
-          <!-- صورة الكتاب -->
-            <div class="col-md-6 col-12 wow fadeInRight">
-                <div class="work-book text-center">
-                    <img src="./img/slider/ux1.png" alt="work book" class="img-fluid">
-                    <h6>محمد عرابي</h6>
-                </div>
-            </div>
-            <!-- تفاصيل الكتاب -->
-            <div class="col-md-6 col-12 for-md">
-                <div class="book-details text-right">
-                    <h6>اسم الكتاب</h6>
-                    <h1 class="wow flipInX">تجربة المستخدم</h1>
-                    <h6>وصف الكتاب</h6>
-                    <p class="wow flipInX">
-                        يضع هذا الكتاب المُوجز القارئ على أعتاب عالم تصميم تجربة المُستخدمين UX،
-                        وهو علم له قواعده وأصوله وأدواته، ويهدف إلى تعريف القارئ المُبتدئ بأساس هذا
-                         العلم وكيف يُطبّق على المُنتجات الرّقمية من مواقع ويب خدميّة
-                    </p>
-                </div>
-                <!-- زري السلة والمفضلة -->
-                <div class="buttons">
-                  <div class="box text-center wow zoomIn">
-                    <a href="#" data-add-to-cart="">إضافة إلى السلة</a>
-                    <input type="number" value="1" min="1" max="9">
-                  </div>
-                  <div class="box2 text-center wow zoomIn" data-add-to-favorite="">
-                    <button class="btn">
-                      <span class="heart-text">إضافة إلى المفضلة</span>
-                      <span class="heart-icon"><i class="fa fa-heart"></i></span>
-                    </button>
-                  </div>
-                </div>
-            </div>
+  <!-- about-book -->
+  <div class="container about-book">
+    <div class="row">
+      <!-- صورة الكتاب -->
+      <div class="col-md-6 col-12 wow fadeInRight">
+        <div class="work-book text-center">
+          <img src="./img/slider/ux1.png" alt="work book" class="img-fluid">
+          <h6 id="gallery-section">محمد عرابي</h6>
         </div>
+      </div>
+      <!-- تفاصيل الكتاب -->
+      <div class="col-md-6 col-12 for-md">
+        <div class="book-details text-right">
+          <h6>اسم الكتاب</h6>
+          <h1 class="wow flipInX">تجربة المستخدم</h1>
+          <h6>وصف الكتاب</h6>
+          <p class="wow flipInX">
+            يضع هذا الكتاب المُوجز القارئ على أعتاب عالم تصميم تجربة المُستخدمين UX،
+            وهو علم له قواعده وأصوله وأدواته، ويهدف إلى تعريف القارئ المُبتدئ بأساس هذا
+            العلم وكيف يُطبّق على المُنتجات الرّقمية من مواقع ويب خدميّة
+          </p>
+        </div>
+        <!-- زري السلة والمفضلة -->
+        <div class="buttons">
+          <div class="box text-center wow zoomIn">
+            <a href="#" data-add-to-cart="">إضافة إلى السلة</a>
+            <input type="number" value="1" min="1" max="9">
+          </div>
+          <div class="box2 text-center wow zoomIn" data-add-to-favorite="">
+            <button class="btn">
+              <span class="heart-text">إضافة إلى المفضلة</span>
+              <span class="heart-icon"><i class="fa fa-heart"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 <!-- قسم عرض صفحات الكتاب -->
 <section id="view-book2">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <img id="gallery-img" src="./img/3D/ux.png" alt="work book">
+        <img src="./img/3D/ux.png" alt="work book">
         <div class="shadow text-center"></div><br>
         <button id="btn-show" class="btn wow heartBeat">اضغط هنا لتصفح الفصل الأول</button>
       </div>
@@ -130,55 +135,55 @@
   </div>
   <button id="btn-hide" class="btn">X</button>
 </div>
-  <!-- تواصل  -->
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 links">
-          <ul class="list-unstyled text-center">
-            <li><a href="tell:012 3456 789">012 3456 789<i class="fa fa-phone wow flip"></i></a></li>
+<!-- تواصل  -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 links">
+        <ul class="list-unstyled text-center">
+          <li><a href="tell:012 3456 789">012 3456 789<i class="fa fa-phone wow flip"></i></a></li>
           
-            <li><a href="mailto:Ammar@hotmail.com">Ammar@hotmail.com<i class="fa fa-envelope-o wow flip"></i></a></li>
-
-            <li>شارع قصر العيني<i class="fa fa-map-marker wow flip"></i></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- خريطة -->
-  <div class="container-fluid  map-box">
-    <div class="row text-center map-box">
-      <div class="col-12" id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10168.116689290919!2d31.2337632!3d30.033158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847334fa4b8c1%3A0x3ff9a1c396a2dcad!2z2KfZhNmC2LXYsSDYp9mE2LnZitmG2YrYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKzYjCDZhdi12LE!5e1!3m2!1sar!2ssa!4v1551026884952"
-          allowfullscreen></iframe>
+          <li><a href="mailto:Ammar@hotmail.com">Ammar@hotmail.com<i class="fa fa-envelope-o wow flip"></i></a></li>
+          
+          <li>شارع قصر العيني<i class="fa fa-map-marker wow flip"></i></li>
+        </ul>
       </div>
     </div>
   </div>
-
-  <footer class="text-center">
-    <div class="icon-top">
-      <a href="#header2" class="scroll" title="رجوع للأعلى" data-toggle="tooltip" data-placement="right">
-        <i class="fa fa-reply wow fadeInLeftBig"></i>
-      </a>
+</section>
+<!-- خريطة -->
+<div class="container-fluid  map-box">
+  <div class="row text-center map-box">
+    <div class="col-12" id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10168.116689290919!2d31.2337632!3d30.033158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847334fa4b8c1%3A0x3ff9a1c396a2dcad!2z2KfZhNmC2LXYsSDYp9mE2LnZitmG2YrYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKzYjCDZhdi12LE!5e1!3m2!1sar!2ssa!4v1551026884952"
+      allowfullscreen></iframe>
     </div>
-    <p>جميع الحقوق محفوظة &copy</p>
-  </footer>
+  </div>
+</div>
+
+<footer class="text-center">
+  <div class="icon-top">
+    <a href="#header2" class="scroll" title="رجوع للأعلى" data-toggle="tooltip" data-placement="right">
+      <i class="fa fa-reply wow fadeInLeftBig"></i>
+    </a>
+  </div>
+  <p>جميع الحقوق محفوظة &copy</p>
+</footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-   crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
 
-   <script src="http://www.turnjs.com/lib/turn.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="http://www.turnjs.com/lib/turn.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
-   <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
-   <script src="./js/jquery.nice-number.js"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="./js/jquery.nice-number.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-  <script src="js/book.js"></script>
+<script src="js/book.js"></script>
 
 </body>
 </html>

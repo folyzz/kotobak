@@ -15,61 +15,74 @@ body {
   border-radius: 15px;
   background-color: #ffffff; }
 
-.tooltip-inner {
-  background-color: transparent;
-  font-family: 'Droid Arabic Kufi', sans-serif;
-  font-size: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 0 30px -10px #000000; }
-
-header {
-  background: linear-gradient(45deg, #FE7F77, #FFAA79);
-  height: 860px; }
-  header nav {
-    padding: 0px 0px !important; }
-    header nav .custom-collapse .nav-cart {
-      color: #ffffff;
-      font-size: 30px;
-      position: relative;
-      top: 4px; }
-    header nav .custom-collapse .nav-bar {
-      color: #ffffff;
-      font-size: 30px;
-      margin-top: 20px; }
-    header nav ul {
-      position: relative;
-      right: 50%;
-      margin-top: 20px; }
-      header nav ul li {
-        margin-left: 30px; }
-        header nav ul li:last-of-type {
-          margin: 8px 0px 0 20px; }
-        header nav ul li a {
-          color: #e6e6e6;
-          font-size: 20px;
-          font-weight: lighter;
-          padding: 0px 5px;
-          transition: all 0.3s ease; }
-          header nav ul li a:hover, header nav ul li a.active {
-            color: #ffffff;
-            text-shadow: 0 0 40px #ffffff; }
-    header nav #brand img {
-      height: 125px;
-      width: 125px;
+nav {
+  padding: 0px 0px !important; }
+  nav .custom-collapse .nav-cart {
+    color: #ffffff;
+    font-size: 30px;
+    position: relative;
+    top: 4px; }
+  nav .custom-collapse .nav-bar {
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 20px; }
+  nav ul {
+    position: relative;
+    right: 50%;
+    margin-top: 20px; }
+    nav ul li {
+      margin-left: 30px; }
+      nav ul li:last-of-type {
+        margin: 8px 0px 0 20px; }
+      nav ul li a {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: lighter;
+        padding: 0px 5px;
+        transition: all 0.3s ease; }
+        nav ul li a:hover, nav ul li a.active {
+          color: #594AA9;
+          text-shadow: 0 0 3px #594AA9; }
+  nav #brand {
+    position: relative;
+    right: 15%; }
+    nav #brand img {
+      height: 100px;
+      width: 100px;
       transition: all 0.5s ease; }
-    header nav #brand a:hover {
+    nav #brand a:hover {
       color: transparent; }
-    header nav #brand h5 {
-      color: #ffffff;
+    nav #brand h5 {
+      font-size: 19px;
+      color: #000000;
       font-family: 'Reem Kufi', cursive;
       display: inline-block;
       margin: 0px;
       position: relative;
-      top: 15px;
+      top: 11px;
       right: -9px;
       transition: all 0.5s ease; }
+
+.noTransparrent {
+  background: #e6e6e6;
+  box-shadow: 0px 1px 22px -5px;
+  transition: all 0.5s ease; }
+  .noTransparrent ul {
+    margin-top: 10px; }
+    .noTransparrent ul a {
+      color: grey; }
+  .noTransparrent #brand img {
+    height: 80px;
+    width: 80px; }
+  .noTransparrent #brand h5 {
+    font-size: 15px;
+    top: 8px; }
+
+header {
+  background: linear-gradient(45deg, #FE7F77, #FFAA79);
+  height: 760px; }
   header .about {
-    padding: 140px 53px 0px; }
+    padding: 240px 53px 0px; }
     header .about h1 {
       font-size: 70px;
       font-weight: bold;
@@ -126,7 +139,7 @@ header {
 
 #gallery {
   background: linear-gradient(90deg, #774BFD, #3A34F0);
-  padding: 70px 0px 120px; }
+  padding: 75px 0px 120px; }
   #gallery h1 {
     color: #ffffff;
     font-weight: bold;
@@ -200,122 +213,144 @@ footer {
     top: 1px; }
 
 #header2 {
-  background: linear-gradient(90deg, #dbeedb, #b1d9d8);
-  height: 90px; }
-  #header2 nav #brand {
-    height: 90px; }
-    #header2 nav #brand img {
-      height: 90px;
-      width: 115px; }
-    #header2 nav #brand h5 {
-      top: 10px;
-      right: -20px; }
-  #header2 nav ul {
-    margin-top: 10px; }
-    #header2 nav ul li a {
-      color: #ffffff; }
-
-#detail .about-book {
-  padding: 50px 0px 0px;
-  height: 650px; }
-  #detail .about-book .work-book {
-    height: 430px;
-    width: 350px; }
-    #detail .about-book .work-book img {
-      height: 100%;
-      width: 100%;
-      border-radius: 1%;
-      box-shadow: 0px 25px 145px -50px #000000; }
-    #detail .about-book .work-book h6 {
-      margin-top: 35px;
-      font-weight: bold;
-      color: #6ACAD4; }
-  #detail .about-book .book-details h6 {
-    font-weight: bold;
-    color: #bfbfbf; }
-  #detail .about-book .book-details h1 {
-    color: #6cb8b6;
-    font-weight: bold;
-    margin-bottom: 33px; }
-  #detail .about-book .book-details p {
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 26px;
-    margin-bottom: 40px;
-    padding-left: 10px; }
-  #detail .about-book .box {
-    font-size: 32px;
-    background-color: #61ddbc;
-    border: 2px solid #35ba9b;
-    border-radius: 30px;
-    width: 450px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 33px -3px #61ddbc; }
-    #detail .about-book .box a {
-      color: #fff;
-      font-size: 20px;
+  background: none;
+  height: 0; }
+  #header2 nav {
+    background: #e6e6e6;
+    box-shadow: 0px 1px 22px -5px; }
+    #header2 nav .custom-collapse .nav-cart {
+      color: #ffffff;
+      font-size: 30px;
       position: relative;
-      top: -4px;
-      right: -60px;
-      transition: all 0.5s ease; }
-      #detail .about-book .box a:hover {
-        text-decoration: none;
-        text-shadow: 0px 0px 20px #fff; }
-    #detail .about-book .box .nice-number {
-      width: 145px;
-      padding: 3px 15px;
-      direction: ltr;
-      border: none;
-      background-color: #fff;
-      margin-left: -148px; }
-      #detail .about-book .box .nice-number button {
-        cursor: pointer;
-        color: #bfbfbf;
-        border: none;
-        background-color: transparent; }
-        #detail .about-book .box .nice-number button:focus {
-          outline: transparent; }
-      #detail .about-book .box .nice-number input {
-        color: #35ba9b;
-        border: none;
-        margin: 0px 3px; }
-  #detail .about-book .box2 {
-    width: 450px;
-    overflow: hidden;
-    margin-top: 10px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 23px -1px #f76c82; }
-    #detail .about-book .box2 button {
-      width: 100%;
-      line-height: 35px;
-      background-color: #f76c82;
-      border: 2px solid #d94452;
+      top: 4px; }
+    #header2 nav .custom-collapse .nav-bar {
+      color: #ffffff;
+      font-size: 30px;
+      margin-top: 20px; }
+    #header2 nav ul {
+      margin-top: 10px; }
+      #header2 nav ul a {
+        color: grey; }
+        #header2 nav ul a:hover, #header2 nav ul a.active {
+          color: #594AA9;
+          text-shadow: 0 0 3px #594AA9; }
+    #header2 nav #brand img {
+      height: 80px;
+      width: 80px; }
+    #header2 nav #brand h5 {
+      font-size: 15px;
+      top: 8px; }
+    #header2 nav #brand .back-icon {
+      position: relative;
+      top: 8px;
+      color: grey; }
+      #header2 nav #brand .back-icon:hover {
+        color: #594AA9;
+        text-shadow: 0 0 3px #594AA9; }
+
+#detail {
+  margin: 80px auto 0px; }
+  #detail .about-book {
+    padding: 50px 0px 0px;
+    height: 650px; }
+    #detail .about-book .work-book {
+      height: 430px;
+      width: 350px; }
+      #detail .about-book .work-book img {
+        height: 100%;
+        width: 100%;
+        border-radius: 1%;
+        box-shadow: 0px 25px 145px -50px #000000; }
+      #detail .about-book .work-book h6 {
+        margin-top: 35px;
+        font-weight: bold;
+        color: #6ACAD4; }
+    #detail .about-book .book-details h6 {
+      font-weight: bold;
+      color: #bfbfbf; }
+    #detail .about-book .book-details h1 {
+      color: #6cb8b6;
+      font-weight: bold;
+      margin-bottom: 33px; }
+    #detail .about-book .book-details p {
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 26px;
+      margin-bottom: 40px;
+      padding-left: 10px; }
+    #detail .about-book .box {
+      font-size: 32px;
+      background-color: #61ddbc;
+      border: 2px solid #35ba9b;
       border-radius: 30px;
-      cursor: pointer; }
-      #detail .about-book .box2 button:focus {
-        box-shadow: none;
-        outline: none; }
-      #detail .about-book .box2 button:hover .heart-text,
-      #detail .about-book .box2 button:focus .heart-text {
-        opacity: 0; }
-      #detail .about-book .box2 button:hover .heart-icon,
-      #detail .about-book .box2 button:focus .heart-icon {
-        top: 5px; }
-      #detail .about-book .box2 button .heart-text {
+      width: 450px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      box-shadow: 0px 0px 33px -3px #61ddbc; }
+      #detail .about-book .box a {
         color: #fff;
         font-size: 20px;
         position: relative;
-        left: -17px;
-        transition: all 0.3s ease; }
-      #detail .about-book .box2 button .heart-icon {
-        color: red;
-        font-size: 36px;
-        position: relative;
-        right: -83px;
-        top: 50px;
-        transition: all 0.3s ease; }
+        top: -4px;
+        right: -60px;
+        transition: all 0.5s ease; }
+        #detail .about-book .box a:hover {
+          text-decoration: none;
+          text-shadow: 0px 0px 20px #fff; }
+      #detail .about-book .box .nice-number {
+        width: 145px;
+        padding: 3px 15px;
+        direction: ltr;
+        border: none;
+        background-color: #fff;
+        margin-left: -148px; }
+        #detail .about-book .box .nice-number button {
+          cursor: pointer;
+          color: #bfbfbf;
+          border: none;
+          background-color: transparent; }
+          #detail .about-book .box .nice-number button:focus {
+            outline: transparent; }
+        #detail .about-book .box .nice-number input {
+          color: #35ba9b;
+          border: none;
+          margin: 0px 3px; }
+    #detail .about-book .box2 {
+      width: 450px;
+      overflow: hidden;
+      margin-top: 10px;
+      border-radius: 30px;
+      box-shadow: 0px 0px 23px -1px #f76c82; }
+      #detail .about-book .box2 button {
+        width: 100%;
+        line-height: 35px;
+        background-color: #f76c82;
+        border: 2px solid #d94452;
+        border-radius: 30px;
+        cursor: pointer; }
+        #detail .about-book .box2 button:focus {
+          box-shadow: none;
+          outline: none; }
+        #detail .about-book .box2 button:hover .heart-text,
+        #detail .about-book .box2 button:focus .heart-text {
+          opacity: 0; }
+        #detail .about-book .box2 button:hover .heart-icon,
+        #detail .about-book .box2 button:focus .heart-icon {
+          top: 5px; }
+        #detail .about-book .box2 button .heart-text {
+          color: #fff;
+          font-size: 20px;
+          position: relative;
+          left: -17px;
+          transition: all 0.3s ease; }
+        #detail .about-book .box2 button .heart-icon {
+          color: red;
+          font-size: 36px;
+          position: relative;
+          right: -83px;
+          top: 50px;
+          transition: all 0.3s ease; }
 
 #view-book {
   background: linear-gradient(90deg, #dbeedb, #b1d9d8);
@@ -353,7 +388,7 @@ footer {
   height: 380px;
   width: 100%;
   position: absolute;
-  top: 697px;
+  top: 686px;
   z-index: 3;
   display: none; }
   #flippage #flipbook {
@@ -382,122 +417,144 @@ footer {
       box-shadow: none; }
 
 #header3 {
-  background: linear-gradient(90deg, #DCA689, #DAAE87);
-  height: 90px; }
-  #header3 nav #brand {
-    height: 90px; }
-    #header3 nav #brand img {
-      height: 90px;
-      width: 115px; }
-    #header3 nav #brand h5 {
-      top: 10px;
-      right: -20px; }
-  #header3 nav ul {
-    margin-top: 10px; }
-    #header3 nav ul li a {
-      color: #ffffff; }
-
-#detail2 .about-book {
-  padding: 50px 0px 0px;
-  height: 650px; }
-  #detail2 .about-book .work-book {
-    height: 430px;
-    width: 350px; }
-    #detail2 .about-book .work-book img {
-      height: 100%;
-      width: 100%;
-      border-radius: 1%;
-      box-shadow: 0px 25px 145px -50px #000000; }
-    #detail2 .about-book .work-book h6 {
-      margin-top: 35px;
-      font-weight: bold;
-      color: #80401A; }
-  #detail2 .about-book .book-details h6 {
-    font-weight: bold;
-    color: #bfbfbf; }
-  #detail2 .about-book .book-details h1 {
-    color: #c07a3b;
-    font-weight: bold;
-    margin-bottom: 33px; }
-  #detail2 .about-book .book-details p {
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 26px;
-    margin-bottom: 40px;
-    padding-left: 10px; }
-  #detail2 .about-book .box {
-    font-size: 32px;
-    background-color: #61ddbc;
-    border: 2px solid #35ba9b;
-    border-radius: 30px;
-    width: 450px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 33px -3px #61ddbc; }
-    #detail2 .about-book .box a {
-      color: #fff;
-      font-size: 20px;
+  background: none;
+  height: 0; }
+  #header3 nav {
+    background: #e6e6e6;
+    box-shadow: 0px 1px 22px -5px; }
+    #header3 nav .custom-collapse .nav-cart {
+      color: #ffffff;
+      font-size: 30px;
       position: relative;
-      top: -4px;
-      right: -60px;
-      transition: all 0.5s ease; }
-      #detail2 .about-book .box a:hover {
-        text-decoration: none;
-        text-shadow: 0px 0px 20px #fff; }
-    #detail2 .about-book .box .nice-number {
-      width: 145px;
-      padding: 3px 15px;
-      direction: ltr;
-      border: none;
-      background-color: #fff;
-      margin-left: -148px; }
-      #detail2 .about-book .box .nice-number button {
-        cursor: pointer;
-        color: #bfbfbf;
-        border: none;
-        background-color: transparent; }
-        #detail2 .about-book .box .nice-number button:focus {
-          outline: transparent; }
-      #detail2 .about-book .box .nice-number input {
-        color: #35ba9b;
-        border: none;
-        margin: 0px 3px; }
-  #detail2 .about-book .box2 {
-    width: 450px;
-    overflow: hidden;
-    margin-top: 10px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 23px -1px #f76c82; }
-    #detail2 .about-book .box2 button {
-      width: 100%;
-      line-height: 35px;
-      background-color: #f76c82;
-      border: 2px solid #d94452;
+      top: 4px; }
+    #header3 nav .custom-collapse .nav-bar {
+      color: #ffffff;
+      font-size: 30px;
+      margin-top: 20px; }
+    #header3 nav ul {
+      margin-top: 10px; }
+      #header3 nav ul a {
+        color: grey; }
+        #header3 nav ul a:hover, #header3 nav ul a.active {
+          color: #594AA9;
+          text-shadow: 0 0 3px #594AA9; }
+    #header3 nav #brand img {
+      height: 80px;
+      width: 80px; }
+    #header3 nav #brand h5 {
+      font-size: 15px;
+      top: 8px; }
+    #header3 nav #brand .back-icon {
+      position: relative;
+      top: 8px;
+      color: grey; }
+      #header3 nav #brand .back-icon:hover {
+        color: #594AA9;
+        text-shadow: 0 0 3px #594AA9; }
+
+#detail2 {
+  margin: 80px auto 0px; }
+  #detail2 .about-book {
+    padding: 50px 0px 0px;
+    height: 650px; }
+    #detail2 .about-book .work-book {
+      height: 430px;
+      width: 350px; }
+      #detail2 .about-book .work-book img {
+        height: 100%;
+        width: 100%;
+        border-radius: 1%;
+        box-shadow: 0px 25px 145px -50px #000000; }
+      #detail2 .about-book .work-book h6 {
+        margin-top: 35px;
+        font-weight: bold;
+        color: #80401A; }
+    #detail2 .about-book .book-details h6 {
+      font-weight: bold;
+      color: #bfbfbf; }
+    #detail2 .about-book .book-details h1 {
+      color: #c07a3b;
+      font-weight: bold;
+      margin-bottom: 33px; }
+    #detail2 .about-book .book-details p {
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 26px;
+      margin-bottom: 40px;
+      padding-left: 10px; }
+    #detail2 .about-book .box {
+      font-size: 32px;
+      background-color: #61ddbc;
+      border: 2px solid #35ba9b;
       border-radius: 30px;
-      cursor: pointer; }
-      #detail2 .about-book .box2 button:focus {
-        box-shadow: none;
-        outline: none; }
-      #detail2 .about-book .box2 button:hover .heart-text,
-      #detail2 .about-book .box2 button:focus .heart-text {
-        opacity: 0; }
-      #detail2 .about-book .box2 button:hover .heart-icon,
-      #detail2 .about-book .box2 button:focus .heart-icon {
-        top: 5px; }
-      #detail2 .about-book .box2 button .heart-text {
+      width: 450px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      box-shadow: 0px 0px 33px -3px #61ddbc; }
+      #detail2 .about-book .box a {
         color: #fff;
         font-size: 20px;
         position: relative;
-        left: -17px;
-        transition: all 0.3s ease; }
-      #detail2 .about-book .box2 button .heart-icon {
-        color: red;
-        font-size: 36px;
-        position: relative;
-        right: -83px;
-        top: 50px;
-        transition: all 0.3s ease; }
+        top: -4px;
+        right: -60px;
+        transition: all 0.5s ease; }
+        #detail2 .about-book .box a:hover {
+          text-decoration: none;
+          text-shadow: 0px 0px 20px #fff; }
+      #detail2 .about-book .box .nice-number {
+        width: 145px;
+        padding: 3px 15px;
+        direction: ltr;
+        border: none;
+        background-color: #fff;
+        margin-left: -148px; }
+        #detail2 .about-book .box .nice-number button {
+          cursor: pointer;
+          color: #bfbfbf;
+          border: none;
+          background-color: transparent; }
+          #detail2 .about-book .box .nice-number button:focus {
+            outline: transparent; }
+        #detail2 .about-book .box .nice-number input {
+          color: #35ba9b;
+          border: none;
+          margin: 0px 3px; }
+    #detail2 .about-book .box2 {
+      width: 450px;
+      overflow: hidden;
+      margin-top: 10px;
+      border-radius: 30px;
+      box-shadow: 0px 0px 23px -1px #f76c82; }
+      #detail2 .about-book .box2 button {
+        width: 100%;
+        line-height: 35px;
+        background-color: #f76c82;
+        border: 2px solid #d94452;
+        border-radius: 30px;
+        cursor: pointer; }
+        #detail2 .about-book .box2 button:focus {
+          box-shadow: none;
+          outline: none; }
+        #detail2 .about-book .box2 button:hover .heart-text,
+        #detail2 .about-book .box2 button:focus .heart-text {
+          opacity: 0; }
+        #detail2 .about-book .box2 button:hover .heart-icon,
+        #detail2 .about-book .box2 button:focus .heart-icon {
+          top: 5px; }
+        #detail2 .about-book .box2 button .heart-text {
+          color: #fff;
+          font-size: 20px;
+          position: relative;
+          left: -17px;
+          transition: all 0.3s ease; }
+        #detail2 .about-book .box2 button .heart-icon {
+          color: red;
+          font-size: 36px;
+          position: relative;
+          right: -83px;
+          top: 50px;
+          transition: all 0.3s ease; }
 
 #view-book2 {
   background: linear-gradient(90deg, #DCA689, #DAAE87, #DAAE87);
@@ -535,7 +592,7 @@ footer {
   height: 380px;
   width: 100%;
   position: absolute;
-  top: 697px;
+  top: 686px;
   z-index: 3;
   display: none; }
   #flippage2 #flipbook {
@@ -735,11 +792,11 @@ header#payment {
           box-shadow: 0 0 50px -17px #000000; }
 
 @media (max-width: 1199px) {
-  header nav ul {
+  nav ul {
     position: relative;
-    right: 40%; }
+    right: 45%; }
   header .about {
-    padding: 140px 53px 0px; }
+    padding: 240px 53px 0px; }
   #gallery .item {
     padding: 0 60px; }
   #detail .about-book .book-details p, #detail2 .about-book .book-details p {
@@ -761,20 +818,16 @@ header#payment {
         padding: 25px; } }
 
 @media (max-width: 991px) {
+  nav #brand {
+    right: 3%; }
+  nav ul {
+    right: 33%;
+    margin: 25px 0px 0 -75px;
+    padding: 0; }
   header {
     height: 720px; }
-    header nav {
-      padding: 0px 0px !important; }
-      header nav #brand {
-        position: relative;
-        right: -4%; }
-      header nav ul {
-        position: relative;
-        right: 24%;
-        margin: 25px 0px 0 -75px;
-        padding: 0; }
     header .about {
-      padding: 100px 0px 0px; }
+      padding: 200px 0px 0px; }
       header .about h1 {
         font-size: 60px; }
         header .about h1 span {
@@ -861,30 +914,26 @@ header#payment {
           right: 10px; } }
 
 @media (max-width: 767px) {
+  nav #dropdown-collapse {
+    background: #e6e6e6; }
+  nav #brand img {
+    height: 100px;
+    width: 100px; }
+  nav #brand h5 {
+    top: 12px;
+    font-size: 16px; }
+  nav ul {
+    display: inline !important; }
+    nav ul li {
+      margin-left: 0px;
+      margin-bottom: 12px; }
+      nav ul li a {
+        font-size: 28px;
+        color: grey; }
   header {
     height: 685px; }
-    header nav #dropdown-collapse {
-      background: linear-gradient(135deg, #FE7F77, #FFAA79);
-      position: absolute;
-      top: 90px;
-      width: 100%;
-      z-index: 1; }
-    header nav #brand img {
-      height: 100px;
-      width: 100px; }
-    header nav #brand h5 {
-      top: 12px;
-      font-size: 16px; }
-    header nav ul {
-      position: relative;
-      right: -5%; }
-      header nav ul li {
-        margin-left: 0px;
-        margin-bottom: 12px; }
-        header nav ul li a {
-          font-size: 28px; }
     header .about {
-      padding: 100px 0px 0px; }
+      padding: 205px 0px 0px; }
       header .about p {
         font-size: 13px; }
       header .about h1 {
@@ -959,18 +1008,10 @@ header#payment {
     right: 15%; } }
 
 @media (max-width: 575px) {
+  nav #brand {
+    right: 0%; }
   header {
     height: 685px; }
-    header nav #brand {
-      position: relative;
-      right: 0%; }
-    header nav ul {
-      margin: 0;
-      width: 65%;
-      position: relative;
-      right: 15%; }
-      header nav ul li a {
-        display: inline; }
     header .about h1 {
       font-size: 45px; }
       header .about h1 span {

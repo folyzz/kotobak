@@ -16,55 +16,54 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-toggleable-md navbar-expand-md fixed-top" id="navBar">
+    <!--الشعار-->
+    <div id="brand">
+      <a href="#" class="navabr-brand">
+        <img src="img/logo.svg" alt="logo">
+      </a>
+      <h5>كتـبك</h5>
+    </div>
+    <!-- collapse -->
+    <div class="custom-collapse">
+      <a href="payment.html" class="navbar-toggler ">
+        <i class="fa fa-shopping-cart nav-cart"></i>
+      </a>
+      <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#dropdown-collapse"
+        aria-expanded="false">
+        <span class="navbar-toggler-icon nav-bar">
+          <i class="fa fa-bars"></i>
+        </span>
+      </button>
+    </div>
+
+    <!-- collapse-body -->
+    <div class="navbar-collapse collapse text-center" id="dropdown-collapse">
+      <!-- روابط -->
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a href="#header" class="nav-link cool-link scroll">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery" class="nav-link cool-link scroll">اخترنا لكم</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link cool-link scroll">اتصل بنا</a>
+        </li>
+        <li class="d-none d-md-block">
+          <a href="payment.html" title="سلة الشراء" data-toggle="tooltip" data-placement="bottom">
+            <i class="fa fa-shopping-cart"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <header id="header">
     <div class="container">
-      <div class="container-fluid">
-        <!-- Navbar -->
-        <nav class="navbar navbar-toggleable-md navbar-expand-md" id="navBar">
-          <!--الشعار-->
-          <div id="brand" class="wow zoomIn">
-            <a href="#" class="navabr-brand">
-              <img src="img/logo.svg" alt="logo">
-            </a>
-            <h5>كتـبك</h5>
-          </div>
-          <!-- collapse -->
-          <div class="custom-collapse">
-            <a href="payment.html" class="navbar-toggler ">
-              <i class="fa fa-shopping-cart nav-cart"></i>
-            </a>
-            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#dropdown-collapse"
-              aria-expanded="false">
-              <span class="navbar-toggler-icon nav-bar">
-                <i class="fa fa-bars"></i>
-              </span>
-            </button>
-          </div>
-      
-          <!-- collapse-body -->
-          <div class="navbar-collapse collapse text-center" id="dropdown-collapse">
-            <!-- روابط -->
-            <ul class="nav navbar-nav wow bounce">
-              <li class="nav-item ">
-                <a href="#header" class="nav-link cool-link scroll active">الرئيسية</a>
-              </li>
-              <li class="nav-item">
-                <a href="#gallery" class="nav-link cool-link scroll">اخترنا لكم</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link cool-link scroll">اتصل بنا</a>
-              </li>
-              <li class="d-none d-md-block">
-                <a href="payment.html" title="سلة الشراء" data-toggle="tooltip" data-placement="bottom">
-                  <i class="fa fa-shopping-cart"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
       <!--  about  -->
       <div class="row text-center about">
         <div class="col-12">
@@ -87,7 +86,6 @@
 
         </div>
       </div>
-
     </div>
   </header>
   <!-- المعرض -->
