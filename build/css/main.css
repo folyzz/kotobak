@@ -159,21 +159,48 @@ header {
         box-shadow: 0 0 45px -11px #000000; }
 
 #contact {
-  background-color: #3F4560; }
-  #contact ul {
-    margin: 10px; }
-    #contact ul li {
+  background-color: #e6e6e6;
+  padding: 45px 70px 0px; }
+  #contact h1 {
+    color: #594AA9;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 18px; }
+  #contact form {
+    margin: 15px 10px; }
+    #contact form input, #contact form textarea {
+      color: #594AA9;
+      margin-bottom: 13px;
+      background: transparent;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 0 25px -11px #000; }
+      #contact form input::placeholder, #contact form textarea::placeholder {
+        color: #594AA9; }
+    #contact form button {
       color: #ffffff;
-      font-size: 16px;
-      display: inline; }
+      background: #594AA9;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      margin: 5px auto 15px;
+      padding: 7px 50px;
+      float: right;
+      box-shadow: 0 0 25px -11px #000;
+      cursor: pointer; }
+  #contact ul {
+    margin: 40px 25px; }
+    #contact ul li {
+      color: #594AA9;
+      font-size: 20px; }
       #contact ul li:not(:last-child) {
-        margin-left: 14%; }
+        margin-bottom: 40px; }
       #contact ul li a {
-        color: #ffffff; }
+        color: #594AA9; }
         #contact ul li a:hover {
           text-decoration: none; }
       #contact ul li i {
-        color: #ffffff;
+        color: #594AA9;
         font-size: 25px;
         margin-right: 5px; }
 
@@ -182,7 +209,7 @@ header {
   padding: 0; }
   .map-box #map {
     padding: 0;
-    height: 500px; }
+    height: 400px; }
     .map-box #map iframe {
       height: 100%;
       width: 100%;
@@ -840,8 +867,10 @@ header#payment {
   #gallery .item {
     height: 395px;
     padding: 0px 20px; }
-  #contact ul {
-    margin: 10px 0; }
+  #contact form {
+    margin: 15px -15px; }
+  #contact ul li {
+    font-size: 17px; }
   .map-box #map {
     height: 400px; }
   #detail .about-book, #detail2 .about-book {
@@ -958,12 +987,20 @@ header#payment {
     #gallery .item {
       height: 315px;
       padding: 0px 10px; }
-  #contact ul li {
-    font-size: 12px; }
-    #contact ul li:not(:last-child) {
-      margin-left: 10%; }
-  #contact ul i {
-    font-size: 20px !important; }
+  #contact .links {
+    text-align: center; }
+    #contact .links ul {
+      padding: 0px;
+      margin: 20px 0px;
+      display: inline-flex; }
+      #contact .links ul li {
+        font-size: 12px; }
+        #contact .links ul li:not(:last-child) {
+          margin-bottom: 0px; }
+        #contact .links ul li:nth-child(2) {
+          margin: 0px 45px; }
+      #contact .links ul i {
+        font-size: 20px; }
   .map-box #map {
     height: 280px; }
   footer .icon-top {
@@ -1039,13 +1076,16 @@ header#payment {
         width: 280px; }
   #contact ul {
     padding: 0;
-    margin: 5px 0; }
+    margin: 5px 0;
+    display: inline-block !important; }
     #contact ul li {
-      font-size: 10px; }
+      font-size: 14px !important; }
       #contact ul li:not(:last-child) {
-        margin-left: 3%; }
+        margin-left: 0px; }
+      #contact ul li:nth-child(2) {
+        margin: 10px 0px !important; }
     #contact ul i {
-      font-size: 15px !important; }
+      font-size: 18px !important; }
   footer .icon-top {
     right: -10%; }
   #detail .about-book .book-details h1, #detail2 .about-book .book-details h1 {

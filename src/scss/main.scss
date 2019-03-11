@@ -207,24 +207,56 @@ header{
 }
 //تواصل معنا
 #contact{
-    background-color: $color-grey-dark;
-    ul{
-        margin: 10px;
-        li{
+    background-color: $color-white-dark;
+    padding: 45px 70px 0px;
+    h1{
+        color: $color-brand;
+        font-weight: bold;
+        font-size: 45px;
+        margin-bottom: 18px;
+    }
+    form{
+        margin: 15px 10px;
+        input,textarea{
+            color: $color-brand;
+            margin-bottom: 13px;
+            background: transparent;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 0 25px -11px #000;
+            &::placeholder{
+                color: $color-brand;
+            }
+        }
+        button{
             color: $color-white;
-            font-size: 16px;
-            display: inline;
+            background: $color-brand;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            margin: 5px auto 15px;
+            padding: 7px 50px;
+            float: right;
+            box-shadow: 0 0 25px -11px #000;
+            cursor: pointer;
+        }
+    }
+    ul{
+        margin: 40px 25px;
+        li{
+            color: $color-brand;
+            font-size: 20px;
             &:not(:last-child){
-                margin-left: 14%;
+                margin-bottom: 40px;
             }
             a{
-                color: $color-white;
+                color: $color-brand;
                 &:hover{
                     text-decoration: none;
                 }
             }
             i{
-                color: $color-white;
+                color: $color-brand;
                 font-size: 25px;
                 margin-right: 5px;
             }
@@ -237,7 +269,7 @@ header{
     padding: 0;
     #map{
         padding: 0;
-        height: 500px;
+        height: 400px;
         iframe{
             height: 100%;
             width: 100%;
@@ -686,8 +718,13 @@ header#payment{
         height: 395px;
         padding: 0px 20px;
     }
-    #contact ul {
-        margin: 10px 0;
+    #contact{
+        form{
+            margin: 15px -15px;
+        }
+        ul li{
+            font-size: 17px;
+        }
     }
     .map-box #map {
         height: 400px;
@@ -863,16 +900,25 @@ header#payment{
             padding: 0px 10px;
         }
     }
-    #contact ul {
-        li
-        {
-            &:not(:last-child) {
-                margin-left: 10%;
+    
+    #contact .links{
+        text-align: center;
+        ul{
+            padding: 0px;
+            margin: 20px 0px;
+            display: inline-flex;
+            li{
+                &:not(:last-child) {
+                    margin-bottom: 0px;
+                }
+                &:nth-child(2) {
+                    margin: 0px 45px;;
+                }
+                font-size: 12px;
             }
-            font-size: 12px;
-        }
-        i{
-            font-size: 20px !important;
+            i{
+                font-size: 20px;
+            }
         }
     }
     .map-box #map {
@@ -1003,14 +1049,18 @@ header#payment{
     #contact ul {
         padding: 0;
         margin: 5px 0;
+        display: inline-block !important;
         li{
+            font-size: 14px !important;
             &:not(:last-child) {
-                margin-left: 3%;
+                margin-left: 0px;
             }
-            font-size: 10px;
+            &:nth-child(2) {
+                margin: 10px 0px !important;
+            }
         }
         i{
-            font-size: 15px !important;
+            font-size: 18px !important;
         }
     }
     footer .icon-top{right: -10%;}
