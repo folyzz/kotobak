@@ -1,7 +1,7 @@
 @import url(./style.css);
 @import url("https://fonts.googleapis.com/css?family=Amiri:700|Aref+Ruqaa|Reem+Kufi|Tajawal");
 @import url("https://fonts.googleapis.com/earlyaccess/droidarabickufi.css");
-body {
+html, body {
   padding: 0;
   margin: 0;
   font-family: 'Droid Arabic Kufi', sans-serif;
@@ -649,13 +649,26 @@ footer {
 
 header#payment {
   background: linear-gradient(90deg, #774BFD, #3A34F0);
-  height: 100%;
-  width: 100%; }
-  header#payment ul a:hover {
-    text-decoration: none;
-    text-shadow: none; }
-  header#payment ul i {
-    font-size: 40px; }
+  height: 760px; }
+  header#payment nav #brand {
+    right: 0; }
+    header#payment nav #brand .back-icon {
+      position: relative;
+      top: 8px;
+      color: #ffffff; }
+      header#payment nav #brand .back-icon:hover {
+        color: #19E4AD;
+        text-shadow: 0 0 3px #19E4AD; }
+  header#payment nav ul {
+    right: 65%; }
+    header#payment nav ul a {
+      color: #FFF; }
+      header#payment nav ul a:hover {
+        color: #FFF;
+        text-decoration: none;
+        text-shadow: none; }
+    header#payment nav ul i {
+      font-size: 40px; }
   header#payment .request-col {
     right: 35%;
     padding: 0px 90px 0px 0px; }
@@ -717,22 +730,15 @@ header#payment {
           header#payment .request-col form table tbody tr .remove-btn:hover {
             color: red; }
       header#payment .request-col form table tfoot {
+        position: absolute;
+        top: 95%;
         transition: all 0.5s ease; }
         header#payment .request-col form table tfoot .text-price {
-          color: #ffffff; }
+          color: #ffffff;
+          margin-left: 23rem; }
           header#payment .request-col form table tfoot .text-price .custom-text-price {
             font-size: 13px;
             color: #b3b3b3; }
-        header#payment .request-col form table tfoot .continue-shopping {
-          float: left;
-          margin-left: 20px; }
-          header#payment .request-col form table tfoot .continue-shopping a {
-            color: #19E4AD;
-            transition: all 0.3s ease; }
-            header#payment .request-col form table tfoot .continue-shopping a:hover {
-              color: transparent;
-              text-shadow: 0 0 1px black;
-              text-decoration: none; }
   header#payment .data-col {
     left: 66%; }
     header#payment .data-col aside {
@@ -830,19 +836,17 @@ header#payment {
     padding-left: 0px; }
   #detail .about-book .work-book, #detail2 .about-book .work-book {
     margin-right: 10%; }
-  header#payment {
-    height: 100%; }
-    header#payment nav ul {
-      right: 51%; }
-    header#payment .request-col {
-      padding: 0px 100px 0px 0px;
-      right: 35%; }
-      header#payment .request-col table tbody td:not(:first-child) {
-        margin: 0px 10px !important; }
-    header#payment .data-col {
-      left: 68%; }
-      header#payment .data-col aside {
-        padding: 25px; } }
+  header#payment nav ul {
+    right: 58%; }
+  header#payment .request-col {
+    padding: 0px 100px 0px 0px;
+    right: 35%; }
+    header#payment .request-col table tbody td:not(:first-child) {
+      margin: 0px 10px !important; }
+  header#payment .data-col {
+    left: 68%; }
+    header#payment .data-col aside {
+      padding: 25px; } }
 
 @media (max-width: 991px) {
   nav #brand {
@@ -899,7 +903,9 @@ header#payment {
   #flippage, #flippage2 {
     overflow: hidden; }
   header#payment {
-    height: 1050px; }
+    height: 65rem; }
+    header#payment nav #brand {
+      right: -3%; }
     header#payment nav ul {
       right: 49%; }
     header#payment .request-col {
@@ -924,8 +930,7 @@ header#payment {
       header#payment .data-col aside {
         width: 50%;
         padding: 20px;
-        position: relative;
-        right: 25%; }
+        margin: 12px auto; }
         header#payment .data-col aside form #personal-data h2 {
           font-size: 16px; }
         header#payment .data-col aside form #personal-data input {
@@ -1026,7 +1031,7 @@ header#payment {
   #flippage, #flippage2 {
     top: 1087px; }
   header#payment nav ul {
-    right: -9%;
+    right: -12%;
     margin: 5px 0px 0 -75px; }
     header#payment nav ul li a {
       font-size: 20px; }
@@ -1041,8 +1046,7 @@ header#payment {
     header#payment .request-col table tbody tr td:not(:first-child) {
       margin: 0px 11px !important; }
   header#payment .data-col aside {
-    width: 70%;
-    right: 15%; } }
+    width: 70%; } }
 
 @media (max-width: 575px) {
   nav #brand {
@@ -1110,7 +1114,7 @@ header#payment {
         width: 150px !important;
         height: 250px !important; }
   header#payment {
-    height: 950px; }
+    height: 58rem; }
     header#payment nav ul {
       right: -18%;
       margin: 5px 0px 0 -75px; }
@@ -1144,7 +1148,7 @@ header#payment {
     header#payment .data-col aside {
       width: 301px;
       padding: 10px;
-      right: 6%; }
+      margin: 17px auto; }
       header#payment .data-col aside form {
         margin-bottom: 0px; }
         header#payment .data-col aside form button {
@@ -1181,7 +1185,7 @@ header#payment {
   #detail .about-book .book-details p, #detail2 .about-book .book-details p {
     font-size: 15px; }
   header#payment {
-    height: 900px; }
+    height: 55rem; }
     header#payment nav #brand h5 {
       top: 10px;
       font-size: 14px; }
@@ -1192,6 +1196,8 @@ header#payment {
       top: 12px;
       right: -30%;
       width: 100px; }
+      header#payment nav ul li:last-of-type {
+        margin: 0px; }
       header#payment nav ul li a {
         font-size: 10px; }
         header#payment nav ul li a i {
@@ -1230,8 +1236,7 @@ header#payment {
         font-size: 13px; }
     header#payment .data-col aside {
       width: 280px;
-      padding: 10px;
-      right: 2%; }
+      padding: 10px; }
       header#payment .data-col aside form {
         margin-bottom: 0px; }
         header#payment .data-col aside form button {

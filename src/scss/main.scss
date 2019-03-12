@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');
 
 
-body{
+html, body{
     padding: 0;
     margin: 0;
     font-family: 'Droid Arabic Kufi', sans-serif;
@@ -391,15 +391,33 @@ footer{
 //*************************************** payment page . 
 header#payment{
     background: linear-gradient(90deg, $color-shopping-cart,$color-shopping-cart-four);
-    height: 100%;
-    width: 100%;
-    ul{
-        a:hover{
-            text-decoration: none;
-            text-shadow: none;
+    height: 760px;
+    nav{
+        #brand{
+            right: 0;
+            .back-icon{
+                position: relative;
+                top: 8px;
+                color: $color-white;
+                &:hover{
+                    color: $color-shopping-cart-three;
+                    text-shadow: 0 0 3px $color-shopping-cart-three;
+                }
+            }
         }
-        i{
-            font-size: 40px;
+        ul{
+            right: 65%;
+            a{
+                color: #FFF;
+                &:hover{
+                    color: #FFF;
+                    text-decoration: none;
+                    text-shadow: none;
+                }
+            }
+            i{
+                font-size: 40px;
+            }
         }
     }
     // قسم طلبك
@@ -488,25 +506,15 @@ header#payment{
                     }
                 }
                 tfoot{
+                    position: absolute;
+                    top: 95%;
                     transition: all 0.5s ease;
                     .text-price{
                         color: $color-white;
+                        margin-left: 23rem;
                         .custom-text-price{
                             font-size: 13px;
                             color: darken($color-white,30%);
-                        }
-                    }
-                    .continue-shopping{
-                        float: left;
-                        margin-left: 20px;
-                        a{
-                            color: $color-shopping-cart-three;
-                            transition: all 0.3s ease;
-                            &:hover{
-                                color: transparent;
-                                text-shadow: 0 0 1px black;
-                                text-decoration: none;
-                            }
                         }
                     }
                 }
@@ -658,9 +666,8 @@ header#payment{
     }
     ////////////////////////////shopping cart
     header#payment{
-        height: 100%;
         nav ul{
-            right: 51%;
+            right: 58%;
         }
         .request-col{
             padding: 0px 100px 0px 0px;
@@ -772,9 +779,14 @@ header#payment{
     }
     ////////////////////////////shopping cart
     header#payment{
-        height: 1050px;
-        nav ul{
-            right: 49%;
+        height: 65rem;
+        nav {
+            #brand{
+                right: -3%;
+            }
+            ul{
+                right: 49%;
+            }
         }
         .request-col{
             padding: 0px;
@@ -810,8 +822,7 @@ header#payment{
             aside{
                 width: 50%;
                 padding: 20px;
-                position: relative;
-                right: 25%;
+                margin: 12px auto;
                 form{
                     #personal-data{
                         h2{font-size: 16px;}
@@ -963,7 +974,7 @@ header#payment{
     ////////////////////////////shopping cart
     header#payment{
         nav ul{
-            right: -9%;
+            right: -12%;
             margin: 5px 0px 0 -75px;
             li{
                 a{
@@ -998,7 +1009,6 @@ header#payment{
         .data-col{
             aside{
                 width: 70%;
-                right: 15%;
             }
         }
     }  
@@ -1104,7 +1114,7 @@ header#payment{
     }
     ////////////////////////////shopping cart
     header#payment{
-        height: 950px;
+        height: 58rem;
         nav ul{
             right: -18%;
             margin: 5px 0px 0 -75px;
@@ -1157,7 +1167,7 @@ header#payment{
             aside{
                 width: 301px;
                 padding: 10px;
-                right: 6%;
+                margin: 17px auto;
                 form{
                     margin-bottom: 0px;
                     button{
@@ -1223,7 +1233,7 @@ header#payment{
     }
     ////////////////////////////shopping cart
     header#payment{
-        height: 900px;
+        height: 55rem;
         nav{
             #brand{
                 h5{
@@ -1240,6 +1250,9 @@ header#payment{
                 right: -30%;
                 width: 100px;
                 li{
+                    &:last-of-type {
+                        margin: 0px;
+                    }
                     a{
                         font-size: 10px;
                         i{font-size: 25px;}
@@ -1300,7 +1313,6 @@ header#payment{
             aside{
                 width: 280px;
                 padding: 10px;
-                right: 2%;
                 form{
                     margin-bottom: 0px;
                     button{
