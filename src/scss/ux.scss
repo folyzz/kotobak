@@ -1,0 +1,54 @@
+@import './variables';
+@import './mixins';
+
+#header-book{
+    @include header ();
+}
+// قسم تفاصيل الكتاب
+#detail-book{
+    margin: 80px auto 0px;
+    .about-book{
+        //صورة الكتاب
+        @include about-book($color-ux-three);
+        // تفاصيل الكتاب
+        .book-details{
+            @include book-details(darken($color-ux,20%));
+        }
+        //زر الطلب
+        .box{
+            @include box();
+        }
+        // زر المفضلة
+        .box2{
+            @include box2();
+        }
+    }
+}
+//قسم عرض الكتاب
+#view-book{
+    @include view-book(
+    linear-gradient(90deg, $color-ux-two,$color-ux,$color-ux),
+    $color-ux-three,
+    darken($color-ux-three, 10%)
+    ); 
+}
+// flipppages
+#flippage{
+    @include flippage(linear-gradient(90deg, $color-ux-two,$color-ux,$color-ux));
+}
+
+@media (max-width: 1199px){
+    @include max-xl;
+}
+@media (max-width: 991px){
+    @include max-lg;
+}
+@media (max-width: 767px){
+    @include max-md;
+}
+@media (max-width: 575px){
+    @include max-sm;
+}
+@media (max-width: 375px){
+    @include max-too-sm;
+}

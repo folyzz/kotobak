@@ -1,11 +1,10 @@
 @import url(./style.css);
 @import url("https://fonts.googleapis.com/css?family=Amiri:700|Aref+Ruqaa|Reem+Kufi|Tajawal");
 @import url("https://fonts.googleapis.com/earlyaccess/droidarabickufi.css");
-html, body {
+body {
   padding: 0;
   margin: 0;
-  font-family: 'Droid Arabic Kufi', sans-serif;
-  overflow-x: hidden; }
+  font-family: 'Droid Arabic Kufi', sans-serif; }
 
 ::-webkit-scrollbar {
   width: 9px;
@@ -239,417 +238,10 @@ footer {
     position: relative;
     top: 1px; }
 
-#header2 {
-  background: none;
-  height: 0; }
-  #header2 nav {
-    background: #e6e6e6;
-    box-shadow: 0px 1px 22px -5px; }
-    #header2 nav .custom-collapse .nav-cart {
-      color: #ffffff;
-      font-size: 30px;
-      position: relative;
-      top: 4px; }
-    #header2 nav .custom-collapse .nav-bar {
-      color: #ffffff;
-      font-size: 30px;
-      margin-top: 20px; }
-    #header2 nav ul {
-      margin-top: 10px; }
-      #header2 nav ul a {
-        color: grey; }
-        #header2 nav ul a:hover, #header2 nav ul a.active {
-          color: #594AA9;
-          text-shadow: 0 0 3px #594AA9; }
-    #header2 nav #brand img {
-      height: 80px;
-      width: 80px; }
-    #header2 nav #brand h5 {
-      font-size: 15px;
-      top: 8px; }
-    #header2 nav #brand .back-icon {
-      position: relative;
-      top: 8px;
-      color: grey; }
-      #header2 nav #brand .back-icon:hover {
-        color: #594AA9;
-        text-shadow: 0 0 3px #594AA9; }
-
-#detail {
-  margin: 80px auto 0px; }
-  #detail .about-book {
-    padding: 50px 0px 0px;
-    height: 650px; }
-    #detail .about-book .work-book {
-      height: 430px;
-      width: 350px; }
-      #detail .about-book .work-book img {
-        height: 100%;
-        width: 100%;
-        border-radius: 1%;
-        box-shadow: 0px 25px 145px -50px #000000; }
-      #detail .about-book .work-book h6 {
-        margin-top: 35px;
-        font-weight: bold;
-        color: #6ACAD4; }
-    #detail .about-book .book-details h6 {
-      font-weight: bold;
-      color: #bfbfbf; }
-    #detail .about-book .book-details h1 {
-      color: #6cb8b6;
-      font-weight: bold;
-      margin-bottom: 33px; }
-    #detail .about-book .book-details p {
-      color: #000000;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 26px;
-      margin-bottom: 40px;
-      padding-left: 10px; }
-    #detail .about-book .box {
-      font-size: 32px;
-      background-color: #61ddbc;
-      border: 2px solid #35ba9b;
-      border-radius: 30px;
-      width: 450px;
-      margin-bottom: 20px;
-      overflow: hidden;
-      box-shadow: 0px 0px 33px -3px #61ddbc; }
-      #detail .about-book .box a {
-        color: #fff;
-        font-size: 20px;
-        position: relative;
-        top: -4px;
-        right: -60px;
-        transition: all 0.5s ease; }
-        #detail .about-book .box a:hover {
-          text-decoration: none;
-          text-shadow: 0px 0px 20px #fff; }
-      #detail .about-book .box .nice-number {
-        width: 145px;
-        padding: 3px 15px;
-        direction: ltr;
-        border: none;
-        background-color: #fff;
-        margin-left: -148px; }
-        #detail .about-book .box .nice-number button {
-          cursor: pointer;
-          color: #bfbfbf;
-          border: none;
-          background-color: transparent; }
-          #detail .about-book .box .nice-number button:focus {
-            outline: transparent; }
-        #detail .about-book .box .nice-number input {
-          color: #35ba9b;
-          border: none;
-          margin: 0px 3px; }
-    #detail .about-book .box2 {
-      width: 450px;
-      overflow: hidden;
-      margin-top: 10px;
-      border-radius: 30px;
-      box-shadow: 0px 0px 23px -1px #f76c82; }
-      #detail .about-book .box2 button {
-        width: 100%;
-        line-height: 35px;
-        background-color: #f76c82;
-        border: 2px solid #d94452;
-        border-radius: 30px;
-        cursor: pointer; }
-        #detail .about-book .box2 button:focus {
-          box-shadow: none;
-          outline: none; }
-        #detail .about-book .box2 button:hover .heart-text,
-        #detail .about-book .box2 button:focus .heart-text {
-          opacity: 0; }
-        #detail .about-book .box2 button:hover .heart-icon,
-        #detail .about-book .box2 button:focus .heart-icon {
-          top: 5px; }
-        #detail .about-book .box2 button .heart-text {
-          color: #fff;
-          font-size: 20px;
-          position: relative;
-          left: -17px;
-          transition: all 0.3s ease; }
-        #detail .about-book .box2 button .heart-icon {
-          color: red;
-          font-size: 36px;
-          position: relative;
-          right: -83px;
-          top: 50px;
-          transition: all 0.3s ease; }
-
-#view-book {
-  background: linear-gradient(90deg, #dbeedb, #b1d9d8);
-  height: 337px; }
-  #view-book img {
-    height: 230px;
-    width: 230px;
-    position: relative;
-    top: -43px;
-    right: 55px;
-    z-index: 2; }
-  #view-book .shadow {
-    height: 20px;
-    width: 130px;
-    border-radius: 50%;
-    display: inline-block;
-    box-shadow: 0 60px 30px rgba(0, 0, 0, 0.15) !important;
-    position: relative;
-    top: 30px;
-    right: -140px;
-    z-index: 1; }
-  #view-book button {
-    font-size: 14px;
-    color: #fff;
-    background-color: #6ACAD4;
-    border-color: #42bcc9;
-    border-radius: 20px;
-    width: 275px;
-    position: relative;
-    top: 50px; }
-
-#flippage {
-  direction: ltr;
-  background: linear-gradient(90deg, #dbeedb, #b1d9d8);
-  height: 380px;
-  width: 100%;
-  position: absolute;
-  top: 686px;
-  z-index: 3;
-  display: none; }
-  #flippage #flipbook {
-    width: 500px;
-    height: 380px;
-    margin: 0px auto; }
-    #flippage #flipbook .page {
-      width: 400px;
-      height: 300px; }
-    #flippage #flipbook .page-wrapper {
-      perspective: 2000px; }
-    #flippage #flipbook .odd {
-      box-shadow: inset 0 0 5px #666; }
-    #flippage #flipbook .even {
-      box-shadow: inset 0 0 5px #666; }
-  #flippage button {
-    font-size: 25px;
-    color: #d94452;
-    display: inline;
-    position: absolute;
-    top: 20px;
-    right: 5px;
-    z-index: 6; }
-    #flippage button:hover, #flippage button:focus {
-      color: #f76c82;
-      box-shadow: none; }
-
-#header3 {
-  background: none;
-  height: 0; }
-  #header3 nav {
-    background: #e6e6e6;
-    box-shadow: 0px 1px 22px -5px; }
-    #header3 nav .custom-collapse .nav-cart {
-      color: #ffffff;
-      font-size: 30px;
-      position: relative;
-      top: 4px; }
-    #header3 nav .custom-collapse .nav-bar {
-      color: #ffffff;
-      font-size: 30px;
-      margin-top: 20px; }
-    #header3 nav ul {
-      margin-top: 10px; }
-      #header3 nav ul a {
-        color: grey; }
-        #header3 nav ul a:hover, #header3 nav ul a.active {
-          color: #594AA9;
-          text-shadow: 0 0 3px #594AA9; }
-    #header3 nav #brand img {
-      height: 80px;
-      width: 80px; }
-    #header3 nav #brand h5 {
-      font-size: 15px;
-      top: 8px; }
-    #header3 nav #brand .back-icon {
-      position: relative;
-      top: 8px;
-      color: grey; }
-      #header3 nav #brand .back-icon:hover {
-        color: #594AA9;
-        text-shadow: 0 0 3px #594AA9; }
-
-#detail2 {
-  margin: 80px auto 0px; }
-  #detail2 .about-book {
-    padding: 50px 0px 0px;
-    height: 650px; }
-    #detail2 .about-book .work-book {
-      height: 430px;
-      width: 350px; }
-      #detail2 .about-book .work-book img {
-        height: 100%;
-        width: 100%;
-        border-radius: 1%;
-        box-shadow: 0px 25px 145px -50px #000000; }
-      #detail2 .about-book .work-book h6 {
-        margin-top: 35px;
-        font-weight: bold;
-        color: #80401A; }
-    #detail2 .about-book .book-details h6 {
-      font-weight: bold;
-      color: #bfbfbf; }
-    #detail2 .about-book .book-details h1 {
-      color: #c07a3b;
-      font-weight: bold;
-      margin-bottom: 33px; }
-    #detail2 .about-book .book-details p {
-      color: #000000;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 26px;
-      margin-bottom: 40px;
-      padding-left: 10px; }
-    #detail2 .about-book .box {
-      font-size: 32px;
-      background-color: #61ddbc;
-      border: 2px solid #35ba9b;
-      border-radius: 30px;
-      width: 450px;
-      margin-bottom: 20px;
-      overflow: hidden;
-      box-shadow: 0px 0px 33px -3px #61ddbc; }
-      #detail2 .about-book .box a {
-        color: #fff;
-        font-size: 20px;
-        position: relative;
-        top: -4px;
-        right: -60px;
-        transition: all 0.5s ease; }
-        #detail2 .about-book .box a:hover {
-          text-decoration: none;
-          text-shadow: 0px 0px 20px #fff; }
-      #detail2 .about-book .box .nice-number {
-        width: 145px;
-        padding: 3px 15px;
-        direction: ltr;
-        border: none;
-        background-color: #fff;
-        margin-left: -148px; }
-        #detail2 .about-book .box .nice-number button {
-          cursor: pointer;
-          color: #bfbfbf;
-          border: none;
-          background-color: transparent; }
-          #detail2 .about-book .box .nice-number button:focus {
-            outline: transparent; }
-        #detail2 .about-book .box .nice-number input {
-          color: #35ba9b;
-          border: none;
-          margin: 0px 3px; }
-    #detail2 .about-book .box2 {
-      width: 450px;
-      overflow: hidden;
-      margin-top: 10px;
-      border-radius: 30px;
-      box-shadow: 0px 0px 23px -1px #f76c82; }
-      #detail2 .about-book .box2 button {
-        width: 100%;
-        line-height: 35px;
-        background-color: #f76c82;
-        border: 2px solid #d94452;
-        border-radius: 30px;
-        cursor: pointer; }
-        #detail2 .about-book .box2 button:focus {
-          box-shadow: none;
-          outline: none; }
-        #detail2 .about-book .box2 button:hover .heart-text,
-        #detail2 .about-book .box2 button:focus .heart-text {
-          opacity: 0; }
-        #detail2 .about-book .box2 button:hover .heart-icon,
-        #detail2 .about-book .box2 button:focus .heart-icon {
-          top: 5px; }
-        #detail2 .about-book .box2 button .heart-text {
-          color: #fff;
-          font-size: 20px;
-          position: relative;
-          left: -17px;
-          transition: all 0.3s ease; }
-        #detail2 .about-book .box2 button .heart-icon {
-          color: red;
-          font-size: 36px;
-          position: relative;
-          right: -83px;
-          top: 50px;
-          transition: all 0.3s ease; }
-
-#view-book2 {
-  background: linear-gradient(90deg, #DCA689, #DAAE87, #DAAE87);
-  height: 337px; }
-  #view-book2 img {
-    height: 230px;
-    width: 230px;
-    position: relative;
-    top: -43px;
-    right: 55px;
-    z-index: 2; }
-  #view-book2 .shadow {
-    height: 20px;
-    width: 130px;
-    border-radius: 50%;
-    display: inline-block;
-    box-shadow: 0 60px 30px rgba(0, 0, 0, 0.15) !important;
-    position: relative;
-    top: 30px;
-    right: -140px;
-    z-index: 1; }
-  #view-book2 button {
-    font-size: 14px;
-    color: #fff;
-    background-color: #80401A;
-    border-color: #562b11;
-    border-radius: 20px;
-    width: 275px;
-    position: relative;
-    top: 50px; }
-
-#flippage2 {
-  direction: ltr;
-  background: linear-gradient(90deg, #DCA689, #DAAE87, #DAAE87);
-  height: 380px;
-  width: 100%;
-  position: absolute;
-  top: 686px;
-  z-index: 3;
-  display: none; }
-  #flippage2 #flipbook {
-    width: 500px;
-    height: 380px;
-    margin: 0px auto; }
-    #flippage2 #flipbook .page {
-      width: 400px;
-      height: 300px; }
-    #flippage2 #flipbook .page-wrapper {
-      perspective: 2000px; }
-    #flippage2 #flipbook .odd {
-      box-shadow: inset 0 0 5px #666; }
-    #flippage2 #flipbook .even {
-      box-shadow: inset 0 0 5px #666; }
-  #flippage2 button {
-    font-size: 25px;
-    color: #d94452;
-    display: inline;
-    position: absolute;
-    top: 20px;
-    right: 5px;
-    z-index: 6; }
-    #flippage2 button:hover, #flippage2 button:focus {
-      color: #f76c82;
-      box-shadow: none; }
-
 header#payment {
   background: linear-gradient(90deg, #774BFD, #3A34F0);
-  height: 760px; }
+  height: 760px;
+  overflow-x: hidden; }
   header#payment nav #brand {
     right: 0; }
     header#payment nav #brand .back-icon {
@@ -832,10 +424,6 @@ header#payment {
     padding: 240px 53px 0px; }
   #gallery .item {
     padding: 0 60px; }
-  #detail .about-book .book-details p, #detail2 .about-book .book-details p {
-    padding-left: 0px; }
-  #detail .about-book .work-book, #detail2 .about-book .work-book {
-    margin-right: 10%; }
   header#payment nav ul {
     right: 58%; }
   header#payment .request-col {
@@ -877,31 +465,6 @@ header#payment {
     font-size: 17px; }
   .map-box #map {
     height: 400px; }
-  #detail .about-book, #detail2 .about-book {
-    padding: 50px 15px 0px; }
-    #detail .about-book .work-book, #detail2 .about-book .work-book {
-      height: 400px;
-      width: 300px;
-      margin-right: -4%; }
-    #detail .about-book .book-details p, #detail2 .about-book .book-details p {
-      margin-bottom: 25px; }
-    #detail .about-book .book-details h1, #detail2 .about-book .book-details h1 {
-      font-size: 35px;
-      margin-bottom: 20px; }
-    #detail .about-book .box, #detail2 .about-book .box {
-      width: 335px;
-      margin-bottom: 15px; }
-      #detail .about-book .box a, #detail2 .about-book .box a {
-        right: -30px; }
-      #detail .about-book .box .nice-number, #detail2 .about-book .box .nice-number {
-        width: 110px;
-        margin-left: -65px; }
-        #detail .about-book .box .nice-number input, #detail2 .about-book .box .nice-number input {
-          width: 30px; }
-    #detail .about-book .box2, #detail2 .about-book .box2 {
-      width: 335px; }
-  #flippage, #flippage2 {
-    overflow: hidden; }
   header#payment {
     height: 65rem; }
     header#payment nav #brand {
@@ -1010,26 +573,6 @@ header#payment {
     height: 280px; }
   footer .icon-top {
     right: -20%; }
-  #header2 nav #dropdown-collapse, #header3 nav #dropdown-collapse {
-    background: #fff; }
-    #header2 nav #dropdown-collapse a, #header3 nav #dropdown-collapse a {
-      color: #666666; }
-  #detail, #detail2 {
-    height: 65rem; }
-    #detail .about-book .buttons, #detail2 .about-book .buttons {
-      display: inline-block; }
-    #detail .about-book .work-book, #detail2 .about-book .work-book {
-      margin: 0px auto 100px; }
-    #detail .about-book .for-md, #detail2 .about-book .for-md {
-      text-align: center; }
-    #detail .about-book .book-details, #detail2 .about-book .book-details {
-      text-align: center !important; }
-      #detail .about-book .book-details h1, #detail2 .about-book .book-details h1 {
-        margin-bottom: 30px; }
-      #detail .about-book .book-details p, #detail2 .about-book .book-details p {
-        margin-bottom: 30px; }
-  #flippage, #flippage2 {
-    top: 1087px; }
   header#payment nav ul {
     right: -12%;
     margin: 5px 0px 0 -75px; }
@@ -1092,27 +635,6 @@ header#payment {
       font-size: 18px !important; }
   footer .icon-top {
     right: -10%; }
-  #detail .about-book .book-details h1, #detail2 .about-book .book-details h1 {
-    font-size: 26px; }
-  #detail .about-book .book-details p, #detail2 .about-book .book-details p {
-    font-size: 15px; }
-  #view-book img, #view-book2 img {
-    height: 190px;
-    width: 190px;
-    top: -35px; }
-  #view-book button, #view-book2 button {
-    top: 85px; }
-  #flippage, #flippage2 {
-    top: 1095px;
-    height: 372px;
-    overflow-x: hidden; }
-    #flippage #flipbook, #flippage2 #flipbook {
-      width: 300px !important;
-      height: 250px !important;
-      margin: 65px auto; }
-      #flippage #flipbook .page, #flippage2 #flipbook .page {
-        width: 150px !important;
-        height: 250px !important; }
   header#payment {
     height: 58rem; }
     header#payment nav ul {
@@ -1178,12 +700,6 @@ header#payment {
         font-size: 40px; }
     header .about .form-group input[type=search] {
       font-size: 10px; }
-  #detail .about-book .box, #detail .about-book .box2, #detail2 .about-book .box, #detail2 .about-book .box2 {
-    width: 300px; }
-  #detail .about-book .book-details h1, #detail2 .about-book .book-details h1 {
-    font-size: 26px; }
-  #detail .about-book .book-details p, #detail2 .about-book .book-details p {
-    font-size: 15px; }
   header#payment {
     height: 55rem; }
     header#payment nav #brand h5 {

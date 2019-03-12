@@ -1,5 +1,5 @@
 
-//***************************** for book page
+//***************************** for book pages
 @mixin header{
     background: none;
     height: 0;
@@ -257,4 +257,151 @@
         }
     }
 }
-//***************************** for book page END
+//// responsive
+@mixin max-xl {//1199px
+    #detail-book{
+        .about-book{
+            .book-details{
+                p{
+                    padding-left: 0px;
+                }
+            }
+            .work-book {
+                margin-right: 10%;
+            }
+        }
+    }
+}
+@mixin max-lg{//991px
+    #detail-book{
+        .about-book{
+            padding: 50px 15px 0px;
+            .work-book{
+                height: 400px;
+                width: 300px;
+                margin-right: -4%;
+            }
+            .book-details {
+                p{
+                    margin-bottom: 25px;
+                }
+                h1{
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                }
+            }
+            .box{
+                width: 335px;
+                margin-bottom: 15px;
+                a{
+                    right: -30px;
+                }
+                .nice-number{
+                    width: 110px;
+                    margin-left: -65px;
+                    input{
+                        width: 30px;
+                    }
+                }
+            }
+            .box2{
+                width: 335px;
+            }
+        }
+    }
+    // FlipBook
+    #flippage{
+        overflow: hidden;
+    }
+}
+@mixin max-md{//767px
+    #header-book{
+        nav{
+            #dropdown-collapse{
+                background: #fff;
+                a{color: darken($color-white,60%);}
+            }
+        }
+    }
+    #detail-book{
+        height: 65rem;
+        .about-book{
+            .buttons{
+                display: inline-block;
+            }
+            .work-book{
+                margin: 0px auto 100px;
+            }
+            .for-md{
+                text-align: center;
+            }
+            .book-details{
+                text-align: center !important;
+                h1{
+                    margin-bottom: 30px
+                }
+                p{
+                    margin-bottom: 30px
+                }
+            }
+        }
+    }
+    #flippage{
+        top: 1077px;
+    }
+}
+@mixin max-sm{//575px
+    #detail-book{
+        .about-book{
+            .book-details{
+                h1{
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    #view-book{
+        img {
+            height: 190px;
+            width: 190px;
+            top: -35px;
+        }
+        button{
+            top: 85px;
+        }
+    }
+    // FlipBook
+    #flippage{
+        top: 1085px;
+        height: 372px;
+        overflow-x: hidden;
+        #flipbook{
+            width:300px !important;
+            height:250px !important;
+            margin: 65px auto;
+            .page{
+                width:150px !important;
+                height:250px !important;
+            }
+        }
+    }
+}
+@mixin max-too-sm{//375px
+    #detail-book{
+        .about-book{
+            .box,.box2{width: 300px;}
+            .book-details{
+                h1{
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+//***************************** for book pages END

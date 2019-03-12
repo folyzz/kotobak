@@ -1,15 +1,15 @@
 @import './style.css';
 @import './variables';
 @import './mixins';
+
 @import url('https://fonts.googleapis.com/css?family=Amiri:700|Aref+Ruqaa|Reem+Kufi|Tajawal');
 @import url('https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');
 
 
-html, body{
+body{
     padding: 0;
     margin: 0;
     font-family: 'Droid Arabic Kufi', sans-serif;
-    overflow-x: hidden;
 }
 // شريط scroll down
 ::-webkit-scrollbar{
@@ -85,6 +85,7 @@ nav{
         }
     }
 }
+// when scrollTop
 .noTransparrent{
     background: $color-white-dark;
     box-shadow: 0px 1px 22px -5px;
@@ -307,84 +308,7 @@ footer{
     }
 }
 
-//*************************************** FREELANCE PAGE 
-//*************************************** FREELANCE PAGE 
-//*************************************** FREELANCE PAGE 
-//*************************************** FREELANCE PAGE 
-#header2{
-    @include header ();
-}
-// قسم تفاصيل الكتاب
-#detail{
-    margin: 80px auto 0px;
-    .about-book{
-        //صورة الكتاب
-        @include about-book($color-freelance-three);
-        // تفاصيل الكتاب
-        .book-details{
-            @include book-details(darken($color-freelance,20%));
-        }
-        //زر الطلب
-        .box{
-            @include box();
-        }
-        // زر المفضلة
-        .box2{
-            @include box2();
-        }
-    }
-}
-//قسم عرض الكتاب
-#view-book{
-    @include view-book(
-    linear-gradient(90deg, $color-freelance-two,$color-freelance),
-    $color-freelance-three,
-    darken($color-freelance-three, 10%)
-    ); 
-}
-// flipppages
-#flippage{
-    @include flippage(linear-gradient(90deg, $color-freelance-two,$color-freelance));
-}
-//*************************************** UX page . 
-//*************************************** UX page .  
-//*************************************** UX page .  
-//*************************************** UX page . 
-#header3{
-    @include header ();
-}
-// قسم تفاصيل الكتاب
-#detail2{
-    margin: 80px auto 0px;
-    .about-book{
-        //صورة الكتاب
-        @include about-book($color-ux-three);
-        // تفاصيل الكتاب
-        .book-details{
-            @include book-details(darken($color-ux,20%));
-        }
-        //زر الطلب
-        .box{
-            @include box();
-        }
-        // زر المفضلة
-        .box2{
-            @include box2();
-        }
-    }
-}
-//قسم عرض الكتاب
-#view-book2{
-    @include view-book(
-    linear-gradient(90deg, $color-ux-two,$color-ux,$color-ux),
-    $color-ux-three,
-    darken($color-ux-three, 10%)
-    ); 
-}
-// flipppages
-#flippage2{
-    @include flippage(linear-gradient(90deg, $color-ux-two,$color-ux,$color-ux));
-}
+
 //*************************************** payment page . 
 //*************************************** payment page .  
 //*************************************** payment page .  
@@ -392,6 +316,7 @@ footer{
 header#payment{
     background: linear-gradient(90deg, $color-shopping-cart,$color-shopping-cart-four);
     height: 760px;
+    overflow-x: hidden;
     nav{
         #brand{
             right: 0;
@@ -652,18 +577,18 @@ header#payment{
         padding: 0 60px;
     }
     /////////////////////////////freelance&&ux
-    #detail,#detail2{
-        .about-book{
-            .book-details{
-                p{
-                    padding-left: 0px;
-                }
-            }
-            .work-book {
-                margin-right: 10%;
-            }
-        }
-    }
+    // #detail-book{
+    //     .about-book{
+    //         .book-details{
+    //             p{
+    //                 padding-left: 0px;
+    //             }
+    //         }
+    //         .work-book {
+    //             margin-right: 10%;
+    //         }
+    //     }
+    // }
     ////////////////////////////shopping cart
     header#payment{
         nav ul{
@@ -737,46 +662,46 @@ header#payment{
         height: 400px;
     }
     /////////////////////////////freelance&&ux
-    #detail,#detail2{
-        .about-book{
-            padding: 50px 15px 0px;
-            .work-book{
-                height: 400px;
-                width: 300px;
-                margin-right: -4%;
-            }
-            .book-details {
-                p{
-                    margin-bottom: 25px;
-                }
-                h1{
-                    font-size: 35px;
-                    margin-bottom: 20px;
-                }
-            }
-            .box{
-                width: 335px;
-                margin-bottom: 15px;
-                a{
-                    right: -30px;
-                }
-                .nice-number{
-                    width: 110px;
-                    margin-left: -65px;
-                    input{
-                        width: 30px;
-                    }
-                }
-            }
-            .box2{
-                width: 335px;
-            }
-        }
-    }
-    // FlipBook
-    #flippage,#flippage2{
-        overflow: hidden;
-    }
+    // #detail-book{
+    //     .about-book{
+    //         padding: 50px 15px 0px;
+    //         .work-book{
+    //             height: 400px;
+    //             width: 300px;
+    //             margin-right: -4%;
+    //         }
+    //         .book-details {
+    //             p{
+    //                 margin-bottom: 25px;
+    //             }
+    //             h1{
+    //                 font-size: 35px;
+    //                 margin-bottom: 20px;
+    //             }
+    //         }
+    //         .box{
+    //             width: 335px;
+    //             margin-bottom: 15px;
+    //             a{
+    //                 right: -30px;
+    //             }
+    //             .nice-number{
+    //                 width: 110px;
+    //                 margin-left: -65px;
+    //                 input{
+    //                     width: 30px;
+    //                 }
+    //             }
+    //         }
+    //         .box2{
+    //             width: 335px;
+    //         }
+    //     }
+    // }
+    // // FlipBook
+    // #flippage{
+    //     overflow: hidden;
+    // }
     ////////////////////////////shopping cart
     header#payment{
         height: 65rem;
@@ -937,40 +862,40 @@ header#payment{
     }
     footer .icon-top{right: -20%;}
     /////////////////////////////freelance&&ux
-    #header2,#header3{
-        nav{
-            #dropdown-collapse{
-                background: #fff;
-                a{color: darken($color-white,60%);}
-            }
-        }
-    }
-    #detail,#detail2{
-        height: 65rem;
-        .about-book{
-            .buttons{
-                display: inline-block;
-            }
-            .work-book{
-                margin: 0px auto 100px;
-            }
-            .for-md{
-                text-align: center;
-            }
-            .book-details{
-                text-align: center !important;
-                h1{
-                    margin-bottom: 30px
-                }
-                p{
-                    margin-bottom: 30px
-                }
-            }
-        }
-    }
-    #flippage,#flippage2{
-        top: 1087px;
-    }
+    // #header-book{
+    //     nav{
+    //         #dropdown-collapse{
+    //             background: #fff;
+    //             a{color: darken($color-white,60%);}
+    //         }
+    //     }
+    // }
+    // #detail-book{
+    //     height: 65rem;
+    //     .about-book{
+    //         .buttons{
+    //             display: inline-block;
+    //         }
+    //         .work-book{
+    //             margin: 0px auto 100px;
+    //         }
+    //         .for-md{
+    //             text-align: center;
+    //         }
+    //         .book-details{
+    //             text-align: center !important;
+    //             h1{
+    //                 margin-bottom: 30px
+    //             }
+    //             p{
+    //                 margin-bottom: 30px
+    //             }
+    //         }
+    //     }
+    // }
+    // #flippage{
+    //     top: 1087px;
+    // }
     ////////////////////////////shopping cart
     header#payment{
         nav ul{
@@ -1075,43 +1000,43 @@ header#payment{
     }
     footer .icon-top{right: -10%;}
     /////////////////////////////freelance&&ux
-    #detail,#detail2{
-        .about-book{
-            .book-details{
-                h1{
-                    font-size: 26px;
-                }
-                p{
-                    font-size: 15px;
-                }
-            }
-        }
-    }
-    #view-book,#view-book2{
-        img {
-            height: 190px;
-            width: 190px;
-            top: -35px;
-        }
-        button{
-            top: 85px;
-        }
-    }
-    // FlipBook
-    #flippage,#flippage2{
-        top: 1095px;
-        height: 372px;
-        overflow-x: hidden;
-        #flipbook{
-            width:300px !important;
-            height:250px !important;
-            margin: 65px auto;
-            .page{
-                width:150px !important;
-                height:250px !important;
-            }
-        }
-    }
+    // #detail-book{
+    //     .about-book{
+    //         .book-details{
+    //             h1{
+    //                 font-size: 26px;
+    //             }
+    //             p{
+    //                 font-size: 15px;
+    //             }
+    //         }
+    //     }
+    // }
+    // #view-book{
+    //     img {
+    //         height: 190px;
+    //         width: 190px;
+    //         top: -35px;
+    //     }
+    //     button{
+    //         top: 85px;
+    //     }
+    // }
+    // // FlipBook
+    // #flippage{
+    //     top: 1095px;
+    //     height: 372px;
+    //     overflow-x: hidden;
+    //     #flipbook{
+    //         width:300px !important;
+    //         height:250px !important;
+    //         margin: 65px auto;
+    //         .page{
+    //             width:150px !important;
+    //             height:250px !important;
+    //         }
+    //     }
+    // }
     ////////////////////////////shopping cart
     header#payment{
         height: 58rem;
@@ -1218,19 +1143,19 @@ header#payment{
         }
     }
     /////////////////////////////freelance&&ux
-    #detail,#detail2{
-        .about-book{
-            .box,.box2{width: 300px;}
-            .book-details{
-                h1{
-                    font-size: 26px;
-                }
-                p{
-                    font-size: 15px;
-                }
-            }
-        }
-    }
+    // #detail-book{
+    //     .about-book{
+    //         .box,.box2{width: 300px;}
+    //         .book-details{
+    //             h1{
+    //                 font-size: 26px;
+    //             }
+    //             p{
+    //                 font-size: 15px;
+    //             }
+    //         }
+    //     }
+    // }
     ////////////////////////////shopping cart
     header#payment{
         height: 55rem;
