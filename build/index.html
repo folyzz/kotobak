@@ -94,11 +94,23 @@
       <div class="text-center">
         <h1>اخترنا لكم</h1>
       </div>
-      <div class="row text-center">
-        <div class="col-12 col-sm-6 item wow zoomIn"><a href="freelance.html"><img src="./img/slider/work1.png" alt="work book img"
-              class="img-fluid"></a></div>
-        <div class="col-12 col-sm-6 item wow zoomIn"><a href="ux.html"><img src="./img/slider/ux1.png" alt="ux book img"
-              class="img-fluid"></a></div>
+      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators wow fadeInUp">
+              <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-slider" data-slide-to="1"></li>
+              <li data-target="#carousel-slider" data-slide-to="2"></li>
+          </ol>
+        <div class="carousel-inner wow fadeInUp">
+          <div class="carousel-item active"><a href="freelance.html"><img src="./img/slider/work1.png" alt="book img"></a></div>
+          <div class="carousel-item"><a href="ux.html"><img src="./img/slider/ux1.png" alt="book img"></a></div>
+          <div class="carousel-item"><a href="onlineWork.html"><img src="./img/slider/onlinework.png" alt="book img"></a></div>
+        </div>
+        <a class="carousel-control-prev custom-arrow wow fadeInRight" href="#carousel-slider" data-slide="prev">
+            <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next custom-arrow wow fadeInLeft" href="#carousel-slider" data-slide="next">
+            <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+        </a>
       </div>
     </div>
   </section>

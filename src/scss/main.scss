@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css?family=Amiri:700|Aref+Ruqaa|Reem+Kufi|Tajawal');
 @import url('https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');
 
-
 body{
     padding: 0;
     margin: 0;
@@ -183,27 +182,48 @@ header{
 //المعرض
 #gallery{
     background: linear-gradient(90deg, $color-shopping-cart,$color-shopping-cart-four);
-    padding: 75px 0px 120px;
+    padding: 75px 0px 60px;
     h1{
         color: $color-white;
         font-weight: bold;
         font-size: 55px;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
     }
-    .item{
-        height: 430px;
-        padding: 0 100px;
-        img{
-            height: 100%;
-            width: 100%;
-            border-radius: 2%;
-            box-shadow: 0 0 35px -11px $color-black;
-            transition: all 0.5s ease;
-            &:hover{
-                transform: scale(1.05);
-                box-shadow: 0 0 45px -11px $color-black;
+    #carousel-slider{
+        ol{
+            bottom: -55px;
+            margin: 0px auto;
+            padding: 0;
+            li{
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
             }
         }
+        .carousel-inner{
+            width: 400px;
+            margin: 0px auto;
+            .carousel-item{
+                height: 470px;
+                width: 400px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 1%;
+                    
+                }
+            }
+        }
+        .custom-arrow{
+            color: #000;
+            background: white;
+            border-radius: 50%;
+            top: 15rem;
+            height: 50px;
+            width: 50px;
+        }
+        .carousel-control-prev{left: 4rem;}
+        .carousel-control-next{right: 4rem;}
     }
 }
 //تواصل معنا
@@ -307,7 +327,6 @@ footer{
         top: 1px;
     }
 }
-
 
 //*************************************** payment page . 
 //*************************************** payment page .  
@@ -573,22 +592,6 @@ header#payment{
     header{
         .about{padding: 240px 53px 0px;}
     }
-    #gallery .item {
-        padding: 0 60px;
-    }
-    /////////////////////////////freelance&&ux
-    // #detail-book{
-    //     .about-book{
-    //         .book-details{
-    //             p{
-    //                 padding-left: 0px;
-    //             }
-    //         }
-    //         .work-book {
-    //             margin-right: 10%;
-    //         }
-    //     }
-    // }
     ////////////////////////////shopping cart
     header#payment{
         nav ul{
@@ -646,9 +649,11 @@ header#payment{
             }
         } 
     }
-    #gallery .item {
-        height: 395px;
-        padding: 0px 20px;
+    #gallery{
+        #carousel-slider{
+            .carousel-control-prev{left: 0rem;}
+            .carousel-control-next{right: 0rem;}
+        }
     }
     #contact{
         form{
@@ -661,47 +666,7 @@ header#payment{
     .map-box #map {
         height: 400px;
     }
-    /////////////////////////////freelance&&ux
-    // #detail-book{
-    //     .about-book{
-    //         padding: 50px 15px 0px;
-    //         .work-book{
-    //             height: 400px;
-    //             width: 300px;
-    //             margin-right: -4%;
-    //         }
-    //         .book-details {
-    //             p{
-    //                 margin-bottom: 25px;
-    //             }
-    //             h1{
-    //                 font-size: 35px;
-    //                 margin-bottom: 20px;
-    //             }
-    //         }
-    //         .box{
-    //             width: 335px;
-    //             margin-bottom: 15px;
-    //             a{
-    //                 right: -30px;
-    //             }
-    //             .nice-number{
-    //                 width: 110px;
-    //                 margin-left: -65px;
-    //                 input{
-    //                     width: 30px;
-    //                 }
-    //             }
-    //         }
-    //         .box2{
-    //             width: 335px;
-    //         }
-    //     }
-    // }
-    // // FlipBook
-    // #flippage{
-    //     overflow: hidden;
-    // }
+    
     ////////////////////////////shopping cart
     header#payment{
         height: 65rem;
@@ -827,13 +792,13 @@ header#payment{
         }
     }
     #gallery{
-        padding: 45px 0px 120px;
+        padding: 45px 0px 60px;
         h1{
             font-size: 45px;
         }
-        .item{
-            height: 315px;
-            padding: 0px 10px;
+        #carousel-slider{
+            .carousel-control-prev{left: -1.5rem;}
+            .carousel-control-next{right: -1.5rem;}
         }
     }
     
@@ -861,41 +826,6 @@ header#payment{
         height: 280px;
     }
     footer .icon-top{right: -20%;}
-    /////////////////////////////freelance&&ux
-    // #header-book{
-    //     nav{
-    //         #dropdown-collapse{
-    //             background: #fff;
-    //             a{color: darken($color-white,60%);}
-    //         }
-    //     }
-    // }
-    // #detail-book{
-    //     height: 65rem;
-    //     .about-book{
-    //         .buttons{
-    //             display: inline-block;
-    //         }
-    //         .work-book{
-    //             margin: 0px auto 100px;
-    //         }
-    //         .for-md{
-    //             text-align: center;
-    //         }
-    //         .book-details{
-    //             text-align: center !important;
-    //             h1{
-    //                 margin-bottom: 30px
-    //             }
-    //             p{
-    //                 margin-bottom: 30px
-    //             }
-    //         }
-    //     }
-    // }
-    // #flippage{
-    //     top: 1087px;
-    // }
     ////////////////////////////shopping cart
     header#payment{
         nav ul{
@@ -972,13 +902,20 @@ header#payment{
         }
     }
     #gallery{
-        padding: 20px 0px 0px;
-        h1{margin-bottom: 50px;}
-        .item{
-            height: 350px;
-            padding: 0px 0px;
-            margin-bottom: 30px;
-            img{width: 280px;}
+        padding: 20px 0px 60px;
+        h1{margin-bottom: 15px;}
+        #carousel-slider{
+            .carousel-inner{
+                width: 250px;
+                margin: 0px auto;
+                .carousel-item{
+                    height: 320px;
+                    width: 250px;
+                }
+            }
+            .custom-arrow{top: 10rem;}
+            .carousel-control-prev{left: -0.5rem;}
+            .carousel-control-next{right: -0.5rem;}
         }
     } 
     #contact ul {
@@ -999,44 +936,7 @@ header#payment{
         }
     }
     footer .icon-top{right: -10%;}
-    /////////////////////////////freelance&&ux
-    // #detail-book{
-    //     .about-book{
-    //         .book-details{
-    //             h1{
-    //                 font-size: 26px;
-    //             }
-    //             p{
-    //                 font-size: 15px;
-    //             }
-    //         }
-    //     }
-    // }
-    // #view-book{
-    //     img {
-    //         height: 190px;
-    //         width: 190px;
-    //         top: -35px;
-    //     }
-    //     button{
-    //         top: 85px;
-    //     }
-    // }
-    // // FlipBook
-    // #flippage{
-    //     top: 1095px;
-    //     height: 372px;
-    //     overflow-x: hidden;
-    //     #flipbook{
-    //         width:300px !important;
-    //         height:250px !important;
-    //         margin: 65px auto;
-    //         .page{
-    //             width:150px !important;
-    //             height:250px !important;
-    //         }
-    //     }
-    // }
+    
     ////////////////////////////shopping cart
     header#payment{
         height: 58rem;
@@ -1142,20 +1042,26 @@ header#payment{
             }
         }
     }
-    /////////////////////////////freelance&&ux
-    // #detail-book{
-    //     .about-book{
-    //         .box,.box2{width: 300px;}
-    //         .book-details{
-    //             h1{
-    //                 font-size: 26px;
-    //             }
-    //             p{
-    //                 font-size: 15px;
-    //             }
-    //         }
-    //     }
-    // }
+    #gallery{
+        h1{font-size: 40px;}
+        #carousel-slider{
+            .carousel-inner{
+                width: 220px;
+                margin: 0px auto;
+                .carousel-item{
+                    height: 290px;
+                    width: 220px;
+                }
+            }
+            .custom-arrow{
+                top: 7rem;
+                height: 30px;
+                width: 30px;
+            }
+            .carousel-control-prev{left: -0.5rem;}
+            .carousel-control-next{right: -0.5rem;}
+        }
+    }
     ////////////////////////////shopping cart
     header#payment{
         height: 55rem;
@@ -1260,18 +1166,3 @@ header#payment{
         }
     } 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,289 @@
+#header-book {
+  background: none;
+  height: 0; }
+  #header-book nav {
+    background: #e6e6e6;
+    box-shadow: 0px 1px 22px -5px; }
+    #header-book nav .custom-collapse .nav-cart {
+      color: #ffffff;
+      font-size: 30px;
+      position: relative;
+      top: 4px; }
+    #header-book nav .custom-collapse .nav-bar {
+      color: #ffffff;
+      font-size: 30px;
+      margin-top: 20px; }
+    #header-book nav ul {
+      margin-top: 10px; }
+      #header-book nav ul a {
+        color: grey; }
+        #header-book nav ul a:hover, #header-book nav ul a.active {
+          color: #594AA9;
+          text-shadow: 0 0 3px #594AA9; }
+    #header-book nav #brand img {
+      height: 80px;
+      width: 80px; }
+    #header-book nav #brand h5 {
+      font-size: 15px;
+      top: 8px; }
+    #header-book nav #brand .back-icon {
+      position: relative;
+      top: 8px;
+      color: grey; }
+      #header-book nav #brand .back-icon:hover {
+        color: #594AA9;
+        text-shadow: 0 0 3px #594AA9; }
+
+#detail-book {
+  margin: 80px auto 0px; }
+  #detail-book .about-book {
+    padding: 50px 0px 0px;
+    height: 650px; }
+    #detail-book .about-book .work-book {
+      height: 430px;
+      width: 350px; }
+      #detail-book .about-book .work-book img {
+        height: 100%;
+        width: 100%;
+        border-radius: 1%;
+        box-shadow: 0px 25px 145px -50px #000000; }
+      #detail-book .about-book .work-book h6 {
+        margin-top: 35px;
+        font-weight: bold;
+        color: #0097A7; }
+    #detail-book .about-book .book-details h6 {
+      font-weight: bold;
+      color: #bfbfbf; }
+    #detail-book .about-book .book-details h1 {
+      color: #0097A7;
+      font-weight: bold;
+      margin-bottom: 33px; }
+    #detail-book .about-book .book-details p {
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 26px;
+      margin-bottom: 40px;
+      padding-left: 10px; }
+    #detail-book .about-book .box {
+      font-size: 32px;
+      background-color: #61ddbc;
+      border: 2px solid #35ba9b;
+      border-radius: 30px;
+      width: 450px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      box-shadow: 0px 0px 33px -3px #61ddbc; }
+      #detail-book .about-book .box a {
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+        top: -4px;
+        right: -60px;
+        transition: all 0.5s ease; }
+        #detail-book .about-book .box a:hover {
+          text-decoration: none;
+          text-shadow: 0px 0px 20px #fff; }
+      #detail-book .about-book .box .nice-number {
+        width: 145px;
+        padding: 3px 15px;
+        direction: ltr;
+        border: none;
+        background-color: #fff;
+        margin-left: -148px; }
+        #detail-book .about-book .box .nice-number button {
+          cursor: pointer;
+          color: #bfbfbf;
+          border: none;
+          background-color: transparent; }
+          #detail-book .about-book .box .nice-number button:focus {
+            outline: transparent; }
+        #detail-book .about-book .box .nice-number input {
+          color: #35ba9b;
+          border: none;
+          margin: 0px 3px; }
+    #detail-book .about-book .box2 {
+      width: 450px;
+      overflow: hidden;
+      margin-top: 10px;
+      border-radius: 30px;
+      box-shadow: 0px 0px 23px -1px #f76c82; }
+      #detail-book .about-book .box2 button {
+        width: 100%;
+        line-height: 35px;
+        background-color: #f76c82;
+        border: 2px solid #d94452;
+        border-radius: 30px;
+        cursor: pointer; }
+        #detail-book .about-book .box2 button:focus {
+          box-shadow: none;
+          outline: none; }
+        #detail-book .about-book .box2 button:hover .heart-text,
+        #detail-book .about-book .box2 button:focus .heart-text {
+          opacity: 0; }
+        #detail-book .about-book .box2 button:hover .heart-icon,
+        #detail-book .about-book .box2 button:focus .heart-icon {
+          top: 5px; }
+        #detail-book .about-book .box2 button .heart-text {
+          color: #fff;
+          font-size: 20px;
+          position: relative;
+          left: -17px;
+          transition: all 0.3s ease; }
+        #detail-book .about-book .box2 button .heart-icon {
+          color: red;
+          font-size: 36px;
+          position: relative;
+          right: -83px;
+          top: 50px;
+          transition: all 0.3s ease; }
+
+#view-book {
+  background: linear-gradient(90deg, #80D6D7, #2FACAA);
+  height: 337px; }
+  #view-book img {
+    height: 230px;
+    width: 230px;
+    position: relative;
+    top: -43px;
+    right: 55px;
+    z-index: 2; }
+  #view-book .shadow {
+    height: 20px;
+    width: 130px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 60px 30px rgba(0, 0, 0, 0.15) !important;
+    position: relative;
+    top: 30px;
+    right: -140px;
+    z-index: 1; }
+  #view-book button {
+    font-size: 14px;
+    color: #fff;
+    background-color: #0097A7;
+    border-color: #006974;
+    border-radius: 20px;
+    width: 275px;
+    position: relative;
+    top: 50px; }
+
+#flippage {
+  direction: ltr;
+  background: linear-gradient(90deg, #80D6D7, #2FACAA);
+  height: 380px;
+  width: 100%;
+  position: absolute;
+  top: 686px;
+  z-index: 3;
+  display: none; }
+  #flippage #flipbook {
+    width: 500px;
+    height: 380px;
+    margin: 0px auto; }
+    #flippage #flipbook .page {
+      width: 400px;
+      height: 300px; }
+    #flippage #flipbook .page-wrapper {
+      perspective: 2000px; }
+    #flippage #flipbook .odd {
+      box-shadow: inset 0 0 5px #666; }
+    #flippage #flipbook .even {
+      box-shadow: inset 0 0 5px #666; }
+  #flippage button {
+    font-size: 25px;
+    color: #d94452;
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    z-index: 6; }
+    #flippage button:hover, #flippage button:focus {
+      color: #f76c82;
+      box-shadow: none; }
+
+@media (max-width: 1199px) {
+  #detail-book .about-book .book-details p {
+    padding-left: 0px; }
+  #detail-book .about-book .work-book {
+    margin-right: 10%; } }
+
+@media (max-width: 991px) {
+  #detail-book .about-book {
+    padding: 50px 15px 0px; }
+    #detail-book .about-book .work-book {
+      height: 400px;
+      width: 300px;
+      margin-right: -4%; }
+    #detail-book .about-book .book-details p {
+      margin-bottom: 25px; }
+    #detail-book .about-book .book-details h1 {
+      font-size: 35px;
+      margin-bottom: 20px; }
+    #detail-book .about-book .box {
+      width: 335px;
+      margin-bottom: 15px; }
+      #detail-book .about-book .box a {
+        right: -30px; }
+      #detail-book .about-book .box .nice-number {
+        width: 110px;
+        margin-left: -65px; }
+        #detail-book .about-book .box .nice-number input {
+          width: 30px; }
+    #detail-book .about-book .box2 {
+      width: 335px; }
+  #flippage {
+    overflow: hidden; } }
+
+@media (max-width: 767px) {
+  #header-book nav #dropdown-collapse {
+    background: #fff; }
+    #header-book nav #dropdown-collapse a {
+      color: #666666; }
+  #detail-book {
+    height: 65rem; }
+    #detail-book .about-book .buttons {
+      display: inline-block; }
+    #detail-book .about-book .work-book {
+      margin: 0px auto 100px; }
+    #detail-book .about-book .for-md {
+      text-align: center; }
+    #detail-book .about-book .book-details {
+      text-align: center !important; }
+      #detail-book .about-book .book-details h1 {
+        margin-bottom: 30px; }
+      #detail-book .about-book .book-details p {
+        margin-bottom: 30px; }
+  #flippage {
+    top: 1077px; } }
+
+@media (max-width: 575px) {
+  #detail-book .about-book .book-details h1 {
+    font-size: 26px; }
+  #detail-book .about-book .book-details p {
+    font-size: 15px; }
+  #view-book img {
+    height: 190px;
+    width: 190px;
+    top: -35px; }
+  #view-book button {
+    top: 85px; }
+  #flippage {
+    top: 1085px;
+    height: 372px;
+    overflow-x: hidden; }
+    #flippage #flipbook {
+      width: 300px !important;
+      height: 250px !important;
+      margin: 65px auto; }
+      #flippage #flipbook .page {
+        width: 150px !important;
+        height: 250px !important; } }
+
+@media (max-width: 375px) {
+  #detail-book .about-book .box, #detail-book .about-book .box2 {
+    width: 300px; }
+  #detail-book .about-book .book-details h1 {
+    font-size: 26px; }
+  #detail-book .about-book .book-details p {
+    font-size: 15px; } }
