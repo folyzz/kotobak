@@ -31,10 +31,10 @@ $(document).ready(function(){
 
 
     $('#btn-show').on('click',function(){
-        $('#flippage,#flippage2').show('drop');
+        $('#flippage').show('drop');
     });
     $('#btn-hide').on('click',function(){
-        $('#flippage,#flippage2').hide('drop');
+        $('#flippage').hide('drop');
     });
 
     $('input[type="number"]').niceNumber({
