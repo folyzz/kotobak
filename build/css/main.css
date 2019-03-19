@@ -40,17 +40,21 @@ nav {
         padding: 0px 5px;
         transition: all 0.3s ease; }
         nav ul li a:hover, nav ul li a.active {
-          color: #594AA9;
-          text-shadow: 0 0 3px #594AA9; }
+          color: #594AA9; }
   nav #brand {
     position: relative;
     right: 15%; }
-    nav #brand img {
+    nav #brand a {
+      display: inline-block; }
+      nav #brand a:hover {
+        color: transparent; }
+    nav #brand .logo-img {
       height: 100px;
       width: 100px;
       transition: all 0.5s ease; }
-    nav #brand a:hover {
-      color: transparent; }
+      nav #brand .logo-img img {
+        height: 100%;
+        width: 100%; }
     nav #brand h5 {
       font-size: 19px;
       color: #000000;
@@ -64,17 +68,15 @@ nav {
 
 .noTransparrent {
   background: #e6e6e6;
-  box-shadow: 0px 1px 22px -5px;
-  transition: all 0.5s ease; }
+  box-shadow: 0px 1px 22px -5px; }
   .noTransparrent ul {
     margin-top: 10px; }
     .noTransparrent ul a {
       color: grey; }
-  .noTransparrent #brand img {
-    height: 80px;
-    width: 80px; }
+  .noTransparrent #brand .logo-img {
+    height: 80px; }
   .noTransparrent #brand h5 {
-    font-size: 15px;
+    right: -18px;
     top: 8px; }
 
 header {
@@ -113,7 +115,7 @@ header {
         padding: 20px 45px;
         border-color: transparent;
         border-radius: 25px;
-        box-shadow: 0 0 35px -11px #000000; }
+        box-shadow: 0 0 30px -11px #000000; }
       header .about .form-group a {
         color: #e6e6e6;
         border-radius: 50%;
@@ -266,8 +268,7 @@ header#payment {
       top: 8px;
       color: #ffffff; }
       header#payment nav #brand .back-icon:hover {
-        color: #19E4AD;
-        text-shadow: 0 0 3px #19E4AD; }
+        color: #19E4AD; }
   header#payment nav ul {
     right: 65%; }
     header#payment nav ul a {

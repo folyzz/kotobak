@@ -6,27 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>كتبك|الدفع</title>
-
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
   <link rel="stylesheet" href="./css/jquery.nice-number.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <link rel="icon" href="./img/logo.png">
   <link rel="stylesheet" href="css/main.css">
-
+  
 </head>
 
 <body>
-
+  
   <header id="payment">
     <div class="container">
       <!-- Navbar -->
       <nav class="navbar navbar-toggleable-md navbar-expand-md" id="navBar">
         <!--الشعار-->
-        <div id="brand" class="wow zoomIn">
+        <div id="brand">
           <a href="." class="navabr-brand">
-            <img src="img/logo.svg" alt="logo">
+            <div class="logo-img">
+              <img src="img/logo.svg" alt="logo">
+            </div>
           </a>
           <h5>كتـبك</h5>
           <a href="." class="back-icon" title="رجوع للرئيسية" data-toggle="tooltip" data-placement="bottom">
@@ -34,7 +36,7 @@
           </a>
         </div>
         <!-- روابط -->
-        <ul class="nav navbar-nav wow bounce">
+        <ul class="nav navbar-nav">
           <li>
             <a href="#">
               Shopping Cart
@@ -43,7 +45,7 @@
           </li>
         </ul>
       </nav>
-
+      
       <div class="row">
         <!-- عامود طلبك -->
         <div class="col-12 col-lg-8 request-col">
@@ -51,7 +53,7 @@
           <form>
             <table>
               <tbody>
-                <tr class="wow zoomIn" data-book-info data-book-price="200">
+                <tr data-book-info data-book-price="200">
                   <td>
                     <div class="media">
                       <div class="media-right custom-img"><img src="./img/slider/work1.png" alt="work book"></div>
@@ -74,7 +76,7 @@
                     <button class="btn remove-btn" data-remove-from-cart>X</button>
                   </td>
                 </tr>
-                <tr class="wow zoomIn" data-book-info data-book-price="250">
+                <tr data-book-info data-book-price="250">
                   <td>
                     <div class="media">
                       <div class="media-right custom-img"><img src="./img/slider/ux1.png" alt="work book"></div>
@@ -97,7 +99,7 @@
                     <button class="btn remove-btn" data-remove-from-cart>X</button>
                   </td>
                 </tr>
-                <tr class="wow zoomIn" data-book-info data-book-price="350">
+                <tr data-book-info data-book-price="350">
                   <td>
                     <div class="media">
                       <div class="media-right custom-img"><img src="./img/slider/onlinework.png" alt="work book"></div>
@@ -205,9 +207,9 @@
       </div>
     </div>
   </header>
-
+  
   <!-- تواصل  -->
-<section id="contact">
+  <section id="contact">
     <div class="container">
       <div class="text-center">
         <h1>اتصل بنا</h1>
@@ -223,9 +225,9 @@
         </div>
         <div class="col-12 col-md-6 links">
           <ul class="list-unstyled">
-            <li><a href="tell:012 3456 789">012 3456 789<i class="fa fa-phone wow flip"></i></a></li>
-            <li><a href="mailto:Ammar@hotmail.com">Ammar@hotmail.com<i class="fa fa-envelope-o wow flip"></i></a></li>
-            <li>شارع قصر العيني<i class="fa fa-map-marker wow flip"></i></li>
+            <li><a href="tell:012 3456 789">012 3456 789<i class="fa fa-phone"></i></a></li>
+            <li><a href="mailto:Ammar@hotmail.com">Ammar@hotmail.com<i class="fa fa-envelope-o"></i></a></li>
+            <li>شارع قصر العيني<i class="fa fa-map-marker"></i></li>
           </ul>
         </div>
       </div>
@@ -233,19 +235,19 @@
   </section>
   
   <footer class="text-center">
-    <p>جميع الحقوق محفوظة &copy</p>
+    <p>جميع الحقوق محفوظة &copy;</p>
   </footer>
   
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-
+  crossorigin="anonymous"></script>
+  
   <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
+  
   <script src="js/payment.js"></script>
-
+  
 </body>
 
 </html>

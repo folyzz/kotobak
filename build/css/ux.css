@@ -18,8 +18,7 @@
       #header-book nav ul a {
         color: grey; }
         #header-book nav ul a:hover, #header-book nav ul a.active {
-          color: #594AA9;
-          text-shadow: 0 0 3px #594AA9; }
+          color: #594AA9; }
     #header-book nav #brand img {
       height: 80px;
       width: 80px; }
@@ -31,8 +30,7 @@
       top: 8px;
       color: grey; }
       #header-book nav #brand .back-icon:hover {
-        color: #594AA9;
-        text-shadow: 0 0 3px #594AA9; }
+        color: #594AA9; }
 
 #detail-book {
   margin: 80px auto 0px; }
@@ -45,8 +43,7 @@
       #detail-book .about-book .work-book img {
         height: 100%;
         width: 100%;
-        border-radius: 1%;
-        box-shadow: 0px 25px 145px -50px #000000; }
+        border-radius: 1%; }
       #detail-book .about-book .work-book h6 {
         margin-top: 35px;
         font-weight: bold;
