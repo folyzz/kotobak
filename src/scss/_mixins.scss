@@ -90,6 +90,18 @@
         padding-left: 10px;
     }
 }
+// sweetalert
+@mixin sweetalert {
+    .swal-footer{ // صنف sweetalert
+        text-align: center;
+        button{
+            background: #3085D6;
+        }
+        .swal-button:not([disabled]):hover{
+            background: #2B78C0;
+        }
+    }
+}
 // زر الطلب
 @mixin box {
     font-size: 32px;

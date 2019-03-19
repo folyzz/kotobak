@@ -14,19 +14,19 @@ $(document).ready(function(){
 
 
     $('[data-add-to-cart]').click(function(e){
-        Swal.fire(
+        swal(
             'اختيار جيد!',
             'أضيف المُنتج إلى عربة الشراء',
             'success'
             );
         e.stopPropagation();
     });
-    $('[data-add-to-favorite]').click(function(e){
-        Swal.fire(
-            'رائع!',
+    $('[data-add-to-favorite]').click(function(){
+        swal(
+            "رائع!",
             'أضيف المُنتج إلى المفضلة',
             'success'
-            );
+        );                     
     });
 
 

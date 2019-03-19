@@ -1,3 +1,10 @@
+body .swal-footer {
+  text-align: center; }
+  body .swal-footer button {
+    background: #3085D6; }
+  body .swal-footer .swal-button:not([disabled]):hover {
+    background: #2B78C0; }
+
 #header-book {
   background: none;
   height: 0; }
